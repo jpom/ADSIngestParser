@@ -8,20 +8,9 @@
 import logging
 import re
 
-# from adsingestp import utils
 from adsingestp.ingest_exceptions import XmlLoadException
 from adsingestp.parsers.base import BaseBeautifulSoupParser
 from adsingestp.parsers.jats import JATSAffils
-
-# from collections import OrderedDict
-# from copy import copy
-
-# import bs4
-# from ordered_set import OrderedSet
-
-
-# import sys
-# import xml.etree.ElementTree as ET
 
 
 logger = logging.getLogger(__name__)
@@ -35,9 +24,7 @@ class SpringerParser(BaseBeautifulSoupParser):
         self.base_metadata = {}
         self.toplevel = None
         self.collectionmeta = None
-        # self.book = None  # delete in favor of toplevel
         self.bookmeta = None
-        # self.toplevel = None  # delete in favor of toplevel
         self.bookpart = None
         self.bookpartmeta = None
         self.contenttype = None
@@ -110,20 +97,16 @@ class SpringerParser(BaseBeautifulSoupParser):
             self.base_metadata["authors"] = authors
 
     def _parse_collection(self):
-        # Pass <book-meta> <custom-meta-group> <custom-meta> <meta-name>book-subject-primary
-        # and <meta-name>book-subject-secondary in %X
+        # Pass <book-meta> <custom-meta-group> <custom-meta> <meta-name>book-subject-secondary
         # Removed in postprocessing; used to create %W
         # TO DO: Change as needed if Collection is ever added to the ingest data model
         self.base_metadata["comments"] = []
-        su_secondary = []
         subjects = []
 
         if self.bookmeta.find("custom-meta-group"):
             cm_group = self.bookmeta.find("custom-meta-group")
 
         for cm in cm_group.find_all("custom-meta"):
-            # meta_name = cm.find("meta-name").get_text(strip=True)
-            # meta_value = cm.find("meta-value").get_text(strip=True)
             meta_name_tag = cm.find("meta-name")
             meta_value_tag = cm.find("meta-value")
 
@@ -134,12 +117,10 @@ class SpringerParser(BaseBeautifulSoupParser):
             meta_name = meta_name_tag.get_text(strip=True)
             meta_value = meta_value_tag.get_text(strip=True)
 
-            # Keeping these separate in case we want to use primary but not secondary
-            # There is 1 primary, may be >1 secondary
-            if meta_name == "book-subject-primary":
-                subjects.append(meta_value)
-            elif meta_name == "book-subject-secondary":
-                su_secondary.append(meta_value)
+            # XML contains book-subject-collection, book-subject-primary, & book-subject-secondary
+            # Sadly, collection & primary terms are too broad to be useful
+            # Have to use much longer term list for book-subject-secondary
+            if meta_name == "book-subject-secondary":
                 subjects.append(meta_value)
 
         if subjects:
@@ -330,6 +311,7 @@ class SpringerParser(BaseBeautifulSoupParser):
                 ref_list_text.append(s)
             self.base_metadata["references"] = ref_list_text
 
+
     def _parse_title(self):
         # 4 possible titles:
         # Series title: <collection-meta collection-type="series"> <title-group> <title>
@@ -338,21 +320,16 @@ class SpringerParser(BaseBeautifulSoupParser):
         # Chapter title: <book-part> <book-part-meta> <title-group> <title> (no subtitle)
 
         # If book is part of a series, get series title
+        # <collection-meta> has 2 collection-type="series" & "subseries"
         # Ignore subseries title, if one exists
+        series_title = None
+
         if self.collectionmeta:
-            for cm in self.collectionmeta.find_all("collection-meta"):
-                ctype = cm.get("collection-type")
-                if ctype not in ("series", "subseries"):
-                    continue
-
-                ti = cm.find("title-group").find("title").get_text(strip=True)
-
-                if ctype == "series":
-                    series_title = ti
+            if self.collectionmeta.find("title-group", None):
+                title_group = self.collectionmeta.find("title-group")
+                if title_group.find("title", None):
+                    series_title = title_group.find("title").get_text(strip=True)
                     self.base_metadata["series_title"] = series_title
-                # elif ctype == "subseries":
-                #    subseries_title = ti
-                #    self.base_metadata["series_title"] = series_title + ": " + subseries_title
 
             # Volume number in series is in <book-meta>
             if self.bookmeta.find("book-volume-number"):
@@ -379,10 +356,14 @@ class SpringerParser(BaseBeautifulSoupParser):
             self.base_metadata["subtitle"] = ""
 
         # publication = book for ALL content types (chapters & frontmatter)
+        publication = None
         if book_subtitle:
-            self.base_metadata["publication"] = f"{book_title}: {book_subtitle}"
+            publication = book_title + ": " + book_subtitle
         else:
-            self.base_metadata["publication"] = book_title
+            publication = book_title
+        if series_title:
+            publication = publication + ". " + series_title
+        self.base_metadata["publication"] = publication
 
     def parse(self, text):
         if hasattr(self, "filename"):
@@ -406,28 +387,54 @@ class SpringerParser(BaseBeautifulSoupParser):
         if self.toplevel.find("book-meta", None):
             self.bookmeta = self.toplevel.find("book-meta")
 
-        # FRONT MATTER
-        # Only BookFrontMatter files contain <book> <front-matter>
-        if self.toplevel.find("front-matter", None):
-            self.frontmatter = self.toplevel.find("front-matter")
-
-            if self.frontmatter.find("book-part-meta", None):
-                self.bookpartmeta = self.frontmatter.find("book-part-meta")
-
-        # CHAPTERS
+        # ALL FILES
         # Book has <collection-meta> only if part of a series
         if self.toplevel.find("collection-meta", None):
             self.collectionmeta = self.toplevel.find("collection-meta")
-        # <collection-meta> has 2 collection-type="series" & "subseries"
 
         # All books have <book-meta>
         if self.toplevel.find("book-meta", None):
             self.bookmeta = self.toplevel.find("book-meta")
 
+        # <contrib-group> provides names of book author(s) or editor(s)
+        contrib_group = self.bookmeta.find("contrib-group")
+        if contrib_group is not None:
+            content_type = contrib_group.get("content-type", "").lower()
+
+        # If book type is manuscript
+        # <contrib-group content-type="book author"> or "book authors"
+        # Only parse front & back matter, skip chapters
+        if "author" in content_type:
+            self.contenttype = "manuscript"
+
+        # If book type is edited volume
+        # <contrib-group content-type="book editor"> or "book editors"
+        # Parse front matter & chapters
+        elif "editor" in content_type:
+            self.contenttype = "edited"
+        else:
+            raise Exception("XML file is of unknown content type")
+
+        # FRONT MATTER
+        # Only BookFrontMatter files contain <book> <front-matter>
+        # Skip BookFrontMatter files
+        if self.toplevel.find("front-matter", None):
+            self.frontmatter = self.toplevel.find("front-matter")
+            return
+        if self.toplevel.find("book-part", {"book-part-type": "part"}):
+            self.bookpart = self.toplevel.find("book-part", {"book-part-type": "part"})
+            if self.bookpart.find("front-matter", None):
+                return
+
+        # CHAPTERS
         # Get <book-part book-part-type="chapter"> only
         # Ignore <book-part book-part-type="part"> <book-part-meta> as it only contains part title
         if self.toplevel.find("book-part", {"book-part-type": "chapter"}):
             self.bookpart = self.toplevel.find("book-part", {"book-part-type": "chapter"})
+            # If a manuscript, skip chapters: we only want book-level records
+            if self.contenttype == "manuscript":
+                return
+
             if self.bookpart.find("book-part-meta", None):
                 self.bookpartmeta = self.bookpart.find("book-part-meta")
 
@@ -448,25 +455,6 @@ class SpringerParser(BaseBeautifulSoupParser):
                 self.bookbackpart = self.backmatter.find("book-part")
                 if self.bookbackpart.find("back"):
                     self.back = self.bookbackpart.find("back")
-
-        # ALL FILES
-        # <contrib-group> provides names of book author(s) or editor(s)
-        contrib_group = self.bookmeta.find("contrib-group")
-        if contrib_group is not None:
-            content_type = contrib_group.get("content-type", "").lower()
-
-        # If book type is manuscript
-        # <contrib-group content-type="book author"> or "book authors"
-        # Only parse front & back matter, do not parse chapters
-        if "author" in content_type:
-            self.contenttype = "manuscript"
-        # If book type is edited volume
-        # <contrib-group content-type="book editor"> or "book editors"
-        # Parse front matter & chapters
-        elif "editor" in content_type:
-            self.contenttype = "edited"
-        else:
-            raise Exception("XML file is of unknown content type")
 
         self._parse_abstract()
         self._parse_authors()

@@ -12,7 +12,6 @@ from adsingestp.ingest_exceptions import XmlLoadException
 from adsingestp.parsers.base import BaseBeautifulSoupParser
 from adsingestp.parsers.jats import JATSAffils
 
-
 logger = logging.getLogger(__name__)
 
 orcid_format = re.compile(r"(\d{4}-){3}\d{3}(\d|X)")
@@ -312,7 +311,6 @@ class SpringerParser(BaseBeautifulSoupParser):
                 s = str(r.extract()).replace("\n", " ").replace("\xa0", " ")
                 ref_list_text.append(s)
             self.base_metadata["references"] = ref_list_text
-
 
     def _parse_title(self):
         # 4 possible titles:

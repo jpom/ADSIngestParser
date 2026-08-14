@@ -308,8 +308,9 @@ class SpringerParser(BaseBeautifulSoupParser):
                 ref_results = []
             for r in ref_results:
                 # output raw XML for reference service to parse later
-                s = str(r.extract()).replace("\n", " ").replace("\xa0", " ")
-                ref_list_text.append(s)
+                s = self._remove_latex(r)
+                t = str(s.extract()).replace("\n", " ").replace("\xa0", " ")
+                ref_list_text.append(t)
             self.base_metadata["references"] = ref_list_text
 
     def _parse_title(self):

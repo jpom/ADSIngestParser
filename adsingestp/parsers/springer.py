@@ -45,6 +45,7 @@ class SpringerParser(BaseBeautifulSoupParser):
 
         if self.bookpartmeta.find("abstract"):
             for p in self.bookpartmeta.find("abstract").find_all("p"):
+                p = self._remove_latex(p)
                 abstract = p.text.strip()
                 self.base_metadata["abstract"] = abstract
 
@@ -192,6 +193,7 @@ class SpringerParser(BaseBeautifulSoupParser):
 
             for kwd in kwd_group.find_all("kwd"):
                 keyword = kwd.get_text(strip=True)
+                keyword = self._remove_latex(keyword)
                 if keyword:
                     keywords.append(
                         {
@@ -329,6 +331,7 @@ class SpringerParser(BaseBeautifulSoupParser):
                 title_group = self.collectionmeta.find("title-group")
                 if title_group.find("title", None):
                     series_title = title_group.find("title").get_text(strip=True)
+                    series_title = self._remove_latex(series_title)
                     self.base_metadata["series_title"] = series_title
 
             # Volume number in series is in <book-meta>
@@ -343,8 +346,10 @@ class SpringerParser(BaseBeautifulSoupParser):
 
         btg = self.bookmeta.find("book-title-group")
         book_title = btg.find("book-title").get_text()
+        book_title = self._remove_latex(book_title)
         if btg.find("subtitle"):
             book_subtitle = btg.find("subtitle").get_text()
+            book_subtitle = self._remove_latex(book_subtitle)
 
         if self.frontmatter or self.backmatter:
             self.base_metadata["title"] = book_title
@@ -352,6 +357,7 @@ class SpringerParser(BaseBeautifulSoupParser):
         else:  # If Chapter, then title = chapter title
             if self.bookpartmeta.find("title-group").find("title"):
                 chapter_title = self.bookpartmeta.find("title-group").find("title").get_text()
+                chapter_title = self._remove_latex(chapter_title)
             self.base_metadata["title"] = chapter_title
             self.base_metadata["subtitle"] = ""
 

@@ -12,7 +12,6 @@ from adsingestp.ingest_exceptions import XmlLoadException
 from adsingestp.parsers.base import BaseBeautifulSoupParser
 from adsingestp.parsers.jats import JATSAffils
 
-
 logger = logging.getLogger(__name__)
 
 orcid_format = re.compile(r"(\d{4}-){3}\d{3}(\d|X)")
@@ -192,8 +191,8 @@ class SpringerParser(BaseBeautifulSoupParser):
             kwd_type = kwd_group.get("kwd-group-type", "")
 
             for kwd in kwd_group.find_all("kwd"):
+                kwd = self._remove_latex(kwd)
                 keyword = kwd.get_text(strip=True)
-                keyword = self._remove_latex(keyword)
                 if keyword:
                     keywords.append(
                         {
@@ -313,7 +312,6 @@ class SpringerParser(BaseBeautifulSoupParser):
                 ref_list_text.append(s)
             self.base_metadata["references"] = ref_list_text
 
-
     def _parse_title(self):
         # 4 possible titles:
         # Series title: <collection-meta collection-type="series"> <title-group> <title>
@@ -327,12 +325,12 @@ class SpringerParser(BaseBeautifulSoupParser):
         series_title = None
 
         if self.collectionmeta:
-            if self.collectionmeta.find("title-group", None):
-                title_group = self.collectionmeta.find("title-group")
-                if title_group.find("title", None):
-                    series_title = title_group.find("title").get_text(strip=True)
-                    series_title = self._remove_latex(series_title)
-                    self.base_metadata["series_title"] = series_title
+            title_group = self.collectionmeta.find("title-group")
+            if title_group:
+                sti = title_group.find("title")
+                if sti:
+                    sti = self._remove_latex(sti)
+                    series_title = sti.text.strip()
 
             # Volume number in series is in <book-meta>
             if self.bookmeta.find("book-volume-number"):
@@ -345,19 +343,26 @@ class SpringerParser(BaseBeautifulSoupParser):
         book_subtitle = None
 
         btg = self.bookmeta.find("book-title-group")
-        book_title = btg.find("book-title").get_text()
-        book_title = self._remove_latex(book_title)
-        if btg.find("subtitle"):
-            book_subtitle = btg.find("subtitle").get_text()
-            book_subtitle = self._remove_latex(book_subtitle)
+        if btg:
+            bt = btg.find("book-title")
+            if bt:
+                bt = self._remove_latex(bt)
+                book_title = bt.text.strip()
+            subti = btg.find("subtitle")
+            if subti:
+                subti = self._remove_latex(subti)
+                book_subtitle = subti.text.strip()
 
         if self.frontmatter or self.backmatter:
             self.base_metadata["title"] = book_title
             self.base_metadata["subtitle"] = book_subtitle
         else:  # If Chapter, then title = chapter title
-            if self.bookpartmeta.find("title-group").find("title"):
-                chapter_title = self.bookpartmeta.find("title-group").find("title").get_text()
-                chapter_title = self._remove_latex(chapter_title)
+            tg = self.bookpartmeta.find("title-group")
+            if tg:
+                ct = tg.find("title")
+                if ct:
+                    ct = self._remove_latex(ct)
+                    chapter_title = ct.text.strip()
             self.base_metadata["title"] = chapter_title
             self.base_metadata["subtitle"] = ""
 

@@ -1,0 +1,138 @@
+{
+  "abstract": {
+    "textEnglish": "Alzheimer's disease (AD) is a progressive neurodegenerative disorder with an increasing prevalence among the elderly, making early and accurate diagnosis critical for effective intervention and management. This paper introduces an end-to-end machine learning pipeline optimized for detecting AD using multimodal data from the Alzheimer's Disease Neuroimaging Initiative (ADNI). The study proposes an ensemble model that integrates key modalities-demographics, cognitive scores, neuropsychological assessments, and MRI data-via early fusion to enhance AD detection. Various machine learning models, including Logistic Regression, Gradient Boosting, AdaBoost, XGBoost, Support Vector Machine, and Neural Networks, are compared, and feature selection is optimized through Recursive Feature Elimination, ANOVA F-value, and mutual information methods, with mutual information showing the most efficacy. With further hyperparameter tuning, the highest accuracy is achieved at 95.85%, with Gradient Boosting as the top-performing model. Additional experiments assess and evaluate individual modality contributions, underscoring the predictive value of cognitive scores and neuropsychological features. To enhance clinical interpretability, we incorporate model explainability using LIME and SHAP, which identify key features influencing model predictions across different AD stages. Explainable AI (XAI) is essential in healthcare for providing transparency and supporting clinician confidence by highlighting which biomarkers, such as MMSE, CDRSB, and PTAU, contribute most to diagnostic outcomes. This study demonstrates classical machine learning's potential in AD diagnostics, offering a pathway to cost-effective and clinically viable models for neurodegenerative disease management."
+  },
+  "authors": [
+    {
+      "affiliation": [
+        {
+          "affPubRaw": "Faculty of Computer Science and Engineering, Galala University, Egypt"
+        }
+      ],
+      "attrib": {
+        "email": "aem104592@gu.edu.eg"
+      },
+      "name": {
+        "given_name": "Abdelrahman",
+        "native_lang": "Abdelrahman Hassan",
+        "surname": "Hassan"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubRaw": "College of Computing and Informatics, Sungkyunkwan University, South Korea"
+        }
+      ],
+      "attrib": {
+        "email": "tamer@skku.edu"
+      },
+      "name": {
+        "given_name": "Tamer",
+        "native_lang": "Tamer Abuhmed",
+        "surname": "Abuhmed"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubRaw": "Faculty of Computer Science and Engineering, Galala University, Egypt"
+        }
+      ],
+      "attrib": {
+        "email": "shaker.elsappagh@gu.edu.eg"
+      },
+      "name": {
+        "given_name": "Shaker",
+        "native_lang": "Shaker El-Sappagh",
+        "surname": "El-Sappagh"
+      }
+    }
+  ],
+  "copyright": {
+    "statement": "\u00a92025 ",
+    "status": true
+  },
+  "funding": [
+    {
+      "agencyname": "National Research Foundation of Korea",
+      "awardnumber": "2021R1A2C1011198"
+    },
+    {
+      "agencyname": "MSIT (Ministry of Science and ICT), Korea",
+      "awardnumber": "IITP-2021-2020-0-01821"
+    }
+  ],
+  "keywords": [
+    {
+      "keyString": "Alzheimer's disease",
+      "keySystem": "AuthorFree"
+    },
+    {
+      "keyString": "Machine Learning",
+      "keySystem": "AuthorFree"
+    },
+    {
+      "keyString": "Ensemble learning",
+      "keySystem": "AuthorFree"
+    },
+    {
+      "keyString": "Cognitive assessment",
+      "keySystem": "AuthorFree"
+    },
+    {
+      "keyString": "Clinical Diagnostic",
+      "keySystem": "AuthorFree"
+    },
+    {
+      "keyString": "Neurodegenerative disease",
+      "keySystem": "AuthorFree"
+    }
+  ],
+  "pagination": {
+    "firstPage": "7489",
+    "lastPage": "8"
+  },
+  "persistentIDs": [
+    {
+      "DOI": "10.1109/IMCOM64595.2025.10857489",
+      "ISBN": [
+        {
+          "isbnString": "979-8-3315-0781-7",
+          "pubtype": "electronic"
+        }
+      ]
+    }
+  ],
+  "pubDate": {
+    "printDate": "2025-01-05"
+  },
+  "publication": {
+    "confDates": "03 01 2025 - 05 01 2025",
+    "confLocation": "Bangkok, Thailand",
+    "pubName": "2025 19th International Conference on Ubiquitous Information Management and Communication (IMCOM), 03 01 2025 - 05 01 2025, Bangkok, Thailand",
+    "pubYear": "2025",
+    "volumeNum": "00"
+  },
+  "recordData": {
+    "createdTime": "",
+    "loadFormat": "IEEE",
+    "loadLocation": "",
+    "loadType": "fromFile",
+    "parsedTime": "2026-09-03T16:07:17.223020Z",
+    "recordOrigin": ""
+  },
+  "references": [
+    "<ref id=\"ref1\"><label>[1]</label> <mixed-citation publication-format=\"print\" publication-type=\"periodical\"><person-group person-group-type=\"author\"><string-name><given-names>W.</given-names> <surname>Wong</surname></string-name></person-group>, \u201c<article-title>Economic burden of Alzheimer disease and managed care considerations</article-title>.,\u201d <source>Am J Manag Care</source>, vol. <volume>26</volume> <issue>8</issue> Suppl, pp. <fpage>SI77</fpage>\u2013<lpage>S183</lpage>, <year>2020</year>, [Online]. Available: <uri>https://api.semanticscholar.org/CorpusID:221308149</uri></mixed-citation></ref>",
+    "<ref id=\"ref2\"><label>[2]</label> <mixed-citation publication-format=\"print\" publication-type=\"periodical\"><person-group person-group-type=\"author\"><string-name><given-names>M. W.</given-names> <surname>Weiner</surname></string-name> and <string-name><given-names>D. P.</given-names> <surname>Veitch</surname></string-name></person-group>, \u201c<article-title>Introduction to special issue: Overview of Alzheimer's Disease Neuroimaging Initiative</article-title>,\u201d <source>Alzheimer's &amp; Dementia</source>, vol. <volume>11</volume>, no. <issue>7</issue>, pp. <fpage>730</fpage>\u2013<lpage>733</lpage>, <year>2015</year>, doi: <uri xlink:href=\"https://doi.org/10.1016/j.jalz.2015.05.007\">https://doi.org/10.1016/j.jalz.2015.05.007</uri></mixed-citation></ref>",
+    "<ref id=\"ref3\"><label>[3]</label> <mixed-citation publication-format=\"print\" publication-type=\"confproc\"><person-group person-group-type=\"author\"><string-name><given-names>A. Alickovic</given-names> <surname>Emina</surname></string-name> and <string-name><surname>Subasi</surname></string-name></person-group>, \u201c<article-title>Automatic Detection of Alzheimer Disease Based on Histogram and Random Forest</article-title>,\u201d in <source>CMBEBIH 2019</source>, <person-group person-group-type=\"editor\"><string-name><surname>R.</surname></string-name> and <string-name><given-names>G. P. L. Badnjevic</given-names> <surname>Almir</surname></string-name> and <string-name><surname>\u0160krbi\u0107</surname></string-name>, Ed.</person-group>, <conf-loc>Cham</conf-loc>: <conf-sponsor>Springer International Publishing</conf-sponsor>, <conf-date>2020</conf-date>, pp. <fpage>91</fpage>\u2013<lpage>96</lpage>.</mixed-citation></ref>",
+    "<ref id=\"ref4\"><label>[4]</label> <mixed-citation publication-format=\"print\" publication-type=\"periodical\"><person-group person-group-type=\"author\"><string-name><given-names>A. S.</given-names> <surname>Alatrany</surname></string-name>, <string-name><given-names>W.</given-names> <surname>Khan</surname></string-name>, <string-name><given-names>A.</given-names> <surname>Hussain</surname></string-name>, <string-name><given-names>H.</given-names> <surname>Kolivand</surname></string-name>, and <string-name><given-names>D.</given-names> <surname>Al-Jumeily</surname></string-name></person-group>, \u201c<article-title>An explainable machine learning approach for Alzheimer's disease classification</article-title>,\u201d <source>Sci Rep</source>, vol. <volume>14</volume>, no. <issue>1</issue>, p. <fpage>2637</fpage>, <year>2024</year>, doi: <pub-id pub-id-type=\"doi\">10.1038/s41598-024-51985-w</pub-id>.</mixed-citation></ref>",
+    "<ref id=\"ref5\"><label>[5]</label> <mixed-citation publication-format=\"print\" publication-type=\"periodical\"><person-group person-group-type=\"author\"><string-name><given-names>S.</given-names> <surname>Ei-Sappagh</surname></string-name>, <string-name><given-names>F.</given-names> <surname>Ali</surname></string-name>, <string-name><given-names>T.</given-names> <surname>Abuhmed</surname></string-name>, <string-name><given-names>J.</given-names> <surname>Singh</surname></string-name>, and <string-name><given-names>J. M.</given-names> <surname>Alonso</surname></string-name></person-group>, \u201c<article-title>Automatic detection of Alzheimer's disease progression: An efficient information fusion approach with heterogeneous ensemble classifiers</article-title>,\u201d <source>Neurocomputing</source>, vol. <volume>512</volume>, pp. <fpage>203</fpage>\u2013<lpage>224</lpage>, <year>2022</year>, doi: <uri xlink:href=\"https://doi.org/l0.l016/j.neucom.2022.09.009\">https://doi.org/l0.l016/j.neucom.2022.09.009</uri></mixed-citation></ref>",
+    "<ref id=\"ref6\"><label>[6]</label> <mixed-citation publication-format=\"print\" publication-type=\"periodical\"><person-group person-group-type=\"author\"><string-name><given-names>M.</given-names> <surname>Shelke</surname></string-name>, <string-name><given-names>P.</given-names> <surname>Deshmukh</surname></string-name>, and <string-name><given-names>V.</given-names> <surname>Shandilya</surname></string-name></person-group>, \u201c<article-title>A review on imbalanced data handling using undersampling and oversampling technique</article-title>,\u201d <source>International Journal of Recent Trends in Engineering and Research</source>, vol. <volume>3</volume>, no. <issue>4</issue>, pp. <fpage>444</fpage>\u2013<lpage>449</lpage>, <year>2017</year>.</mixed-citation></ref>"
+  ],
+  "title": {
+    "textEnglish": "End-to-End Optimized Ensemble Model for Alzheimer's Disease Detection"
+  }
+}
+
+

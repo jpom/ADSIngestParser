@@ -1,0 +1,947 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Article Processing Date: 02/24/2025-->
+<!--Vendor Name: DCL-->
+<!--JATS Tagging Guidelines version: 1.7-->
+<!--IEEE Math Coding Requirements and Guidelines for Vendors version: v1.0-->
+<!DOCTYPE conf-article PUBLIC "-//IEEE//DTD IEEE Conferences JATS-based DTD v1.7//EN" "conferences.dtd">
+<conf-article article-type="research" content-type="orig-research" dtd-version="1.7" open-access="no" xml:lang="eng" lifecycle="final" peer-reviewed="yes" show-flag="show" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<conf-front>
+<conf-proc-meta>
+<conf-proc-id conf-proc-id-type="conf-acronym">
+ICASSP
+</conf-proc-id>
+<conf-proc-title-group>
+<conf-full-title>
+ICASSP 2025 - 2025 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)
+</conf-full-title>
+<conf-normalized-title>
+Acoustics, Speech and Signal Processing (ICASSP), ICASSP 2025 - 2025 IEEE International Conference on
+</conf-normalized-title>
+<conf-abbrev-title>
+ICASSP
+</conf-abbrev-title>
+</conf-proc-title-group>
+<volume>
+00
+</volume>
+<isbn publication-format="electronic">
+979-8-3503-6874-1
+</isbn>
+</conf-proc-meta>
+<conf-meta>
+<conf-name>
+ICASSP 2025 - 2025 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)</conf-name>
+<conf-start iso-8601-date="2025-04-06"><day>06</day><month>April</month><year>2025</year></conf-start>
+<conf-end iso-8601-date="2025-04-11"><day>11</day><month>April</month><year>2025</year></conf-end>
+<conf-loc><city>Hyderabad</city>, <state></state>, <country>India</country></conf-loc>
+</conf-meta>
+
+
+<conf-article-meta><article-id pub-id-type="doi">10.1109/ICASSP49660.2025.10889350</article-id>
+<xplore-article-id>10889350</xplore-article-id>
+<xplore-issue>10887541</xplore-issue>
+<xplore-pub-id>10887540</xplore-pub-id>
+
+<title-group>
+<article-title>Cram&#x00E9;r-Rao Bounds for Wideband Near-Field Sensing</article-title>
+</title-group>
+<contrib-group>
+<contrib id="contrib1" primary="yes" corresp="yes" contrib-type="author">
+<name-alternatives>
+<string-name specific-use="display">
+<given-names>Tong</given-names>
+<surname>Wei</surname>
+</string-name>
+<string-name specific-use="index">
+<given-names>Tong</given-names>
+<surname>Wei</surname>
+</string-name>
+</name-alternatives>
+<xref ref-type="aff" rid="aff1"></xref>
+</contrib>
+<contrib id="contrib2" primary="no" corresp="no" contrib-type="author">
+<name-alternatives>
+<string-name specific-use="display">
+<given-names>Kumar Vijay</given-names>
+<surname>Mishra</surname>
+</string-name>
+<string-name specific-use="index">
+<given-names>Kumar Vijay</given-names>
+<surname>Mishra</surname>
+</string-name>
+</name-alternatives>
+<xref ref-type="aff" rid="aff1"></xref>
+</contrib>
+<contrib id="contrib3" primary="no" corresp="no" contrib-type="author">
+<name-alternatives>
+<string-name specific-use="display">
+<given-names>Linlong</given-names>
+<surname>Wu</surname>
+</string-name>
+<string-name specific-use="index">
+<given-names>Linlong</given-names>
+<surname>Wu</surname>
+</string-name>
+</name-alternatives>
+<xref ref-type="aff" rid="aff1"></xref>
+</contrib>
+<contrib id="contrib4" primary="no" corresp="no" contrib-type="author">
+<name-alternatives>
+<string-name specific-use="display">
+<given-names>Bhavani Shankar Mysore Rama</given-names>
+<surname>Rao</surname>
+</string-name>
+<string-name specific-use="index">
+<given-names>Bhavani Shankar Mysore Rama</given-names>
+<surname>Rao</surname>
+</string-name>
+</name-alternatives>
+<xref ref-type="aff" rid="aff1"></xref>
+</contrib>
+</contrib-group>
+<aff id="aff1"><institution-wrap><institution content-type="division">Interdisciplinary Centre for Security, Reliability and Trust (SnT)</institution><institution content-type="institution">University of Luxembourg</institution></institution-wrap></aff>
+<pub-date iso-8601-date="2025-04-11" pub-type="print">
+<day>
+11
+</day>
+<month>
+April
+</month>
+<year>
+2025
+</year>
+</pub-date>
+<fpage>1</fpage>
+<lpage>5</lpage>
+<permissions>
+<copyright-statement>979-8-3503-6874-1/25/&#x0024;31.00 &#x00A9;2025 IEEE</copyright-statement>
+<copyright-year>2025</copyright-year>
+<copyright-holder copyright-owner="IEEE">IEEE</copyright-holder>
+<license>
+<license-p><price currency="USD">31.00</price></license-p>
+</license>
+</permissions>
+<self-uri content-type="xml">10889350_ft.xml</self-uri>
+<self-uri content-type="print">2482.pdf</self-uri>
+<abstract>
+<p>The evolution of array signal processing technologies is progressing toward the deployment of compact, densely arranged sensors to form extremely large aperture arrays (ELAA), aiming to significantly improve angular resolution and beamforming gain. In this paper, we propose a wideband near-field sensing system that combines orthogonal frequency-division multiplexing (OFDM) signaling with ELAA technology. The ELAA transmitter emits wideband signals, while the radar receiver processes the echoes to estimate critical target parameters, including location, velocity, and radar cross-section. We then derive the generalized Cram&#x00E9;r-Rao lower bound (CRB) to assess the OFDM system&#x2019;s estimation performance. Numerical experiments reveal that the proposed wideband near-field sensing system outperforms its far-field and narrowband counterparts by achieving lower CRB values.</p></abstract>
+<kwd-group kwd-group-type="AuthorFree">
+<title>Index Terms</title>
+<kwd>Cram&#x00E9;r-Rao bound</kwd>
+<kwd>extremely large-scale antenna array</kwd>
+<kwd>near-field</kwd>
+<kwd>sensing</kwd>
+<kwd>wideband</kwd>
+</kwd-group>
+<counts>
+<fig-count count="3"/>
+<table-count count="0"/>
+<equation-count count="27"/>
+<ref-count count="31"/>
+<page-count count="5"/>
+</counts>
+</conf-article-meta>
+
+</conf-front>
+<body>
+<sec id="sec1">
+<label>1.</label>
+<title>INTRODUCTION</title>
+<p>Extremely large-scale antenna arrays (ELAA) and extremely high frequencies (EHF) are set to play a transformative role in enabling sixth-generation (6G) wireless systems <xref ref-type="bibr" rid="ref1">[1]</xref>, <xref ref-type="bibr" rid="ref2">[2]</xref>. These systems aim to provide ultra-reliable, low-latency communication, massive connectivity, ultra-high data rates, and precise positioning <xref ref-type="bibr" rid="ref3">[3]</xref>. These advancements also pave the way for integrating sensing capabilities into 6G networks, addressing critical challenges such as spectrum congestion, hardware costs, and power consumption <xref ref-type="bibr" rid="ref4">[4]</xref><xref ref-type="bibr" rid="ref5"/><xref ref-type="bibr" rid="ref6"/><xref ref-type="bibr" rid="ref7"/>&#x2013;<xref ref-type="bibr" rid="ref8">[8]</xref>. However, the combination of ELAA and EHF extends the Rayleigh distance, necessitating operation in the near-field region <xref ref-type="bibr" rid="ref9">[9]</xref>. This shift underscores the need for accurate near-field signal models and sophisticated processing algorithms to fully harness the potential of these technologies <xref ref-type="bibr" rid="ref10">[10]</xref>.</p>
+<p>With the advent of ELAA-EHF systems, it is essential to benchmark their performance. Lower bounds on estimation errors are critical for evaluating the performance of both radar <xref ref-type="bibr" rid="ref11">[11]</xref> and communication <xref ref-type="bibr" rid="ref12">[12]</xref> systems. A widely adopted metric is the Cram&#x00E9;r-Rao Lower Bound (CRB), which defines the theoretical limit on the variance of an estimator for unknown parameters <xref ref-type="bibr" rid="ref13">[13]</xref>. The CRB is particularly tight when estimation errors are small <xref ref-type="bibr" rid="ref14">[14]</xref>. In communication systems, CRB is commonly applied for evaluating channel state information (CSI) estimation. For instance, <xref ref-type="bibr" rid="ref12">[12]</xref> derives the CRB for a far-field MIMO-OFDM communication system, while <xref ref-type="bibr" rid="ref15">[15]</xref> explores the CRB for near-field communication scenarios. However, communication-based channel estimation often targets composite quantities rather than specific parameters like the position, velocity, or reflectivity of users (LoS paths) and background scatterers (NLoS paths). These tasks, typically addressed by radar systems, have been explored through various CRBs, including those for direction of arrival (DOA) estimation <xref ref-type="bibr" rid="ref16">[16]</xref>.</p>
+<p>For systems leveraging wideband processing, CRBs have been developed for far-field wideband DOA estimation <xref ref-type="bibr" rid="ref17">[17]</xref> and range-Doppler estimation <xref ref-type="bibr" rid="ref18">[18]</xref>. While far-field systems can decouple parameters like DOA and range for separate processing, near-field systems face challenges in decoupling these parameters due to their inherent coupling. In <xref ref-type="bibr" rid="ref19">[19]</xref>, the CRB for narrowband MIMO radar systems is proposed for static targets, evaluating estimation performance along individual axes. However, existing methods often overlook the combined gains of wideband and near-field processing, particularly for non-static targets.</p>
+<p>To address these limitations, we propose a wideband near-field sensing system utilizing OFDM transmission for non-static objects. The CRB is analyzed for key parameters, including location, velocity, and radar cross-section (RCS), within this wideband framework. Unlike prior works such as <xref ref-type="bibr" rid="ref20">[20]</xref>, which focus on static targets in narrowband setups, our approach evaluates the CRB for both velocity and RCS estimation of moving targets in a wideband configuration. Furthermore, the proposed wideband near-field CRB is benchmarked against far-field narrowband <xref ref-type="bibr" rid="ref21">[21]</xref>, far-field wideband <xref ref-type="bibr" rid="ref17">[17]</xref>, and near-field narrowband <xref ref-type="bibr" rid="ref19">[19]</xref> schemes. Our findings highlight that target velocity significantly impacts position estimation. Numerical results demonstrate that the proposed wideband near-field sensing system achieves a lower CRB compared to its counterparts, showcasing its superiority for next-generation sensing applications.</p>
+</sec>
+<sec id="sec2">
+<label>2.</label>
+<title>SYSTEM MODEL</title>
+<p>Consider a wideband MIMO radar sensing system employing the OFDM signaling and ELAA, comprising a transmitter (Tx) with <italic>N<sub>t</sub></italic>-antenna uniform linear array (ULA) and a receiver (Rx) with <italic>N<sub>r</sub></italic>-antenna ULA; the Tx and Rx can be co-located or separately deployed. Let <inline-formula><tex-math notation="LaTeX">${{\mathbb{I}}_{{n_t}}} = \left({{x_{{n_t}}},{y_{{n_t}}}}\right),{n_t} \in \left\{ {1, \cdots ,{N_t}} \right\}{\text{and}}\,{{\mathbb{I}}_{{n_r}}} = \left({{x_{{n_r}}},{y_{{n_r}}}}\right),{n_r} \in \left\{ {1, \cdots ,{N_r}} \right\}$</tex-math></inline-formula> denote the position of <italic>n<sub>t</sub></italic>-th Tx antenna and <italic>n<sub>r</sub></italic>-th Rx antenna, respectively, in a two-dimensional (2-D) Cartesian plane. The near-field coverage area comprises <italic>Q</italic> targets, a term which refers to the objects of interest to radar, communication users, and scatterers; the <italic>q</italic>-th target located at I<italic>q</italic> and having a velocity <bold><italic>v</italic></bold><sup>(<italic>q</italic>)</sup><italic>, q</italic> = 1, &#x22EF;<italic>, Q.</italic></p>
+<p>The OFDM signaling involves <italic>K</italic> subcarriers, <italic>M</italic> OFDM symbols each of which has a total duration of <italic>T</italic><sub>sym</sub> = <italic>T</italic><sub>cp</sub> + <italic>T</italic><sub>es</sub>, where <italic>T</italic><sub>cp</sub> and <italic>T</italic><sub>es</sub> denote the cyclic prefix duration and the elementary symbol duration, respectively, and <inline-formula><tex-math notation="LaTeX">$\Delta f = \frac{1}{{{T_{{\text{es}}}}}}$</tex-math></inline-formula> denotes the subcarrier spacing. Further, <italic>T</italic><sub>cpi</sub> = <italic>MT</italic><sub>sym</sub> denotes the frame length of the coherent processing interval (CPI) <xref ref-type="bibr" rid="ref22">[22]</xref>.</p>
+<p>Let the signal vector transmitted on <italic>k</italic>-th subcarrier and <italic>m</italic>-th OFDM symbol over <italic>N<sub>t</sub></italic> antennas be denoted by <inline-formula><tex-math notation="LaTeX">${{\mathbf{x}}_{k,m}} \in {{\mathbb{C}}^{{N_t} \times 1}}$</tex-math></inline-formula>. Applying <italic>Nt K</italic>-point inverse fast Fourier transform (IFFT) to the signal <bold>x</bold><italic><sub>k,m</sub></italic>, and following an upconversion over the block of <italic>M</italic> symbols in <italic>t</italic> &#x2208; [0<italic>, MT<sub>sym</sub></italic>], the transmit signal in time domain takes the form <xref ref-type="bibr" rid="ref23">[23]</xref>, <xref ref-type="bibr" rid="ref24">[24]</xref>
+<disp-formula id="deqn1"><tex-math notation="LaTeX">\begin{equation*}{\mathbf{\tilde x}}(t) = \Re \left\{ {\sum\limits_{m = 1}^M {\sum\limits_{k = 1}^K {{{\mathbf{x}}_{k,m}}} } {e^{j2\pi {f_k}t}}\operatorname{rect} \left({\frac{{t - m{T_{{\text{sym}}}}}}{{{T_{{\text{sym}}}}}}}\right)} \right\}\tag{1}\end{equation*}</tex-math></disp-formula>
+where the rectangular pulse function rect(<italic>t</italic>) takes the value 1 for <italic>t</italic> &#x2208; [0, 1] and 0 otherwise, <italic>f<sub>c</sub></italic> is the carrier frequency and <italic>f<sub>k</sub></italic> = <italic>f<sub>c</sub></italic>+<italic>k</italic>&#x25B3;<italic>f</italic> is the <italic>k</italic>-th subcarrier frequency.</p>
+<p>With <inline-formula><tex-math notation="LaTeX">${\tilde x_{{n_t}}}(t)$</tex-math></inline-formula> denotng the <italic>n<sub>t</sub></italic>-th entry of <inline-formula><tex-math notation="LaTeX">${\mathbf{\tilde x}}(t)$</tex-math></inline-formula> in <xref rid="deqn1" ref-type="disp-formula">(1)</xref>, the received signal at <italic>n<sub>r</sub></italic>-th receive antenna after propagation delay is
+<disp-formula id="deqn2"><tex-math notation="LaTeX">\begin{equation*}{y_{{n_r}}}(t) = \sum\limits_{q = 1}^Q {{\alpha _q}} g_{{n_r}}^q(t)\sum\limits_{{n_t} = 1}^{{N_t}} {g_{{n_t}}^q} (t){\tilde x_{{n_t}}}\left({t - \tau _{{n_t}{n_r}}^q}\right)\cdot{e^{j2\pi f_{{n_t}{n_r}}^{q,k}t}} + {n_{{n_r}}}(t)\tag{2}\end{equation*}</tex-math></disp-formula>
+where <italic>&#x03B1;<sub>q</sub></italic> denotes the RCS of <italic>q</italic>-th target and <inline-formula><tex-math notation="LaTeX">${n_{{n_r}}}(t)$</tex-math></inline-formula> is the front end additive Gaussian white noise (AWGN) of the <italic>n<sub>r</sub></italic>-th Rx element. The Doppler shift, <inline-formula><tex-math notation="LaTeX">$f_{{n_t}{n_r}}^{q,k}$</tex-math></inline-formula>, for the <italic>q</italic>-th target on the <italic>k</italic>-th subcarrier with the <italic>n<sub>t</sub></italic>-th Tx and <italic>n<sub>r</sub></italic>-th Rx antenna pair is given <xref ref-type="bibr" rid="ref25">[25]</xref>
+<disp-formula id="deqn3"><tex-math notation="LaTeX">\begin{equation*}f_{{n_t}{n_r}}^{q,k} = \frac{{{f_k}}}{c}\left({\frac{{\left\langle {{{\mathbf{v}}^{(q)}},{{\mathbb{I}}_q} - {{\mathbb{I}}_{{n_t}}}} \right\rangle }}{{\left\| {{{\mathbb{I}}_q} - {{\mathbb{I}}_{{n_t}}}} \right\|}} + \frac{{\left\langle {{{\mathbf{v}}^{(q)}},{{\mathbb{I}}_q} - {{\mathbb{I}}_{{n_r}}}} \right\rangle }}{{\left\| {{{\mathbb{I}}_q} - {{\mathbb{I}}_{{n_r}}}} \right\|}}}\right),\tag{3}\end{equation*}</tex-math></disp-formula>
+where <inline-formula><tex-math notation="LaTeX">${{\mathbf{v}}^{(q)}} = \left[ {v_x^{(q)},v_y^{(q)}} \right]$</tex-math></inline-formula> denotes the directional velocity of <italic>q</italic>-th target in which <inline-formula><tex-math notation="LaTeX">$v_x^{(q)}\;{\text{and}}\;v_y^{(q)}$</tex-math></inline-formula> are the velocity along with <italic>x</italic> and <italic>y</italic>-axis, respectively <xref ref-type="bibr" rid="ref26">[26]</xref>. Meanwhile, the time delay in <xref rid="deqn2" ref-type="disp-formula">(2)</xref> takes the form
+<disp-formula id="deqn4"><tex-math notation="LaTeX">\begin{equation*}\tau _{{n_t}{n_r}}^q = \frac{{\left\| {{{\mathbb{I}}_q} - {{\mathbb{I}}_{{n_t}}}} \right\| + \left\| {{{\mathbb{I}}_q} - {{\mathbb{I}}_{{n_r}}}} \right\|}}{c}.\tag{4}\end{equation*}</tex-math></disp-formula></p>
+<p>We consider frequency-dependent path loss in <xref rid="deqn2" ref-type="disp-formula">(2)</xref> which can be modeled as <inline-formula><tex-math notation="LaTeX">$g_{*,k}^q = \sqrt {{z_*}} \frac{{{\lambda _k}}}{{4\pi \left\| {{{\mathbb{I}}_q} - {{\mathbb{I}}_*}} \right\|}}$</tex-math></inline-formula> <xref ref-type="bibr" rid="ref27">[27]</xref>, <xref ref-type="bibr" rid="ref28">[28]</xref>, where &#x2217; &#x2208; {<italic>n<sub>r</sub>, n<sub>t</sub></italic>}, <italic>z</italic><sub>&#x2217;</sub> denotes radiation profile of the material of corresponding element, and <italic>z</italic><sub>&#x2217;</sub> = 1 for the full-digital array and 0 <italic>&#x003C; z</italic>&#x2217; &#x003C; 1 for metasurface array <xref ref-type="bibr" rid="ref19">[19]</xref>. We consider the <italic>z</italic>&#x2217; = 1 case in this paper for simplicity.</p>
+<p>Following <xref ref-type="bibr" rid="ref23">[23]</xref>, <xref ref-type="bibr" rid="ref24">[24]</xref>, we then assume that the Doppler-related phase-shift within an OFDM symbol duration is negligible, i.e., <inline-formula><tex-math notation="LaTeX">$f_{{n_t}{n_r}}^{q,k} \ll \frac{1}{{{T_{{\text{sym}}}}}} &lt; \frac{1}{{{T_{{\text{es}}}}}} = \vartriangle f,{\text{hence}}\,f_{{n_t}{n_r}}^{q,k}t \approx f_{{n_t}{n_r}}^{q,k}m{T_{{\text{sym}}}},t \in \left[ {m{T_{{\text{sym}}}},(m + 1){T_{{\text{sym}}}}} \right]$</tex-math></inline-formula>. Further, this causes no inter-carrier interference. Removing CP and the carrier frequency in I/Q demodulation and implementing the Fourier transform within <italic>m</italic>-th time interval i.e., OFDM symbol duration, the received signal on the <italic>k</italic>-th subcarrier of the <italic>m</italic>-th OFDM symbol is given by
+<disp-formula id="deqn5"><tex-math notation="LaTeX">\begin{equation*}{y_{{n_r}}}[m,k] = \int_{m{T_{{\text{sym}}}} + {T_{{\text{cp}}}}}^{(m + 1){T_{{\text{sym}}}}} {{y_{{n_r}}}} (t){e^{ - 2\pi {f_c}t}}{e^{ - 2\pi k\Delta ft}}dt.\tag{5}\end{equation*}</tex-math></disp-formula></p>
+<p>Substituting <xref rid="deqn2" ref-type="disp-formula">(2)</xref> into <xref rid="deqn5" ref-type="disp-formula">(5)</xref> and stacking the received signal of all the Rx elements, we have <xref rid="deqn5" ref-type="disp-formula">(5)</xref> as
+<disp-formula id="deqn6"><tex-math notation="LaTeX">\begin{align*}&amp; {{\mathbf{y}}_{k,m}} = \sum\limits_{q = 1}^Q {{\alpha _q}} {{\mathbf{a}}_{\text{R}}}(k,m,q){\mathbf{a}}_{\text{T}}^T(k,m,q){{\mathbf{x}}_{k,m}} + {{\mathbf{n}}_{k,m}},{\text{where}} \\ &amp; {{\mathbf{a}}_{\text{T}}}(k,m,q) = {\left[ {g_{1,k}^q{e^{j2\pi {\varphi _1}(k,m,q)}}, \cdots ,g_{{N_t},k}^q{e^{j2\pi {\varphi _{{N_t}}}(k,m,q)}}} \right]^T}, \\ &amp; {\varphi _*}(k,m,q) = \frac{{{f_k}}}{c}\left({\frac{{\left\langle {{{\mathbf{v}}^{(q)}},{{\mathbb{I}}_q} - {{\mathbb{I}}_*}} \right\rangle }}{{\left\| {{{\mathbb{I}}_q} - {{\mathbb{I}}_*}} \right\|}}m{T_{{\text{sym}}}} - \left\| {{{\mathbb{I}}_q} - {{\mathbb{I}}_*}} \right\|}\right),* \in \left\{ {{n_t},{n_r}} \right\}.\tag{6}\end{align*}</tex-math></disp-formula></p>
+<p>Here, <bold>a</bold><sub>T</sub> is the wideband near-field Tx steering vector of Tx; the Rx steering vector is similarly defined. Further, <italic>&#x03C6;<sub>l</sub></italic>(<italic>k, m, q</italic>) denotes the total phase shift caused by the location and Doppler of <italic>q</italic>-th target with respect to <italic>l</italic>-th element of Tx/ Rx at the <italic>k</italic>-th subcarrier of <italic>m</italic>-th OFDM symbol. For notation simplification, the receive signal in <xref rid="deqn6" ref-type="disp-formula">(6)</xref> is rewritten as
+<disp-formula id="deqn7"><tex-math notation="LaTeX">\begin{equation*}{{\mathbf{y}}_{k,m}} = {{\mathbf{A}}_{k,m}}{{\mathbf{x}}_{k,m}} + {{\mathbf{n}}_{k,m}},m \in [1,M],k \in [1,K],\tag{7}\end{equation*}</tex-math></disp-formula>
+where <inline-formula><tex-math notation="LaTeX">${{\mathbf{A}}_{k,m}} = {{\mathbf{A}}_{{\text{R}},k,m}}{\mathbf{BA}}_{{\text{T}},k,m}^T$</tex-math></inline-formula> denotes the channel response matrix, <bold>A</bold><sub>T<italic>,k,m</italic></sub> = [<bold>a</bold><sub>T</sub>(<italic>k, m</italic>, 1), &#x22EF; , <bold>a</bold><sub>T</sub>(<italic>k, m,Q</italic>)] and <bold>A</bold><sub>R<italic>,k,m</italic></sub> is similarly defined. Further, the diagonal matrix <bold>B</bold> = diag[<italic>&#x03B1;</italic><sub>1</sub>, &#x22EF;<italic>, &#x03B1;<sub>Q</sub></italic>]. We then stack the received signal <xref rid="deqn7" ref-type="disp-formula">(7)</xref> from all <italic>M</italic> OFDM symbols into a single vector as
+<disp-formula id="deqn8"><tex-math notation="LaTeX">\begin{equation*}{{\mathbf{y}}_k} = {{\mathbf{A}}_k}{{\mathbf{x}}_k} + {{\mathbf{n}}_k} \in {{\mathbb{C}}^{{N_r}M}}\tag{8}\end{equation*}</tex-math></disp-formula>
+where <inline-formula><tex-math notation="LaTeX">${{\mathbf{y}}_k} = {\left[ {{\mathbf{y}}_{k,1}^T, \cdots ,{\mathbf{y}}_{k,M}^T} \right]^T}$</tex-math></inline-formula> denotes the receive signal of <italic>k</italic>-th subcarrier with the mean <italic><bold>&#x03BC;</bold><sub>k</sub></italic> = <bold>A</bold><italic><sub>k</sub></italic><bold>x</bold><italic><sub>k</sub></italic> and the covariance <inline-formula><tex-math notation="LaTeX">${{\mathbf{C}}_k} = \sigma _r^2{{\mathbf{I}}_{{N_r}M}}$</tex-math></inline-formula> respectively, <bold>A</bold><italic><sub>k</sub></italic> = bdiag[<bold>A</bold><italic><sub>k</sub>,</italic>1, &#x22EF;,<bold>A</bold><italic><sub>k,M</sub></italic>], <inline-formula><tex-math notation="LaTeX">${{\mathbf{x}}_k} = {\left[ {{\mathbf{x}}_{k,1}^T, \cdots ,{\mathbf{x}}_{k,M}^T} \right]^T}{\text{and}}\,{{\mathbf{n}}_k} = {\left[ {{\mathbf{n}}_{k,1}^T, \cdots ,{\mathbf{n}}_{k,M}^T} \right]^T}$</tex-math></inline-formula>. According to <xref rid="deqn8" ref-type="disp-formula">(8)</xref>, the target-related real-valued unknown parameter is
+<disp-formula id="deqn9"><tex-math notation="LaTeX">\begin{equation*}{\mathbf{\theta }} = {\left[ {{\mathbf{x}},{\mathbf{y}},{{\mathbf{v}}_x},{{\mathbf{v}}_y},{{\mathbf{\alpha }}_R},{{\mathbf{\alpha }}_I}} \right]^T} \in {{\mathbb{R}}^{6Q \times 1}},\tag{9}\end{equation*}</tex-math></disp-formula>
+where <inline-formula><tex-math notation="LaTeX">${\mathbf{x}} = \left[ {{x_1}, \cdots ,{x_Q}} \right],{\mathbf{y}} = \left[ {{y_1}, \cdots ,{y_Q}} \right],{{\mathbf{v}}_x} = \left[ {v_x^{(1)}, \cdots ,v_x^{(Q)}} \right],{{\mathbf{v}}_y} = \left[ {v_y^{(1)}, \cdots ,v_y^{(Q)}} \right],{{\mathbf{\alpha }}_R} = \left[ {{\alpha _{{R_1}}}, \cdots ,{\alpha _{{R_Q}}}} \right]$</tex-math></inline-formula>, and <inline-formula><tex-math notation="LaTeX">${\alpha _I} = \left[ {{\alpha _{{I_1}}}, \cdots ,{\alpha _{{I_Q}}}} \right]$</tex-math></inline-formula>. We will derive and analyze CRB for retrieving the parameter vector <xref rid="deqn9" ref-type="disp-formula">(9)</xref> from the received signal <xref rid="deqn8" ref-type="disp-formula">(8)</xref> in the sequel.</p>
+</sec>
+<sec id="sec3">
+<label>3.</label>
+<title>WIDEABND NEAR-FIELD CRB ANALYSIS</title>
+<p>Let us first rewrite <xref rid="deqn8" ref-type="disp-formula">(8)</xref> as the real vector <inline-formula><tex-math notation="LaTeX">${\overline {\mathbf{y}} _k} = {\left[ {\Re {{\left({{{\mathbf{y}}_k}}\right)}^T};\Im {{\left({{{\mathbf{y}}_k}}\right)}^T}} \right]^T},{\overline {\mathbf{\mu }} _k} = {\left[ {\Re {{\left({{{\mathbf{\mu }}_k}}\right)}^T},\Im {{\left({{{\mathbf{\mu }}_k}}\right)}^T}} \right]^T},{\text{and}}\,{\overline {\mathbf{C}} _k} = \frac{{\sigma _r^2}}{2}{{\mathbf{I}}_{2{N_r}M}}$</tex-math></inline-formula> To evaluate CRB, we can first write the likelihood function of as <xref ref-type="bibr" rid="ref29">[29]</xref>
+<disp-formula id="deqn10"><tex-math notation="LaTeX">\begin{equation*}{p_k}\left({{{\overline {\mathbf{y}} }_k},{\mathbf{\theta }}}\right) = \frac{1}{{\sqrt {2{\pi ^{2{N_r}M}}\left| {{{\overline {\mathbf{C}} }_k}} \right|} }}{e^{ - {{\left({{{\overline {\mathbf{y}} }_k} - {{\bar \mu }_k}}\right)}^T}\overline {\mathbf{C}} _k^{ - 1}\left({{{\overline {\mathbf{y}} }_k} - {{\bar \mu }_k}}\right)/2}}.\tag{10}\end{equation*}</tex-math></disp-formula></p>
+<p>According to <xref rid="deqn10" ref-type="disp-formula">(10)</xref>, we can write the log-likelihood function and omit the constant terms as
+<disp-formula id="deqn11"><tex-math notation="LaTeX">\begin{equation*}\ln {p_k}\left({{{\overline {\mathbf{y}} }_k},{\mathbf{\theta }}}\right) = - \frac{1}{2}\left({\ln \left| {{{\overline {\mathbf{C}} }_k}} \right| + {{\left({{{\overline {\mathbf{y}} }_k} - {{\overline {\mathbf{\mu }} }_k}}\right)}^T}\overline {\mathbf{C}} _k^{ - 1}\left({{{\overline {\mathbf{y}} }_k} - {{\overline {\mathbf{\mu }} }_k}}\right)}\right).\tag{11}\end{equation*}</tex-math></disp-formula></p>
+<p>Then, FIM at <italic>k</italic>-th subcarrier is given by <xref ref-type="bibr" rid="ref29">[29]</xref>
+<disp-formula id="deqn12"><tex-math notation="LaTeX">\begin{equation*}{{\mathbf{F}}_k} = - {\mathbb{E}}\left\{ {\frac{{{\partial ^2}\ln {p_k}\left({{{\overline {\mathbf{y}} }_k},{\mathbf{\theta }}}\right)}}{{\partial {\mathbf{\theta }}\partial {{\mathbf{\theta }}^T}}}} \right\}\tag{12}\end{equation*}</tex-math></disp-formula>
+where <inline-formula><tex-math notation="LaTeX">${\mathbb{E}}\{ \cdot \} $</tex-math></inline-formula> denotes the expectation operator. Due to use of OFDM signaling and the assumption that Doppler does not create inter-carrier interference, the channel response and transmitted signals in different subcarriers can be treated as orthogonal. Thus, we can define the wideband FIM as <xref ref-type="bibr" rid="ref17">[17]</xref>
+<disp-formula id="deqn13"><tex-math notation="LaTeX">\begin{equation*}{\mathbf{\tilde F}} = \sum\limits_{k = 1}^K {{{\mathbf{F}}_k}} .\tag{13}\end{equation*}</tex-math></disp-formula></p>
+<p>Based on Slepian-Bangs formula, we can calculate the inverse of generalized CRB on <italic>k</italic>-th subcarrier, see equation (B.3.25) in <xref ref-type="bibr" rid="ref29">[29]</xref>, as
+<disp-formula id="deqn14"><tex-math notation="LaTeX">\begin{equation*}{{\mathbf{F}}_k}(i,j) = \operatorname{Tr} \left({{\mathbf{C}}_k^{ - 1}\frac{{\partial {{\mathbf{C}}_k}}}{{\partial {\theta _i}}}{\mathbf{C}}_k^{ - 1}\frac{{\partial {{\mathbf{C}}_k}}}{{\partial {\theta _j}}}}\right) + 2\Re \left[ {{{\left({\frac{{\partial {{\mathbf{\mu }}_k}}}{{\partial {\theta _i}}}}\right)}^H}{\mathbf{C}}_k^{ - 1}\frac{{\partial {{\mathbf{\mu }}_k}}}{{\partial {\theta _j}}}} \right],\tag{14}\end{equation*}</tex-math></disp-formula>
+in which the first term is equal to zero due to <inline-formula><tex-math notation="LaTeX">$\frac{{\partial {{\mathbf{C}}_k}}}{{\partial {\theta _k}}} = {\mathbf{0}},\forall k.$</tex-math></inline-formula> Now, in wideband near-field case, the difficulty of FIM calculation lies in the derivation of <xref rid="deqn14" ref-type="disp-formula">(14)</xref>. Towards this, the FIM for the <italic>k</italic>-th subcarrier is
+<disp-formula id="deqn15"><tex-math notation="LaTeX">\begin{equation*}{{\mathbf{F}}_k} = \left[ {\begin{array}{llllll} {{\mathbf{F}}_{{\mathbf{xx}}}^k}&amp;{{\mathbf{F}}_{{\mathbf{xy}}}^k}&amp;{{\mathbf{F}}_{{\mathbf{x}}{{\mathbf{v}}_x}}^k}&amp;{{\mathbf{F}}_{{\mathbf{x}}{{\mathbf{v}}_y}}^k}&amp;{{\mathbf{F}}_{{\mathbf{x}}{\alpha _R}}^k}&amp;{{\mathbf{F}}_{{\mathbf{x}}{\alpha _I}}^k} \\ {{\mathbf{F}}_{{\mathbf{yx}}}^k}&amp;{{\mathbf{F}}_{{\mathbf{yy}}}^k}&amp;{{\mathbf{F}}_{{\mathbf{y}}{{\mathbf{v}}_x}}^k}&amp;{{\mathbf{F}}_{{\mathbf{y}}{{\mathbf{v}}_y}}^k}&amp;{{\mathbf{F}}_{{\mathbf{y}}{\alpha _R}}^k}&amp;{{\mathbf{F}}_{{\mathbf{y}}{\alpha _I}}^k} \\ {{\mathbf{F}}_{{{\mathbf{v}}_x}{\mathbf{x}}}^k}&amp;{{\mathbf{F}}_{{{\mathbf{v}}_x}{\mathbf{y}}}^k}&amp;{{\mathbf{F}}_{{{\mathbf{v}}_x}{{\mathbf{v}}_x}}^k}&amp;{{\mathbf{F}}_{{{\mathbf{v}}_x}{\mathbf{v}}y}^k}&amp;{{\mathbf{F}}_{{{\mathbf{v}}_x}{\alpha _R}}^k}&amp;{{\mathbf{F}}_{{{\mathbf{v}}_x}{\alpha _I}}^k} \\ {{\mathbf{F}}_{{{\mathbf{v}}_y}{\text{x}}}^k}&amp;{{\mathbf{F}}_{{{\mathbf{v}}_y}{\mathbf{y}}}^k}&amp;{{\mathbf{F}}_{{{\mathbf{v}}_y}{{\mathbf{v}}_x}}^k}&amp;{{\mathbf{F}}_{{{\mathbf{v}}_y}{{\mathbf{v}}_y}}^k}&amp;{{\mathbf{F}}_{{{\mathbf{v}}_y}{\alpha _R}}^k}&amp;{{\mathbf{F}}_{{{\mathbf{v}}_y}{\alpha _I}}^k} \\ {{\mathbf{F}}_{{\alpha _R}{\text{x}}}^k}&amp;{{\mathbf{F}}_{{\alpha _R}{\mathbf{y}}}^k}&amp;{{\mathbf{F}}_{{\alpha _R}{{\mathbf{v}}_x}}^k}&amp;{{\mathbf{F}}_{{\alpha _R}{{\mathbf{v}}_y}}^k}&amp;{{\mathbf{F}}_{{\alpha _R}{\alpha _R}}^k}&amp;{{\mathbf{F}}_{{\alpha _R}{\alpha _I}}^k} \\ {{\mathbf{F}}_{{\alpha _{{I^{\text{x}}}}}}^k}&amp;{{\mathbf{F}}_{{\alpha _I}{\mathbf{y}}}^k}&amp;{{\mathbf{F}}_{{\alpha _I}{{\mathbf{v}}_x}}^k}&amp;{{\mathbf{F}}_{{\alpha _I}{{\mathbf{v}}_y}}^k}&amp;{{\mathbf{F}}_{{\alpha _I}{\alpha _R}}^k}&amp;{{\mathbf{F}}_{{\alpha _I}{\alpha _I}}^k} \end{array}} \right]\tag{15}\end{equation*}</tex-math></disp-formula>
+in which the diagonal blocks are related to the target position, velocity, and RCS estimation, respectively. The matrix of CRB is given by <inline-formula><tex-math notation="LaTeX">${{\mathbf{B}}_k} = {\mathbf{F}}_k^{ - 1}$</tex-math></inline-formula>. Due to the nature of the CRB, an exact analysis is not possible and one needs numerical evaluation. In this work, to gain further insights, we use the Schur&#x2019;s complement method to calculate the inverse of <bold>F</bold><italic><sub>k</sub></italic> and then derive the following lower bound <inline-formula><tex-math notation="LaTeX">${{\mathbf{B}}_k}(i,i) \geq {\mathbf{F}}_k^{ - 1}(i,i);$</tex-math></inline-formula> See <xref ref-type="bibr" rid="ref30">[30]</xref>.</p>
+<p><bold>CRB for RCS Estimation:</bold> Based on <xref rid="deqn7" ref-type="disp-formula">(7)</xref>, we have, for <italic>q</italic> = 1, &#x22EF;<italic>,Q</italic>,
+<disp-formula id="deqn16.1-deqn16b"><tex-math notation="LaTeX">\begin{align*}&amp;\frac{{\partial {{\mathbf{A}}_{k,m}}{{\mathbf{x}}_{k,m}}}}{{\partial {\alpha _{{R_q}}}}} = {{\mathbf{a}}_{\text{R}}}(k,m,q){\mathbf{a}}_{\text{T}}^T(k,m,q){{\mathbf{x}}_{k,m}},\tag{16a} \\ &amp; \frac{{\partial {{\mathbf{A}}_{k,m}}{{\mathbf{x}}_{k,m}}}}{{\partial {\alpha _{{I_q}}}}} = j{{\mathbf{a}}_{\text{R}}}(k,m,q){\mathbf{a}}_{\text{T}}^T(k,m,q){{\mathbf{x}}_{k,m}}.\tag{16b}\end{align*}</tex-math></disp-formula></p>
+<p>According to Cauchy-Riemann equations <xref ref-type="bibr" rid="ref31">[31]</xref>, we have
+<disp-formula id="deqn17.1-deqn17b"><tex-math notation="LaTeX">\begin{align*}&amp;\frac{{\partial {{\mathbf{A}}_{k,m}}{{\mathbf{x}}_{k,m}}}}{{\partial {{\mathbf{\alpha }}_R}}} = \left[ {{{{\mathbf{\mathop{A}\limits^{\smile} }}}_{k,m}}(1){{\mathbf{x}}_{k,m}}, \cdots ,{{{\mathbf{\mathop{A}\limits^{\smile} }}}_{k,m}}(Q){{\mathbf{x}}_{k,m}}} \right],\tag{17a} \\ &amp; \frac{{\partial {{\mathbf{A}}_{k,m}}{{\mathbf{x}}_{k,m}}}}{{\partial {{\mathbf{\alpha }}_I}}} = \left[ {j{{{\mathbf{\mathop{A}\limits^{\smile} }}}_{k,m}}(1){{\mathbf{x}}_{k,m}}, \cdots ,j{{{\mathbf{\mathop{A}\limits^{\smile} }}}_{k,m}}(Q){{\mathbf{x}}_{k,m}}} \right],\tag{17b}\end{align*}</tex-math></disp-formula>
+where <inline-formula><tex-math notation="LaTeX">${{\mathbf{\mathop{A}\limits^{\smile} }}_{k,m}}(q) = {{\mathbf{A}}_{{\text{R}},k,m}}{{\mathbf{\Lambda }}_q}{\mathbf{A}}_{{\text{T}},k,m}^T$</tex-math></inline-formula> denotes the partial derivative matrix and <bold>&#x039B;</bold><italic><sub>q</sub></italic> denotes the selection matrix with <italic>q</italic>-th diagonal element is one and the others are zero. Substituting <xref rid="deqn17.1-deqn17b" ref-type="disp-formula">(17)</xref> into <xref rid="deqn13" ref-type="disp-formula">(13)</xref> and <xref rid="deqn14" ref-type="disp-formula">(14)</xref>, we can get the wideband CRB for RCS estimation as <xref ref-type="bibr" rid="ref17">[17]</xref>
+<disp-formula id="deqn18"><tex-math notation="LaTeX">\begin{equation*}{\text{CR}}{{\text{B}}_{{\alpha _{{R_q}}},L}} = {\operatorname{CRB} _{{\alpha _{{I_q}}},L}} = \frac{{\sigma _r^2}}{{2\sum _{k = 1}^K\sum _{m = 1}^MG_{{\text{R}},k}^q\left\| {{\mathbf{a}}_{\text{T}}^T(k,m,q){{\text{x}}_{k,m}}} \right\|_2^2}},\tag{18}\end{equation*}</tex-math></disp-formula>
+where <inline-formula><tex-math notation="LaTeX">$G_{{\text{R}},k}^q = \left\| {{{\mathbf{a}}_{\text{R}}}(k,m,q)} \right\|_2^2$</tex-math></inline-formula> denotes the Rx antenna gain on <italic>k</italic>-th subcarrier.</p>
+<p><bold>CRB for Velocity Estimation</bold>: Similarly, the velocity part is
+<disp-formula id="deqn19.1-deqn19b"><tex-math notation="LaTeX">\begin{align*}&amp;\frac{{\partial {{\mathbf{A}}_{k,m}}{{\mathbf{x}}_{k,m}}}}{{\partial {{\mathbf{v}}_x}}} = \left[ {{{\mathbf{\acute{A}}}_{k,m}}(1){{\mathbf{x}}_{k,m}}, \cdots ,{{\mathbf{\acute{A}}}_{k,m}}(Q){{\mathbf{x}}_{k,m}}} \right],\tag{19a} \\ &amp; \frac{{\partial {{\mathbf{A}}_{k,m}}{{\mathbf{x}}_{k,m}}}}{{\partial {{\mathbf{v}}_y}}} = \left[ {{{\mathop {\mathbf{A}}\limits^` }_{k,m}}(1){{\mathbf{x}}_{k,m}}, \cdots ,{{\mathop {\mathbf{A}}\limits^` }_{k,m}}(Q){{\mathbf{x}}_{k,m}}} \right],\tag{19b}\end{align*}</tex-math></disp-formula>
+where <inline-formula><tex-math notation="LaTeX">${{\mathbf{\acute{A}}}_{k,m}}(q) = \left[ {{{\mathbf{\acute{A}}}_{{\text{R}},k,m}}{{\mathbf{\Lambda }}_q}{\mathbf{BA}}_{{\text{T}},k,m}^T + {{\mathbf{A}}_{{\text{R}},k,m}}{\mathbf{B}}{{\mathbf{\Lambda }}_q}{\mathbf{\acute{A}}}_{{\text{T}},k,m}^T} \right]$</tex-math></inline-formula> and <bold>&#x00C0;</bold><italic><sub>k,m</sub></italic>(<italic>q</italic>) denotes the partial derivative of <bold>A</bold><italic><sub>k,m</sub></italic> w.r.t. <inline-formula><tex-math notation="LaTeX">${v_{{x_q}}}$</tex-math></inline-formula> and <inline-formula><tex-math notation="LaTeX">${v_{{y_q}}}$</tex-math></inline-formula>, respectively, in which any of these is given
+<disp-formula id="deqn20.1-deqn20b"><tex-math notation="LaTeX">\begin{align*}&amp;\frac{{\partial {{\mathbf{a}}_{{\text{R}},{\text{T}},*}}(k,m,q)}}{{\partial {v_{{x_q}}}}} = \frac{{j2\pi \frac{{{f_k}}}{c}m{T_{{\text{sym}}}}\left({{x_q} - {x_*}}\right)}}{{\left\| {{{\mathbb{I}}_q} - {{\mathbb{I}}_*}} \right\|}}{{\mathbf{a}}_{{\text{R}},{\text{T}},*}}(k,m,q)\tag{20a} \\ &amp; \frac{{\partial {{\mathbf{a}}_{{\text{R}},{\mathbf{T}},*}}(k,m,q)}}{{\partial {v_{{y_q}}}}} = \frac{{j2\pi \frac{{{f_k}}}{c}m{T_{{\text{sym}}}}\left({{y_q} - {y_*}}\right)}}{{\left\| {{{\mathbb{I}}_q} - {{\mathbb{I}}_*}} \right\|}}{{\mathbf{a}}_{{\text{R}},{\text{T}},*}}(k,m,q).\tag{20b}\end{align*}</tex-math></disp-formula></p>
+<p>Substituting <xref rid="deqn19.1-deqn19b" ref-type="disp-formula">(19)</xref> into <xref rid="deqn14" ref-type="disp-formula">(14)</xref> and <xref rid="deqn13" ref-type="disp-formula">(13)</xref>, the CRB related to the velocity estimation of <italic>q</italic>-th target is
+<disp-formula id="deqn21.1-deqn21b"><tex-math notation="LaTeX">\begin{align*}&amp; {\operatorname{CRB} _{{v_{{x_q}}},L}} = \frac{{\sigma _r^2}}{{2\sum _{k = 1}^K\sum _{m = 1}^M\left\| {{{\mathbf{{\acute{A}}}}_{k,m}}(q){{\mathbf{x}}_{k,m}}} \right\|_2^2}},\tag{21a} \\ {\operatorname{CRB} _{{v_{{y_q}}},L}} = \frac{{\sigma _r^2}}{{2\sum _{k = 1}^K\sum _{m = 1}^M\left\| {{{\mathbf{A}}_{k,m}}(q){{\mathbf{x}}_{k,m}}} \right\|_2^2}}. \tag{21b}\end{align*}</tex-math></disp-formula></p>
+<p><bold>CRB for Position Estimation:</bold> Similarly, we have
+<disp-formula id="deqn22.1-deqn22b"><tex-math notation="LaTeX">\begin{align*}&amp;\frac{{\partial {{\mathbf{A}}_{k,m}}{{\mathbf{x}}_{k,m}}}}{{\partial {\mathbf{x}}}} = \left[ {{{\ddot{\mathbf{A}} }_{k,m}}(1){{\mathbf{x}}_{k,m}}, \cdots ,{{\ddot{\mathbf{A}} }_{k,m}}(Q){{\mathbf{x}}_{k,m}}} \right],\tag{22a} \\ &amp; \frac{{\partial {{\mathbf{A}}_{k,m}}{{\mathbf{x}}_{k,m}}}}{{\partial {\mathbf{y}}}} = \left[ {{{\mathop {\mathbf{A}}\limits^. }_{k,m}}(1){{\mathbf{x}}_{k,m}}, \cdots ,{{\mathop {\mathbf{A}}\limits^. }_{k,m}}(Q){{\mathbf{x}}_{k,m}}} \right],\tag{22b}\end{align*}</tex-math></disp-formula>
+where <inline-formula><tex-math notation="LaTeX">${\ddot{\mathbf{A}}_{k,m}}(q) = \left[ {{{\ddot{\mathbf{A}} }_{{\text{R}},k,m}}{{\mathbf{\Lambda }}_q}{\mathbf{BA}}_{{\text{T}},k,m}^T + {{\mathbf{A}}_{{\text{R}},k,m}}{\mathbf{B}}{{\mathbf{\Lambda }}_q}\ddot{\mathbf{A}} _{{\text{T}},k,m}^T} \right]$</tex-math></inline-formula> and <inline-formula><tex-math notation="LaTeX">${\dot{\mathbf{A}}_{k,m}}(q) = \left[ {{{\mathop {\mathbf{A}}\limits^. }_{{\text{R}},k,m}}{{\mathbf{\Lambda }}_q}{\mathbf{BA}}_{{\text{T}},k,m}^T + {{\mathbf{A}}_{{\text{R}},k,m}}{\mathbf{B}}{{\mathbf{\Lambda }}_q}\dot{\mathbf{A}}_{{\text{T}},k,m}^T} \right]$</tex-math></inline-formula> denotes the partial derivative of <bold>A</bold><italic><sub>k,m</sub></italic> w.r.t. <italic>x<sub>q</sub></italic> and <italic>y<sub>q</sub></italic>, respectively, with each element of the derivative w.r.t <italic>x<sub>q</sub></italic> being <inline-formula><tex-math notation="LaTeX">$\frac{{\partial {{\mathbf{a}}_{{\text{R}},{\text{T}}, * }}(k,m,q)}}{{\partial {x_q}}} = {\ddot g_{{\text{R}},{\text{T}}, * }}(k,m,q){{\mathbf{a}}_{{\text{R}},{\text{T}}, * }}(k,m,q){\text{,}}$</tex-math></inline-formula> where the gain <inline-formula><tex-math notation="LaTeX">${\ddot g_{{\text{R}},{\text{T}},*}}(k,m,q)$</tex-math></inline-formula> is given by <xref rid="deqn23-deqn24b" ref-type="disp-formula">(23)</xref> arranged at the top of next page and each element of the derivation w.r.t <italic>y<sub>q</sub></italic> can be similarly obtained. Substituting <xref rid="deqn22.1-deqn22b" ref-type="disp-formula">(22)</xref> into <xref rid="deqn14" ref-type="disp-formula">(14)</xref> and <xref rid="deqn13" ref-type="disp-formula">(13)</xref>, lower bound on CRB of the location estimation for <italic>q</italic>-th target is
+<disp-formula id="deqn23-deqn24b"><tex-math notation="LaTeX">\begin{align*}&amp;{\ddot g_{{\text{R}},{\text{T}},*}}(k,m,q) = \left({\frac{{{\lambda _k}\left({{x_*} - {x_q}}\right)}}{{4\pi {{\left\| {{{\mathbb{I}}_q} - {{\mathbb{I}}_*}} \right\|}^2}}} + \frac{{j2\pi \frac{{{f_k}}}{c}\left({v_x^{(q)}m{T_{{\text{sym }}}} - \left({{x_q} - {x_*}}\right)}\right)}}{{\left\| {{{\mathbb{I}}_q} - {{\mathbb{I}}_*}} \right\|}} - } \right.\left. {\frac{{j2\pi \frac{{{f_k}}}{c}m{T_{{\text{sym}}}}\left({v_x^{(q)}{{\left({{x_q} - {x_*}}\right)}^2} + v_y^{(q)}\left({{x_q} - {x_*}}\right)\left({{y_q} - {y_*}}\right)}\right)}}{{{{\left\| {{{\mathbb{I}}_q} - {{\mathbb{I}}_*}} \right\|}^3}}}}\right).\tag{23} \\ {\operatorname{CRB} _{{x_q},L}} = \frac{{\sigma _r^2}}{{2\sum _{k = 1}^K\sum _{m = 1}^M\left\| {{{\ddot{\mathbf{A}} }_{k,m}}(q){{\mathbf{x}}_{k,m}}} \right\|_2^2}},\tag{24a} \\ &amp; {\text{CR}}{{\text{B}}_{{y_q},L}} = \frac{{\sigma _r^2}}{{2\sum _{k = 1}^K\sum _{m = 1}^M\left\| {{{\mathop {\mathbf{A}}\limits^. }_{k,m}}(q){{\mathbf{x}}_{k,m}}} \right\|_2^2}}.\tag{24b}\end{align*}</tex-math></disp-formula></p>
+<p><bold>Single Target Setting</bold>: Herein, we consider the single target setup and restrict the transmit power in each OFDM symbol, i.e., <inline-formula><tex-math notation="LaTeX">${\mathbf{x}}_{k,m}^H{{\mathbf{x}}_{k,m}} = {\mathcal{P}}$</tex-math></inline-formula>, where <inline-formula><tex-math notation="LaTeX">${\mathcal{P}}$</tex-math></inline-formula> denotes the transmit power at each subcarrier and OFDM symbol. Note that the MIMO radar in wideband far-field <xref ref-type="bibr" rid="ref17">[17]</xref>, and narrowband near-field <xref ref-type="bibr" rid="ref19">[19]</xref> cases only consider the static target which limits its application. Towards this end, the performance of CRB of proposed wideband near-field system under moving target setup is investigated. Hereafter, we use the abbreviation NFF, WFF, NNF, and WNF denote narrowband far-field, wideband far-field, narrowband near-field, and wideband near-field, respectively.</p>
+<p>First, for the far-field case, we can approximate the distance between target and each elements as equal, i.e., <inline-formula><tex-math notation="LaTeX">${r_q} = \left\| {{{\mathbb{I}}_q} - {{\mathbb{I}}_o}} \right\|$</tex-math></inline-formula>, where <inline-formula><tex-math notation="LaTeX">${{\mathbb{I}}_o}$</tex-math></inline-formula> denotes the location of first reference element. Thus, for RCS estimation, the CRB under far-field case is given
+<disp-formula id="deqn25-deqn26"><tex-math notation="LaTeX">\begin{align*} &amp; {\text{CRB}}_{\alpha ,L}^{{\text{NFF}}} \approx \frac{{256\sigma _r^2{\pi ^4}r_{\text{T}}^2r_{\text{R}}^2}}{{{\mathcal{P}}M{N_t}{N_r}\lambda _c^4}},\tag{25} \\ &amp; {\text{CRB}}_{\alpha ,L}^{{\text{WFF}}} \approx \frac{{256\sigma _r^2{\pi ^4}r_{\text{T}}^2r_{\text{R}}^2}}{{{\mathcal{P}}M{N_t}{N_r}\sum _{k = 1}^K\lambda _k^4}},\tag{26}\end{align*}</tex-math></disp-formula>
+where <italic>r</italic><sub>T</sub> and <italic>r</italic><sub>R</sub> denote the distance from target to first element of Tx and Rx, respectively. Then, we consider the near-field and ELAA case, if the Tx and Rx deployed alone to x-axis with the first element at the origin, and the target located at y-axis, then we can approximate the near-field CRB for RCS as
+<disp-formula id="deqn27.1-deqn27b"><tex-math notation="LaTeX">\begin{align*}&amp;{\text{CRB}}_{\alpha ,L}^{{\text{NNF}}} \approx \frac{{256\sigma _r^2{\pi ^4}\hat r_{\text{T}}^2\hat r_{\text{R}}^2}}{{{\mathcal{P}}M{N_t}{N_r}\lambda _c^4}},\tag{27a} \\ &amp; {\text{CRB}}_{\alpha ,L}^{{\text{WNF}}} \approx \frac{{256\sigma _r^2{\pi ^4}\hat r_{\text{T}}^2\hat r_{\text{R}}^2}}{{{\mathcal{P}}M{N_t}{N_r}\sum _{k = 1}^K\lambda _k^4}},\tag{27b}\end{align*}</tex-math></disp-formula>
+where <inline-formula><tex-math notation="LaTeX">${\hat r_{\text{T}}}\;{\text{and}}\;{\hat r_{\text{R}}}$</tex-math></inline-formula> denote the distance between target to the centroid of Tx and Rx, respectively. Based on <xref ref-type="disp-formula" rid="deqn27.1-deqn27b">(27b)</xref>, we have the following asymptotic behavior for wideband near-field CRB
+<disp-formula id="deqn28.1-deqn28c"><tex-math notation="LaTeX">\begin{align*}&amp;\mathop {\lim }\limits_{{\mathcal{P}} \to \infty } {\text{CRB}}_{\alpha ,L}^{{\text{WNF}}} = 0;\mathop {\lim }\limits_{K \to \infty } {\text{CRB}}_{\alpha ,L}^{{\text{WNF}}} = 0;\tag{28a} \\ &amp; \mathop {\lim }\limits_{{N_r} \to \infty } {\text{CRB}}_{\alpha ,L}^{{\text{WNF}}} = 0;\mathop {\lim }\limits_{{N_t} \to \infty } {\text{CRB}}_{\alpha ,L}^{{\text{WNF}}} = 0,\tag{28b} \\ &amp; \mathop {\lim }\limits_{M \to \infty } {\text{CRB}}_{\alpha ,L}^{{\text{WNF}}} = 0;\mathop {\lim }\limits_{{\lambda _k} \to \infty } {\text{CRB}}_{\alpha ,L}^{{\text{WNF}}} = 0.\tag{28c}\end{align*}</tex-math></disp-formula></p>
+<p>Further, we can also have the following inequalities
+<disp-formula><tex-math notation="LaTeX">\begin{equation*}{\text{CRB}}_{\alpha ,L}^{{\text{WNF}}} \leq {\text{CRB}}_{\alpha ,L}^{{\text{WFF}}} \leq {\text{CRB}}_{\alpha ,L}^{{\text{NFF}}};{\text{CRB}}_{\alpha ,L}^{{\text{WNF}}} \leq {\text{CRB}}_{\alpha ,L}^{{\text{NNF}}}.\end{equation*}</tex-math></disp-formula></p>
+<p>Similarly, we can approximate the CRB for location estimation in <xref rid="deqn23-deqn24b" ref-type="disp-formula">(24)</xref> and velocity estimation in <xref rid="deqn21.1-deqn21b" ref-type="disp-formula">(21)</xref> using the distance between target and array as in <xref rid="deqn25-deqn26" ref-type="disp-formula">(25)</xref> and <xref rid="deqn27.1-deqn27b" ref-type="disp-formula">(27)</xref>, respectively. This is omitted for lack of space. Meanwhile, estimating the parameters, i.e, RCS, velocity and location of all targets is beyond the scope of this paper and will be investigated in the full version of this paper.</p>
+<fig id="fig1">
+<label>Fig. 1.</label>
+<caption>
+<p>Transmit power versus CRB for RCS estimation.</p>
+</caption>
+<graphic xlink:href="wei1-p5-wei.tif"/>
+</fig>
+</sec>
+<sec id="sec4">
+<label>4.</label>
+<title>NUMERICAL EXPERIMENTS</title>
+<p>In the simulations, we consider a bistatic MIMO radar system with <italic>Nt</italic> = <italic>Nr</italic> = 128. The inter-element spacing for both Tx and Rx is set to <italic>&#x03BB;c/</italic>2. The central frequency of the wideband sensing system is <italic>fc</italic> = 28 GHz, and the frequency step of OFDM is set to &#x0394;<italic>f</italic> = 0.12 MHz. The total number of subcarriers and OFDM symbols are set to <italic>K</italic> = 8 and <italic>M</italic> = 64. A single target is located on the y-axis and moves with a velocity of <bold>v</bold> = <xref ref-type="bibr" rid="ref10">[10]</xref>, <xref ref-type="bibr" rid="ref10">[10]</xref> m/s. The RCS is set to <italic>&#x03B1;</italic> = 1. The noise variances are <inline-formula><tex-math notation="LaTeX">$\sigma _r^2$</tex-math></inline-formula> = 154dBm.</p>
+<p><xref ref-type="fig" rid="fig1">Fig. 1</xref> illustrates the CRB of RCS estimation versus the transmit power of each element. We compare the proposed wideband near-field sensing system with its far-field narrowband <xref ref-type="bibr" rid="ref21">[21]</xref>, far-field wideband <xref ref-type="bibr" rid="ref17">[17]</xref>, and near-field narrowband <xref ref-type="bibr" rid="ref19">[19]</xref> counterparts. It is observed that as transmit power increases, the CRB for RCS decreases linearly, consistent with our analysis in <xref rid="deqn25-deqn26" ref-type="disp-formula">(25)</xref> and <xref rid="deqn27.1-deqn27b" ref-type="disp-formula">(27)</xref>. Meanwhile, a target located in the near-field region achieves a lower RCS estimation CRB compared to the far-field region. This is because, in the near-field region, free-space path loss is always smaller than in the far-field region. Further, in the extremely near-field region, e.g., 2.5m, the approximation in <xref rid="deqn27.1-deqn27b" ref-type="disp-formula">(27)</xref> is more accurate than the approximation in <xref rid="deqn25-deqn26" ref-type="disp-formula">(25)</xref>. Finally, the wideband CRBs are always lower than the narrowband CRBs due to the wideband processing gain, despite requiring more spectrum resources.</p>
+<p><xref ref-type="fig" rid="fig2">Fig. 2</xref> illustrates the CRB of velocity estimation versus the transmit power of each element. Similarly, it is observed that as transmit power increases, the CRB for velocity also decreases linearly across different cases. Meanwhile, when the target is located in the near-field region, it achieves a lower velocity estimation CRB compared to a target in the far-field region since we can only obtain radial velocity in far-field. Furthermore, as the target distance decreases, a lower CRB is always achieved due to the higher Tx and Rx channel gain in <xref rid="deqn21.1-deqn21b" ref-type="disp-formula">(21)</xref>. Moreover, the CRB for the far-field is still not favorable, even with high transmit power, i.e., <inline-formula><tex-math notation="LaTeX">${\mathcal{P}}$</tex-math></inline-formula> = 40 dBm. This means that to reach the same estimation accuracy, we need to improve transmit power or use more subcarriers, i.e., increase the bandwidth. Finally, the wideband CRBs for velocity are always lower than the corresponding narrowband counterparts due to the wideband processing gain, i.e., <italic>K</italic> &#x003E; 1 for the summation of channel gain in wideband systems, but <italic>K</italic> = 1 for the narrowband case.</p>
+<fig id="fig2">
+<label>Fig. 2.</label>
+<caption>
+<p>Transmit power versus CRB for velocity estimation.</p>
+</caption>
+<graphic xlink:href="wei2-p5-wei.tif"/>
+</fig>
+<fig id="fig3">
+<label>Fig. 3.</label>
+<caption>
+<p>Transmit power versus CRB for location estimation.</p>
+</caption>
+<graphic xlink:href="wei3-p5-wei.tif"/>
+</fig>
+<p><xref ref-type="fig" rid="fig3">Fig. 3</xref> illustrates the CRB of location estimation versus the transmit power of each element. Similar to <xref ref-type="fig" rid="fig2">Fig. 2</xref>, we observe that as transmit power increases, the CRB for location also decreases linearly in all cases. Finally, as the target distance decreases, i.e., from the far-field to the near-field and then to the extremely near-field region, the CRB is always reduced due to the higher Tx and Rx channel gain in <xref rid="deqn23-deqn24b" ref-type="disp-formula">(24)</xref>.</p>
+</sec>
+<sec id="sec5">
+<label>5.</label>
+<title>SUMMARY</title>
+<p>In this paper, we studied a wideband near-field sensing system using ELAA and OFDM signaling. We analyze the CRB for estimating RCS, velocity, and location of the radar target. Based on the analysis, the considered wideband near-field sensing system achieves a lower CRB compared to its far-field narrowband <xref ref-type="bibr" rid="ref21">[21]</xref>, far-field wideband <xref ref-type="bibr" rid="ref17">[17]</xref>, and near-field narrowband <xref ref-type="bibr" rid="ref19">[19]</xref> counterparts. Meanwhile, the performance of CRBs largely depends on the target distance. Numerical simulation results validate our analysis and show that the proposed system achieves a lower CRB than other schemes.</p>
+</sec>
+</body>
+<back>
+<ref-list>
+<title>REFERENCES</title>
+<ref id="ref1">
+<label>[1]</label>
+<mixed-citation publication-type="periodical" publication-format="print">
+<person-group person-group-type="author">
+<string-name>
+<given-names>A. M.</given-names> 
+<surname>Elbir</surname>
+</string-name>, 
+<string-name>
+<given-names>K. V.</given-names> 
+<surname>Mishra</surname>
+</string-name>, 
+<string-name>
+<given-names>S.</given-names> 
+<surname>Chatzinotas</surname>
+</string-name>, and 
+<string-name>
+<given-names>M.</given-names> 
+<surname>Bennis</surname>
+</string-name>
+</person-group>, &#x201C;<article-title>Terahertz-band integrated sensing and communications: Challenges and opportunities</article-title>,&#x201D; <source specific-use="IEEE">IEEE Aerospace and Electronic Systems Magazine</source>, vol. <volume>39</volume>, no. <issue>12</issue>, pp. <fpage>38</fpage>&#x2013;<lpage>49</lpage>, <year>2024</year>.
+</mixed-citation>
+</ref>
+<ref id="ref2">
+<label>[2]</label>
+<mixed-citation publication-type="periodical" publication-format="print">
+<person-group person-group-type="author">
+<string-name>
+<given-names>A. M.</given-names> 
+<surname>Elbir</surname>
+</string-name>, 
+<string-name>
+<given-names>K. V.</given-names> 
+<surname>Mishra</surname>
+</string-name>, 
+<string-name>
+<given-names>A.</given-names> 
+<surname>Celik</surname>
+</string-name>, and 
+<string-name>
+<given-names>A. M.</given-names> 
+<surname>Eltawil</surname>
+</string-name>
+</person-group>, &#x201C;<article-title>The curse of beam-squint in ISAC: Causes, implications, and mitigation strategies</article-title>,&#x201D; <source specific-use="IEEE">IEEE Communications Magazine</source>, vol. <volume>62</volume>, no. <issue>9</issue>, pp. <fpage>52</fpage>&#x2013;<lpage>58</lpage>, <year>2024</year>.
+</mixed-citation>
+</ref>
+<ref id="ref3">
+<label>[3]</label>
+<mixed-citation publication-type="periodical" publication-format="print">
+<person-group person-group-type="author">
+<string-name>
+<given-names>C.-X.</given-names> 
+<surname>Wang</surname>
+</string-name>, 
+<string-name>
+<given-names>X.</given-names> 
+<surname>You</surname>
+</string-name>, 
+<string-name>
+<given-names>X.</given-names> 
+<surname>Gao</surname>
+</string-name>, 
+<string-name>
+<given-names>X.</given-names> 
+<surname>Zhu</surname>
+</string-name>, 
+<string-name>
+<given-names>Z.</given-names> 
+<surname>Li</surname>
+</string-name>, 
+<string-name>
+<given-names>C.</given-names> 
+<surname>Zhang</surname>
+</string-name>, 
+<string-name>
+<given-names>H.</given-names> 
+<surname>Wang</surname>
+</string-name>, 
+<string-name>
+<given-names>Y.</given-names> 
+<surname>Huang</surname>
+</string-name>, 
+<string-name>
+<given-names>Y.</given-names> 
+<surname>Chen</surname>
+</string-name>, 
+<string-name>
+<given-names>H.</given-names> 
+<surname>Haas</surname>
+</string-name>, 
+<string-name>
+<given-names>J. S.</given-names> 
+<surname>Thompson</surname>
+</string-name>, 
+<string-name>
+<given-names>E. G.</given-names> 
+<surname>Larsson</surname>
+</string-name>, 
+<string-name>
+<given-names>M. D.</given-names> 
+<surname>Renzo</surname>
+</string-name>, 
+<string-name>
+<given-names>W.</given-names> 
+<surname>Tong</surname>
+</string-name>, 
+<string-name>
+<given-names>P.</given-names> 
+<surname>Zhu</surname>
+</string-name>, 
+<string-name>
+<given-names>X.</given-names> 
+<surname>Shen</surname>
+</string-name>, 
+<string-name>
+<given-names>H. V.</given-names> 
+<surname>Poor</surname>
+</string-name>, and 
+<string-name>
+<given-names>L.</given-names> 
+<surname>Hanzo</surname>
+</string-name>
+</person-group>, &#x201C;<article-title>On the road to 6G: Visions, requirements, key technologies, and testbeds</article-title>,&#x201D; <source specific-use="IEEE">IEEE Communications Surveys &#x0026; Tutorials</source>, vol. <volume>25</volume>, no. <issue>2</issue>, pp. <fpage>905</fpage>&#x2013;<lpage>974</lpage>, <year>2023</year>.
+</mixed-citation>
+</ref>
+<ref id="ref4">
+<label>[4]</label>
+<mixed-citation publication-type="book" publication-format="print">
+<person-group person-group-type="author">
+<string-name>
+<given-names>K. V.</given-names> 
+<surname>Mishra</surname>
+</string-name>, 
+<string-name>
+<given-names>M.</given-names> 
+<surname>Bhavani Shankar</surname>
+</string-name>, 
+<string-name>
+<given-names>B.</given-names> 
+<surname>Ottersten</surname>
+</string-name>, and 
+<string-name>
+<given-names>A. L.</given-names> 
+<surname>Swindlehurst</surname>
+</string-name>
+</person-group>, <source>Signal processing for joint radar-communications</source>. <publisher-name>Wiley-IEEE Press</publisher-name>, <year>2024</year>.
+</mixed-citation>
+</ref>
+<ref id="ref5">
+<label>[5]</label>
+<mixed-citation publication-type="periodical" publication-format="print">
+<person-group person-group-type="author">
+<string-name>
+<given-names>K. V.</given-names> 
+<surname>Mishra</surname>
+</string-name>, 
+<string-name>
+<given-names>M. R.</given-names> 
+<surname>Bhavani Shankar</surname>
+</string-name>, 
+<string-name>
+<given-names>V.</given-names> 
+<surname>Koivunen</surname>
+</string-name>, 
+<string-name>
+<given-names>B.</given-names> 
+<surname>Ottersten</surname>
+</string-name>, and 
+<string-name>
+<given-names>S. A.</given-names> 
+<surname>Vorobyov</surname>
+</string-name>
+</person-group>, &#x201C;<article-title>Toward millimeter wave joint radar communications: A signal processing perspective</article-title>,&#x201D; <source specific-use="IEEE">IEEE Signal Processing Magazine</source>, vol. <volume>36</volume>, no. <issue>5</issue>, pp. <fpage>100</fpage>&#x2013;<lpage>114</lpage>, <year>2019</year>.
+</mixed-citation>
+</ref>
+<ref id="ref6">
+<label>[6]</label>
+<mixed-citation publication-type="periodical" publication-format="print">
+<person-group person-group-type="author">
+<string-name>
+<given-names>T.</given-names> 
+<surname>Wei</surname>
+</string-name>, 
+<string-name>
+<given-names>L.</given-names> 
+<surname>Wu</surname>
+</string-name>, 
+<string-name>
+<given-names>K. V.</given-names> 
+<surname>Mishra</surname>
+</string-name>, and 
+<string-name>
+<given-names>B.</given-names> 
+<surname>Shankar</surname>
+</string-name> <string-name>
+<given-names>M.</given-names> 
+<surname>R</surname>
+</string-name></person-group>., &#x201C;<article-title>RIS-aided wideband holographic DFRC</article-title>,&#x201D; <source specific-use="IEEE">IEEE Transactions on Aerospace and Electronic Systems</source>, vol. <volume>60</volume>, no. <issue>4</issue>, pp. <fpage>4241</fpage>&#x2013;<lpage>4256</lpage>, <year>2024</year>.
+</mixed-citation>
+</ref>
+<ref id="ref7">
+<label>[7]</label>
+<mixed-citation publication-type="periodical" publication-format="print">
+<person-group person-group-type="author">
+<string-name>
+<given-names>E.</given-names> 
+<surname>Vargas</surname>
+</string-name>, 
+<string-name>
+<given-names>K. V.</given-names> 
+<surname>Mishra</surname>
+</string-name>, 
+<string-name>
+<given-names>R.</given-names> 
+<surname>Jacome</surname>
+</string-name>, 
+<string-name>
+<given-names>B. M.</given-names> 
+<surname>Sadler</surname>
+</string-name>, and 
+<string-name>
+<given-names>H.</given-names> 
+<surname>Arguello</surname>
+</string-name>
+</person-group>, &#x201C;<article-title>Dual-blind deconvolution for overlaid radar-communications systems</article-title>,&#x201D; <source specific-use="IEEE">IEEE Journal on Selected Areas in Information Theory</source>, vol. <volume>4</volume>, pp. <fpage>75</fpage>&#x2013;<lpage>93</lpage>, <year>2023</year>.
+</mixed-citation>
+</ref>
+<ref id="ref8">
+<label>[8]</label>
+<mixed-citation publication-type="periodical" publication-format="print">
+<person-group person-group-type="author">
+<string-name>
+<given-names>S.</given-names> 
+<surname>Nayemuzzaman</surname>
+</string-name>, 
+<string-name>
+<given-names>K. V.</given-names> 
+<surname>Mishra</surname>
+</string-name>, 
+<string-name>
+<given-names>J.</given-names> 
+<surname>Liu</surname>
+</string-name>, and 
+<string-name>
+<given-names>M.</given-names> 
+<surname>Saquib</surname>
+</string-name>
+</person-group>, &#x201C;<article-title>Co-designing statistical MIMO radar and in-band full-duplex multi-user MIMO communications&#x2013;part III: Multi-target tracking</article-title>,&#x201D; <italic>arXiv preprint arXiv:2403.19120</italic>, <year>2024</year>.
+</mixed-citation>
+</ref>
+<ref id="ref9">
+<label>[9]</label>
+<mixed-citation publication-type="book" publication-format="print">
+<person-group person-group-type="author">
+<string-name>
+<given-names>C. A.</given-names> 
+<surname>Balanis</surname>
+</string-name>
+</person-group>, <source>Modern antenna handbook</source>. <publisher-name>Wiley</publisher-name>, <year>2011</year>.
+</mixed-citation>
+</ref>
+<ref id="ref10">
+<label>[10]</label>
+<mixed-citation publication-type="periodical" publication-format="print">
+<person-group person-group-type="author">
+<string-name>
+<given-names>A. M.</given-names> 
+<surname>Elbir</surname>
+</string-name>, <string-name>
+<given-names>&#x00D6;. T.</given-names> 
+<surname>Demir</surname>
+</string-name>, 
+<string-name>
+<given-names>K. V.</given-names> 
+<surname>Mishra</surname>
+</string-name>, 
+<string-name>
+<given-names>S.</given-names> 
+<surname>Chatzinotas</surname>
+</string-name>, and 
+<string-name>
+<given-names>M.</given-names> 
+<surname>Haardt</surname>
+</string-name>
+</person-group>, &#x201C;<article-title>Near-field signal processing: Unleashing the power of proximity</article-title>,&#x201D; <source specific-use="IEEE">IEEE Signal Processing Magazine</source>, <year>2025</year>, in press.
+</mixed-citation>
+</ref>
+<ref id="ref11">
+<label>[11]</label>
+<mixed-citation publication-type="periodical" publication-format="print">
+<person-group person-group-type="author">
+<string-name>
+<given-names>R.</given-names> 
+<surname>Boyer</surname>
+</string-name>
+</person-group>, &#x201C;<article-title>Performance bounds and angular resolution limit for the moving colocated MIMO radar</article-title>,&#x201D; <source specific-use="IEEE">IEEE Transactions on Signal Processing</source>, vol. <volume>59</volume>, no. <issue>4</issue>, pp. <fpage>1539</fpage>&#x2013;<lpage>1552</lpage>, <year>2011</year>.
+</mixed-citation>
+</ref>
+<ref id="ref12">
+<label>[12]</label>
+<mixed-citation publication-type="periodical" publication-format="print">
+<person-group person-group-type="author">
+<string-name>
+<given-names>M. D.</given-names> 
+<surname>Larsen</surname>
+</string-name>, 
+<string-name>
+<given-names>A. L.</given-names> 
+<surname>Swindlehurst</surname>
+</string-name>, and 
+<string-name>
+<given-names>T.</given-names> 
+<surname>Svantesson</surname>
+</string-name>
+</person-group>, &#x201C;<article-title>Performance bounds for MIMO-OFDM channel estimation</article-title>,&#x201D; <source specific-use="IEEE">IEEE Transactions on Signal Processing</source>, vol. <volume>57</volume>, no. <issue>5</issue>, pp. <fpage>1901</fpage>&#x2013;<lpage>1916</lpage>, <year>2009</year>.
+</mixed-citation>
+</ref>
+<ref id="ref13">
+<label>[13]</label>
+<mixed-citation publication-type="book" publication-format="print">
+<person-group person-group-type="author">
+<string-name>
+<given-names>H. L.</given-names> 
+<surname>Van Trees</surname>
+</string-name>, 
+<string-name>
+<given-names>K. L.</given-names> 
+<surname>Bell</surname>
+</string-name>, and 
+<string-name>
+<given-names>Z.</given-names> 
+<surname>Tian</surname>
+</string-name>
+</person-group>, <source>Detection Estimation and Modulation Theory, Part I: Detection, Estimation, and Filtering Theory</source>, <edition>2nd</edition> ed. <publisher-name>Wiley</publisher-name>, <year>2013</year>.
+</mixed-citation>
+</ref>
+<ref id="ref14">
+<label>[14]</label>
+<mixed-citation publication-type="periodical" publication-format="print">
+<person-group person-group-type="author">
+<string-name>
+<given-names>A.</given-names> 
+<surname>Zeira</surname>
+</string-name> and 
+<string-name>
+<given-names>P. M.</given-names> 
+<surname>Schultheiss</surname>
+</string-name>
+</person-group>, &#x201C;<article-title>Realizable lower bounds for time delay estimation</article-title>,&#x201D; <source specific-use="IEEE">IEEE transactions on signal processing</source>, vol. <volume>41</volume>, no. <issue>11</issue>, pp. <fpage>3102</fpage>&#x2013;<lpage>3113</lpage>, <year>1993</year>.
+</mixed-citation>
+</ref>
+<ref id="ref15">
+<label>[15]</label>
+<mixed-citation publication-type="periodical" publication-format="print">
+<person-group person-group-type="author">
+<string-name>
+<given-names>Y.</given-names> 
+<surname>Lu</surname>
+</string-name> and 
+<string-name>
+<given-names>L.</given-names> 
+<surname>Dai</surname>
+</string-name>
+</person-group>, &#x201C;<article-title>Near-field channel estimation in mixed LoS/NLoS environments for extremely large-scale MIMO systems</article-title>,&#x201D; <source specific-use="IEEE">IEEE Transactions on Communications</source>, vol. <volume>71</volume>, no. <issue>6</issue>, pp. <fpage>3694</fpage>&#x2013;<lpage>3707</lpage>, <year>2023</year>.
+</mixed-citation>
+</ref>
+<ref id="ref16">
+<label>[16]</label>
+<mixed-citation publication-type="periodical" publication-format="print">
+<person-group person-group-type="author">
+<string-name>
+<given-names>M.</given-names> 
+<surname>Kleinsteuber</surname>
+</string-name> and <string-name>
+<given-names>A.-K.</given-names> 
+<surname>Seghouane</surname>
+</string-name>
+</person-group>, &#x201C;<article-title>On the deterministic CRB for DOA estimation in unknown noise fields using sparse sensor arrays</article-title>,&#x201D; <source specific-use="IEEE">IEEE Transactions on Signal Processing</source>, vol. <volume>56</volume>, no. <issue>2</issue>, pp. <fpage>860</fpage>&#x2013;<lpage>864</lpage>, <year>2008</year>.
+</mixed-citation>
+</ref>
+<ref id="ref17">
+<label>[17]</label>
+<mixed-citation publication-type="periodical" publication-format="print">
+<person-group person-group-type="author">
+<string-name>
+<given-names>Y.</given-names> 
+<surname>Liang</surname>
+</string-name>, 
+<string-name>
+<given-names>W.</given-names> 
+<surname>Cui</surname>
+</string-name>, 
+<string-name>
+<given-names>Q.</given-names> 
+<surname>Shen</surname>
+</string-name>, 
+<string-name>
+<given-names>W.</given-names> 
+<surname>Liu</surname>
+</string-name>, and 
+<string-name>
+<given-names>S.</given-names> 
+<surname>Wu</surname>
+</string-name>
+</person-group>, &#x201C;<article-title>Cram&#x00E9;r-rao bound analysis of underdetermined wideband DOA estimation under the subband model via frequency decomposition</article-title>,&#x201D; <source specific-use="IEEE">IEEE Transactions on Signal Processing</source>, vol. <volume>69</volume>, pp. <fpage>4132</fpage>&#x2013;<lpage>4148</lpage>, <year>2021</year>.
+</mixed-citation>
+</ref>
+<ref id="ref18">
+<label>[18]</label>
+<mixed-citation publication-type="periodical" publication-format="print">
+<person-group person-group-type="author">
+<string-name>
+<given-names>Y.</given-names> 
+<surname>Chen</surname>
+</string-name> and 
+<string-name>
+<given-names>R. S.</given-names> 
+<surname>Blum</surname>
+</string-name>
+</person-group>, &#x201C;<article-title>On the impact of unknown signals on delay, doppler, amplitude, and phase parameter estimation</article-title>,&#x201D; <source specific-use="IEEE">IEEE Transactions on Signal Processing</source>, vol. <volume>67</volume>, no. <issue>2</issue>, pp. <fpage>431</fpage>&#x2013;<lpage>443</lpage>, <year>2019</year>.
+</mixed-citation>
+</ref>
+<ref id="ref19">
+<label>[19]</label>
+<mixed-citation publication-type="periodical" publication-format="print">
+<person-group person-group-type="author">
+<string-name>
+<given-names>H.</given-names> 
+<surname>Hua</surname>
+</string-name>, 
+<string-name>
+<given-names>J.</given-names> 
+<surname>Xu</surname>
+</string-name>, and 
+<string-name>
+<given-names>Y. C.</given-names> 
+<surname>Eldar</surname>
+</string-name>
+</person-group>, &#x201C;<article-title>Near-field 3D localization via MIMO radar: Cram&#x00E9;r-Rao bound analysis and estimator design</article-title>,&#x201D; <source specific-use="IEEE">IEEE Transactions on Signal Processing</source>, vol. <volume>72</volume>, pp. <fpage>3879</fpage>&#x2013;<lpage>3895</lpage>, <year>2024</year>.
+</mixed-citation>
+</ref>
+<ref id="ref20">
+<label>[20]</label>
+<mixed-citation publication-type="periodical" publication-format="print">
+<person-group person-group-type="author">
+<string-name>
+<given-names>H.</given-names> 
+<surname>Wang</surname>
+</string-name>, 
+<string-name>
+<given-names>Z.</given-names> 
+<surname>Xiao</surname>
+</string-name>, and 
+<string-name>
+<given-names>Y.</given-names> 
+<surname>Zeng</surname>
+</string-name>
+</person-group>, &#x201C;<article-title>Cram&#x00E9;r-Rao bounds for near-field sensing with extremely large-scale MIMO</article-title>,&#x201D; <source specific-use="IEEE">IEEE Transactions on Signal Processing</source>, vol. <volume>72</volume>, pp. <fpage>701</fpage>&#x2013;<lpage>717</lpage>, <year>2024</year>.
+</mixed-citation>
+</ref>
+<ref id="ref21">
+<label>[21]</label>
+<mixed-citation publication-type="periodical" publication-format="print">
+<person-group person-group-type="author">
+<string-name>
+<given-names>M.</given-names> 
+<surname>Wang</surname>
+</string-name> and 
+<string-name>
+<given-names>A.</given-names> 
+<surname>Nehorai</surname>
+</string-name>
+</person-group>, &#x201C;<article-title>Coarrays, MUSIC, and the Cram&#x00E9;r&#x2013;Rao bound</article-title>,&#x201D; <source specific-use="IEEE">IEEE Transactions on Signal Processing</source>, vol. <volume>65</volume>, no. <issue>4</issue>, pp. <fpage>933</fpage>&#x2013;<lpage>946</lpage>, <year>2017</year>.
+</mixed-citation>
+</ref>
+<ref id="ref22">
+<label>[22]</label>
+<mixed-citation publication-type="periodical" publication-format="print">
+<person-group person-group-type="author">
+<string-name>
+<given-names>Y.</given-names> 
+<surname>Liu</surname>
+</string-name>, 
+<string-name>
+<given-names>G.</given-names> 
+<surname>Liao</surname>
+</string-name>, 
+<string-name>
+<given-names>Y.</given-names> 
+<surname>Chen</surname>
+</string-name>, 
+<string-name>
+<given-names>J.</given-names> 
+<surname>Xu</surname>
+</string-name>, and 
+<string-name>
+<given-names>Y.</given-names> 
+<surname>Yin</surname>
+</string-name>
+</person-group>, &#x201C;<article-title>Super-resolution range and velocity estimations with OFDM integrated radar and communications waveform</article-title>,&#x201D; <source specific-use="IEEE">IEEE Transactions on Vehicular Technology</source>, vol. <volume>69</volume>, no. <issue>10</issue>, pp. <fpage>11 659</fpage>&#x2013;<lpage>11 672</lpage>, <year>2020</year>.
+</mixed-citation>
+</ref>
+<ref id="ref23">
+<label>[23]</label>
+<mixed-citation publication-type="periodical" publication-format="print">
+<person-group person-group-type="author">
+<string-name>
+<given-names>L.</given-names> 
+<surname>Zheng</surname>
+</string-name> and 
+<string-name>
+<given-names>X.</given-names> 
+<surname>Wang</surname>
+</string-name>
+</person-group>, &#x201C;<article-title>Super-resolution delay-doppler estimation for OFDM passive radar</article-title>,&#x201D; <source specific-use="IEEE">IEEE Transactions on Signal Processing</source>, vol. <volume>65</volume>, no. <issue>9</issue>, pp. <fpage>2197</fpage>&#x2013;<lpage>2210</lpage>, <year>2017</year>.
+</mixed-citation>
+</ref>
+<ref id="ref24">
+<label>[24]</label>
+<mixed-citation publication-type="periodical" publication-format="print">
+<person-group person-group-type="author">
+<string-name>
+<given-names>M. F.</given-names> 
+<surname>Keskin</surname>
+</string-name>, 
+<string-name>
+<given-names>V.</given-names> 
+<surname>Koivunen</surname>
+</string-name>, and 
+<string-name>
+<given-names>H.</given-names> 
+<surname>Wymeersch</surname>
+</string-name>
+</person-group>, &#x201C;<article-title>Limited feed-forward waveform design for OFDM dual-functional radar-communications</article-title>,&#x201D; <source specific-use="IEEE">IEEE Transactions on Signal Processing</source>, vol. <volume>69</volume>, pp. <fpage>2955</fpage>&#x2013;<lpage>2970</lpage>, <year>2021</year>.
+</mixed-citation>
+</ref>
+<ref id="ref25">
+<label>[25]</label>
+<mixed-citation publication-type="periodical" publication-format="print">
+<person-group person-group-type="author">
+<string-name>
+<given-names>S.</given-names> 
+<surname>Sun</surname>
+</string-name>, 
+<string-name>
+<given-names>Y.</given-names> 
+<surname>Hu</surname>
+</string-name>, 
+<string-name>
+<given-names>K. V.</given-names> 
+<surname>Mishra</surname>
+</string-name>, and 
+<string-name>
+<given-names>A. P.</given-names> 
+<surname>Petropulu</surname>
+</string-name>
+</person-group>, &#x201C;<article-title>Widely separated MIMO radar using matrix completion</article-title>,&#x201D; <source specific-use="IEEE">IEEE Transactions on Radar Systems</source>, vol. <volume>2</volume>, pp. <fpage>180</fpage>&#x2013;<lpage>196</lpage>, <year>2024</year>.
+</mixed-citation>
+</ref>
+<ref id="ref26">
+<label>[26]</label>
+<mixed-citation publication-type="confproc" publication-format="print">
+<person-group person-group-type="author">
+<string-name>
+<given-names>S.</given-names> 
+<surname>Sun</surname>
+</string-name>, 
+<string-name>
+<given-names>K. V.</given-names> 
+<surname>Mishra</surname>
+</string-name>, and 
+<string-name>
+<given-names>A. P.</given-names> 
+<surname>Petropulu</surname>
+</string-name>
+</person-group>, &#x201C;<article-title>Target estimation by exploiting low rank structure in widely separated MIMO radar</article-title>,&#x201D; in <source specific-use="IEEE">2019 IEEE Radar Conference (RadarConf)</source>, <conf-date>2019</conf-date>, pp. <fpage>1</fpage>&#x2013;<lpage>6</lpage>.
+</mixed-citation>
+</ref>
+<ref id="ref27">
+<label>[27]</label>
+<mixed-citation publication-type="periodical" publication-format="print">
+<person-group person-group-type="author">
+<string-name>
+<given-names>K.</given-names> 
+<surname>Dovelos</surname>
+</string-name>, 
+<string-name>
+<given-names>M.</given-names> 
+<surname>Matthaiou</surname>
+</string-name>, 
+<string-name>
+<given-names>H. Q.</given-names> 
+<surname>Ngo</surname>
+</string-name>, and 
+<string-name>
+<given-names>B.</given-names> 
+<surname>Bellalta</surname>
+</string-name>
+</person-group>, &#x201C;<article-title>Channel estimation and hybrid combining for wideband terahertz massive MIMO systems</article-title>,&#x201D; <source specific-use="IEEE">IEEE Journal on Selected Areas in Communications</source>, vol. <volume>39</volume>, no. <issue>6</issue>, pp. <fpage>1604</fpage>&#x2013;<lpage>1620</lpage>, <year>2021</year>.
+</mixed-citation>
+</ref>
+<ref id="ref28">
+<label>[28]</label>
+<mixed-citation publication-type="periodical" publication-format="print">
+<person-group person-group-type="author">
+<string-name>
+<given-names>J.</given-names> 
+<surname>Xu</surname>
+</string-name>, 
+<string-name>
+<given-names>L.</given-names> 
+<surname>You</surname>
+</string-name>, 
+<string-name>
+<given-names>G. C.</given-names> 
+<surname>Alexandropoulos</surname>
+</string-name>, 
+<string-name>
+<given-names>X.</given-names> 
+<surname>Yi</surname>
+</string-name>, 
+<string-name>
+<given-names>W.</given-names> 
+<surname>Wang</surname>
+</string-name>, and 
+<string-name>
+<given-names>X.</given-names> 
+<surname>Gao</surname>
+</string-name>
+</person-group>, &#x201C;<article-title>Near-field wideband extremely large-scale mimo transmissions with holographic metasurface-based antenna arrays</article-title>,&#x201D; <source specific-use="IEEE">IEEE Transactions on Wireless Communications</source>, pp. <fpage>1</fpage>&#x2013;<lpage>1</lpage>, <year>2024</year>.
+</mixed-citation>
+</ref>
+<ref id="ref29">
+<label>[29]</label>
+<mixed-citation publication-type="book" publication-format="print">
+<person-group person-group-type="author">
+<string-name>
+<given-names>P.</given-names> 
+<surname>Stoica</surname>
+</string-name> and 
+<string-name>
+<given-names>R.</given-names> 
+<surname>Moses</surname>
+</string-name>
+</person-group>, <source>Spectral analysis of signals</source>. <publisher-name>Pearson Prentice Hall</publisher-name>, <year>2005</year>.
+</mixed-citation>
+</ref>
+<ref id="ref30">
+<label>[30]</label>
+<mixed-citation publication-type="periodical" publication-format="print">
+<person-group person-group-type="author">
+<string-name>
+<given-names>S. H.</given-names> 
+<surname>Dokhanchi</surname>
+</string-name>, 
+<string-name>
+<given-names>B. S.</given-names> 
+<surname>Mysore</surname>
+</string-name>, 
+<string-name>
+<given-names>K. V.</given-names> 
+<surname>Mishra</surname>
+</string-name>, and 
+<string-name>
+<given-names>B.</given-names> 
+<surname>Ottersten</surname>
+</string-name>
+</person-group>, &#x201C;<article-title>A mmwave automotive joint radar-communications system</article-title>,&#x201D; <source specific-use="IEEE">IEEE Transactions on Aerospace and Electronic Systems</source>, vol. <volume>55</volume>, no. <issue>3</issue>, pp. <fpage>1241</fpage>&#x2013;<lpage>1260</lpage>, <year>2019</year>.
+</mixed-citation>
+</ref>
+<ref id="ref31">
+<label>[31]</label>
+<mixed-citation publication-type="book" publication-format="print">
+<person-group person-group-type="author">
+<string-name>
+<given-names>A.</given-names> 
+<surname>Hjrungnes</surname>
+</string-name>
+</person-group>, <source>Complex-Valued Matrix Derivatives: With Applications in Signal Processing and Communications</source>, <edition>1st</edition> ed. <publisher-loc>USA</publisher-loc>: <publisher-name>Cambridge University Press</publisher-name>, <year>2011</year>.
+</mixed-citation>
+</ref>
+</ref-list>
+</back>
+</conf-article>

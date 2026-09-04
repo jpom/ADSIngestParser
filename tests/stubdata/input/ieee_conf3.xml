@@ -1,0 +1,1639 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE conf-article PUBLIC "-//IEEE//DTD IEEE Conferences JATS-based DTD v1.7//EN" "conferences.dtd">
+<conf-article article-type="research" content-type="orig-research" dtd-version="1.7" open-access="no" xml:lang="eng" show-flag="show" peer-reviewed="yes" lifecycle="final" xmlns:ali="http://www.niso.org/schemas/ali/1.0/" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<!-- Article Processing Date: 01/31/2025 -->
+<!-- Vendor Name: Aptara -->
+<!-- IEEE XML JATS Tagging Guidelines version: 20240523 -->
+<!-- IEEE Math Coding Requirements and Guidelines for Vendors version: v2.4 -->
+<conf-front>
+<conf-proc-meta>
+<conf-proc-id conf-proc-id-type="conf-acronym">IMCOM</conf-proc-id>
+<conf-proc-title-group>
+<conf-full-title>2025 19th International Conference on Ubiquitous Information Management and Communication (IMCOM)</conf-full-title>
+<conf-normalized-title>Ubiquitous Information Management and Communication (IMCOM), 2025 19th International Conference on</conf-normalized-title>
+</conf-proc-title-group>
+<volume>00</volume>
+<isbn publication-format="electronic">979-8-3315-0781-7</isbn>
+</conf-proc-meta>
+<conf-meta>
+<conf-name>2025 19th International Conference on Ubiquitous Information Management and Communication (IMCOM)</conf-name>
+<conf-start iso-8601-date="2025-01-03"><day>03</day><month>01</month><year>2025</year></conf-start>
+<conf-end iso-8601-date="2025-01-05"><day>05</day><month>01</month><year>2025</year></conf-end>
+<conf-loc><city>Bangkok</city>, <country>Thailand</country></conf-loc>
+</conf-meta>
+<conf-article-meta>
+<article-id pub-id-type="doi">10.1109/IMCOM64595.2025.10857489</article-id>
+<xplore-article-id>10857489</xplore-article-id>
+<xplore-issue>10857432</xplore-issue>
+<xplore-pub-id>10857431</xplore-pub-id>
+<title-group>
+<article-title>End-to-End Optimized Ensemble Model for Alzheimer&#x0027;s Disease Detection</article-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" id="contrib1">
+<name-alternatives>
+<string-name specific-use="display"><given-names>Abdelrahman</given-names> <surname>Hassan</surname></string-name>
+<string-name specific-use="index"><given-names>Abdelrahman</given-names> <surname>Hassan</surname></string-name>
+</name-alternatives>
+<email>aem104592@gu.edu.eg</email>
+<xref ref-type="aff" rid="aff1"/>
+</contrib>
+<contrib contrib-type="author" id="contrib2">
+<name-alternatives>
+<string-name specific-use="display"><given-names>Tamer</given-names> <surname>Abuhmed</surname></string-name>
+<string-name specific-use="index"><given-names>Tamer</given-names> <surname>Abuhmed</surname></string-name>
+</name-alternatives>
+<email>tamer@skku.edu</email>
+<xref ref-type="aff" rid="aff2"/>
+</contrib>
+<contrib contrib-type="author" id="contrib3">
+<name-alternatives>
+<string-name specific-use="display"><given-names>Shaker</given-names> <surname>El-Sappagh</surname></string-name>
+<string-name specific-use="index"><given-names>Shaker</given-names> <surname>El-Sappagh</surname></string-name>
+</name-alternatives>
+<email>shaker.elsappagh@gu.edu.eg</email>
+<xref ref-type="aff" rid="aff1"/>
+</contrib>
+</contrib-group>
+<aff id="aff1">
+<institution-wrap>
+<institution content-type="division">Faculty of Computer Science and Engineering</institution>
+<institution content-type="institution">Galala University</institution>
+</institution-wrap>
+<country>Egypt</country>
+</aff>
+<aff id="aff2">
+<institution-wrap>
+<institution content-type="institution">College of Computing and Informatics, Sungkyunkwan University</institution>
+</institution-wrap>
+<country>South Korea</country>
+</aff>
+<pub-date date-type="cover" pub-type="print" iso-8601-date="2025-01-05"><day>5</day><month>Jan.</month><year>2025</year></pub-date>
+<fpage>1</fpage>
+<lpage>8</lpage>
+<permissions>
+<copyright-statement>979-8-3315-0782-4/25/$31.00 &#x00A9;2025 IEEE</copyright-statement>
+<copyright-year>2025</copyright-year>
+<copyright-holder copyright-owner="IEEE"></copyright-holder>
+<license license-type="IEEE">
+<ali:license_ref></ali:license_ref>
+<license-p><price currency="USD">31.00</price></license-p>
+</license>
+</permissions>
+<self-uri content-type="xml">10857489_ft.xml</self-uri>
+<self-uri content-type="print">679132.pdf</self-uri>
+<abstract xml:lang="en">
+<p>Alzheimer&#x0027;s disease (AD) is a progressive neurodegenerative disorder with an increasing prevalence among the elderly, making early and accurate diagnosis critical for effective intervention and management. This paper introduces an end-to-end machine learning pipeline optimized for detecting AD using multimodal data from the Alzheimer&#x0027;s Disease Neuroimaging Initiative (ADNI). The study proposes an ensemble model that integrates key modalities-demographics, cognitive scores, neuropsychological assessments, and MRI data-via early fusion to enhance AD detection. Various machine learning models, including Logistic Regression, Gradient Boosting, AdaBoost, XGBoost, Support Vector Machine, and Neural Networks, are compared, and feature selection is optimized through Recursive Feature Elimination, ANOVA F-value, and mutual information methods, with mutual information showing the most efficacy. With further hyperparameter tuning, the highest accuracy is achieved at 95.85&#x0025;, with Gradient Boosting as the top-performing model. Additional experiments assess and evaluate individual modality contributions, underscoring the predictive value of cognitive scores and neuropsychological features. To enhance clinical interpretability, we incorporate model explainability using LIME and SHAP, which identify key features influencing model predictions across different AD stages. Explainable AI (XAI) is essential in healthcare for providing transparency and supporting clinician confidence by highlighting which biomarkers, such as MMSE, CDRSB, and PTAU, contribute most to diagnostic outcomes. This study demonstrates classical machine learning&#x0027;s potential in AD diagnostics, offering a pathway to cost-effective and clinically viable models for neurodegenerative disease management.</p>
+</abstract>
+<kwd-group kwd-group-type="AuthorFree">
+<kwd>Alzheimer&#x0027;s disease</kwd>
+<kwd>Machine Learning</kwd>
+<kwd>Ensemble learning</kwd>
+<kwd>Cognitive assessment</kwd>
+<kwd>Clinical Diagnostic</kwd>
+<kwd>Neurodegenerative disease</kwd>
+</kwd-group>
+<funding-group>
+<award-group>
+<funding-source><institution-wrap><institution>National Research Foundation of Korea</institution><institution-id institution-id-type="fundref">10.13039/501100003725</institution-id></institution-wrap></funding-source>
+<award-id>2021R1A2C1011198</award-id>
+</award-group>
+<award-group>
+<funding-source><institution-wrap><institution>MSIT (Ministry of Science and ICT), Korea</institution></institution-wrap></funding-source>
+<award-id>IITP-2021-2020-0-01821</award-id>
+</award-group>
+<funding-statement>This study was funded by the National Research Foundation of Korea (NRF) grant funded by the Korea government (MSIT) (No. 2021R1A2C1011198), and the MSIT (Ministry of Science and ICT), Korea, under the ICT Creative Consilience Program (IITP-2021-2020-0-01821) supervised by the IITP (Institute for Information &#x0026; communications Technology Planning &#x0026; Evaluation).</funding-statement>
+</funding-group>
+<counts>
+<fig-count count="3"/>
+<table-count count="14"/>
+<equation-count count="0"/>
+<ref-count count="6"/>
+<page-count count="8"/>
+</counts>
+</conf-article-meta>
+</conf-front>
+<body>
+<sec id="sec1"><label>I.</label><title>Introduction</title>
+<p>Alzheimer&#x0027;s disease represents the most common etiology of dementia and is the fifth leading cause of death in adults older than 65 years. The estimated cost for the treatment of AD in 2020 alone is approximately $305 billion, and it is above $1 trillion as the population ages. AD has been projected to be the sixth leading cause of death among adults in the U.S. and the fifth leading cause of death among adults over the age of 65 years. The estimated spending for the treatment of AD in 2020 amounted to approximately $305 billion and is predicted to surpass $1 trillion as the population ages. The number of deaths caused by AD has risen by 146&#x0025; since 2000, with over 122,000 fatalities recorded. Approximately 5.8 million individuals who are 65 years or older now live with AD, and this number is projected to increase to approximately 14 million by the year 2050. The diagnosis of AD is typically not established until the patient has developed mild or moderate dementia. A significant number of individuals with AD remain undiagnosed, and approximately half of Medicare patients are unaware that they have a confirmed diagnosis of AD <xref ref-type="bibr" rid="ref1">[1]</xref>. Early detection of Alzheimer&#x0027;s disease enables more effective disease management. Machine learning can be used to develop models that determine the best combinations of blood biomarkers or other measurements to detect amyloid positivity earlier. This will facilitate the triaging of participants for clinical trials where a subset identified as positive could advance to more expensive PET scans. Also, machine learning can be used to detect longitudinal changes in cognition, which allows for the selection of participants who have more rapid cognitive decline. This makes it possible for one to observe clinical trial effects earlier. By applying machine learning algorithms, it is possible to establish a pattern linking memory imaging techniques and diseases at their stage of evolution. Among them are the stratification of participants by different trajectories of amyloid deposition and cognitive recognition and the study of disease heterogeneity. In connection with the use of machine learning in the detection of Alzheimer&#x0027;s Disease, different models are commonly used. A comparison study was conducted by Alickovic &#x0026; Subasi to assess the efficacy of supervised machine-learning models in predicting Alzheimer&#x0027;s disease. This study did a comparative analysis to assess the effectiveness of well-supervised machine learning models in predicting Alzheimer&#x0027;s disease <xref ref-type="bibr" rid="ref2">[2]</xref>. The study primarily examined support vector machines, naive Bayes, k-nearest neighbors, random forests, artificial neural networks, and logistic regression. The researchers performed their studies utilizing the ADNI dataset <xref ref-type="bibr" rid="ref3">[3]</xref>. They reached the highest performance with the random forest classifier with an accuracy of 85.77&#x0025; and KNN with an accuracy of 84.27&#x0025;. In <xref ref-type="bibr" rid="ref4">[4]</xref>, the study shows some limitations in their work. First, loss of information and its effect on correlation assessments might accrue through discretizing continuous values into features. The second is that the clinically derived diagnosis labels used for evaluation may not cover all variables considered by the model; hence, its performance would only be partially evaluated. Using the ADNI dataset <xref ref-type="bibr" rid="ref3">[3]</xref>. EI-Sappagh et al. (2024) have introduced an approach in machine learning for predicting the progression of AD using types of data. They combined machine learning models to analyze scores of MRI results, neuropsychological tests, and static features. This method achieved accuracy in predicting Alzheimer&#x0027;s disease progression without relying on neuroimaging data. The study underscores the significance of achieving a balance between the accuracy and diversity of base classifiers in the development of models. It is recommended that future research focuses on examining the ways in which feature selection and ensemble design can enhance predictive accuracy.</p>
+<p>This study also offers a valuable basis for the development of effective methods to detect the progression of Alzheimer&#x0027;s disease, which can be readily implemented in cost-effective healthcare environments.<xref ref-type="bibr" rid="ref5">[5]</xref>. The main contributions of this study are as follows:
+<list list-type="bullet">
+<list-item>
+<label>&#x2022;</label><p>We proposed an end-to-end machine learning pipeline to detect AD based on classical machine learning algorithms and a multimodal and baseline ADNI dataset. Four medically critical modalities (i.e., demographics, cognitive scores, neuropsychological battery, and MRI) are fused using the early fusion mechanism, and diverse models have been optimized. Different experiments are explored to check the role of hyperparameter tuning, feature selection, data balancing, and diverse modalities.</p>
+</list-item>
+<list-item>
+<label>&#x2022;</label><p>We compared several machine learning models: Logistic Regression (LR), Gradient Boosting (GB), AdaBoost (AB), XGBoost (XGB), Support Vector Machine (SVM), and Neural Network (NN) on Synthetic Minority Over-sampling Technique (SMOTE) balanced ADNI dataset.</p>
+</list-item>
+<list-item>
+<label>&#x2022;</label><p>We used three feature selection methods: Recursive Feature Elimination, SelectKBest with ANOVA F-value and SelectKBest with mutual information. The results showed that mutual_info has improved model the performance.</p>
+</list-item>
+<list-item>
+<label>&#x2022;</label><p>Model hyperparameter optimization has been explored using the most popular optimization techniques including grid search, random search, and Bayesian search, where grid search gave the best performance.</p>
+</list-item>
+<list-item>
+<label>&#x2022;</label><p>The role of each medical modality is explored. To determine the relative importance of each modality, we systematically removed it and trained and tested the models using the remaining modalities.</p>
+</list-item>
+</list></p>
+</sec>
+<sec id="sec2"><label>II.</label><title>Materials and Methods</title>
+<sec id="sec2a"><label>A.</label><title>Dataset Description</title>
+<p>We use a dataset obtained from the Alzheimer&#x0027;s disease neuroimaging initiative (ADNI) database with 2,769 subjects who are categorized into three groups: 1) 897 subjects are CN, 2) 1000 subjects are MCI (Mild Cognitive Impairment), 4) 872 subjects are AD in all visits. <xref ref-type="table" rid="table1">Table 1</xref> shows the statistics of the selected patients. The study is based on forecast-effective and medically critical modalities (cognitive scores, demographics, MRI, and neuropsychological battery). A full description of these modalities can be found on the official ADNI website(<uri>http://adni.loni.usc.edu/</uri>).</p>
+</sec>
+<sec id="sec2b"><label>B.</label><title>Proposed Framework</title>
+<p><xref ref-type="fig" rid="fig1">Fig. 1</xref> shows the proposed framework. It has six main steps. These steps are discussed as follows. The first step is data collection, as explained in <xref ref-type="sec" rid="sec2a">Section 2.1</xref>. We use a dataset of 2,769 patients taken from the ADNI database categorized into 3 classes: CN, MCI, and AD. Also, the data set consists of 4 categories of features: demographic features, cognitive scores features, neuropsychological battery features, and MRI features, with a total number of 50 features. The second step is data splitting; we used two kinds of experiments: firstly, we decided to split the data into the train and test subsets where 80&#x0025; of the data is for training and 20&#x0025; for testing and starting the first experiment, as shown in <xref ref-type="sec" rid="sec3a">Sections 3.1</xref>, <xref ref-type="sec" rid="sec3b">3.2</xref>, and <xref ref-type="sec" rid="sec3c">3.3</xref>. In the second experiment, we decided to split the same data into four subsets and started to remove one category from the dataset and train and test the models on the rest of the dataset to see how much this removed category is contributing to the models, and to measure the impact of this category on the performance. The third step is data preprocessing.
+<table-wrap id="table1"><label>Table I.</label><caption><title>Dataset description.</title></caption>
+<graphic xlink:href="10857489-table-1-source.tif"/>
+<table rules="all" frame="box" cellpadding="5">
+<colgroup>
+<col span="4"/>
+</colgroup>
+<thead>
+<tr>
+<th>Feature</th>
+<th>CN (n&#x003D; 897)</th>
+<th>MCI (n&#x003D; 1000)</th>
+<th>AD (n&#x003D; 872)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Gender (M/F)</td>
+<td>374/523</td>
+<td>567/433</td>
+<td>517/355</td>
+</tr>
+<tr>
+<td>Age</td>
+<td>72.83&#x00B1;7.30</td>
+<td>73.34&#x00B1;7.18</td>
+<td>72.90&#x00B1;7.41</td>
+</tr>
+<tr>
+<td>MMSE</td>
+<td>27.41&#x00B1;2.66</td>
+<td>26.43&#x00B1;3.08</td>
+<td>27.25&#x00B1;2.72</td>
+</tr>
+<tr>
+<td>ADAS13</td>
+<td>15.61&#x00B1;9.62</td>
+<td>18.95&#x00B1;10.9</td>
+<td>16.28&#x00B1;9.75</td>
+</tr>
+<tr>
+<td>CDRSB</td>
+<td>1.40&#x00B1;1.790</td>
+<td>2.09&#x00B1;2.140</td>
+<td>1.53&#x00B1;1.820</td>
+</tr>
+<tr>
+<td>MOCA</td>
+<td>22.87&#x00B1;4.34</td>
+<td>21.67&#x00B1;4.76</td>
+<td>22.61&#x00B1;4.41</td>
+</tr>
+<tr>
+<td>Hippocampus</td>
+<td>6926&#x00B1;1141</td>
+<td>6658&#x00B1;1183</td>
+<td>6877&#x00B1;1159</td>
+</tr>
+<tr>
+<td>FAQ</td>
+<td>3.68&#x00B1;6.050</td>
+<td>5.88&#x00B1;7.280</td>
+<td>4.02&#x00B1;6.230</td>
+</tr>
+<tr>
+<td>Education</td>
+<td>16.07&#x00B1;2.73</td>
+<td>15.84&#x00B1;2.71</td>
+<td>16.03&#x00B1;2.76</td>
+</tr>
+</tbody>
+</table>
+</table-wrap></p>
+<p>The dataset contains patient records that will be obtained throughout this work by 50 features represented by 4 types of features, as we mentioned above in the step of data collection. The first thing we did was remove the patient ID from our case, as we will not be using it. We encoded categorical features by the Label encoder method in the Scikit-Learn framework. So, we have encoded features: Gender of Patient, Ethnicity category, Race category, and Marital status. As for imputation, we found 21,353 missing values across the entire dataset and 24 missing values from the diagnosis column. We decided to delete the records for those patients with missing values in their diagnosis column. We start imputing the missing values by predicting them using the iterative imputer method, which is found in the scikit-learn framework, and using Random Forest as an estimator. As shown in <xref ref-type="table" rid="table2">Table 2</xref>, we found that the data was imbalanced, so we tried to implement SMOTE-Tomek to handle the problem by doing under-sampling and oversampling to get a balanced dataset. The fourth step is the optimization and selection of the model. We applied 3 feature selection methods as we needed to know the best features that would decide if the patient had AD or not or decide the type of the Diagnose that the patient had. So, we started to apply Recursive Feature Elimination (RFE), which selects features by fitting the model iteratively and removing the least important feature. It initially trains the model with all its features, ranking them by importance. The least important features are then eliminated individually, and the model is retrained until the optimal number of features is reached. It helps identify the most important features that would help enhance model performance. Also, we used selectKBest with f_classif(ANOVA F-value), where features are selected in a univariate statistical test that calculates between non-negative features and the target. It will calculate the F-value related to the ANOVA and discrepancies related to the between-features. In that way, it will rank the most probable alternative hypothesis that supposes that there are effects. In this manner, it influences identifying the best attributes to influence the exchange rate. At the end of feature selection, we used selectKBest with mutual_info, which selects features based on their mutual information for the target variable. Mutual information is a measure of the amount of information the feature gives about the target variable. By ranking features based on their mutual information scores and choosing the top k features, this approach ensures that it retains only the most informative ones for the model, thus improving its performance.
+<fig id="fig1"><label>Fig. 1</label><caption><p>Proposed framework for Alzheimer&#x0027;s disease detection.</p></caption>
+<graphic xlink:href="10857489-fig-1-source.tif"/>
+</fig></p>
+<p>We have optimized our model using two methods: Grid Search and Random Search on the following classifiers: LR, GB, AB, XGB, SVM, and NN and we received high results. This step is among those vital in the search for the best hyperparameters to return them to the models for training and evaluating the dataset with parameters, and this will help the models enhance the training and testing process to return the best results. Model testing is the fifth step; we tested our models. Model usage and deployment is the final step; model usage is to detect Alzheimer&#x0027;s disease based on input data, which contains clinical information and records about the patient, as mentioned in <xref ref-type="sec" rid="sec2a">Section 2.1</xref>. If we want to test on all features, then in our study, the deployment will be done on the best-selected features that give a high importance score in making a decision on whether the patient has AD.
+<table-wrap id="table2"><label>Table II.</label><caption><title>Data balancing step.</title></caption>
+<graphic xlink:href="10857489-table-2-source.tif"/>
+<table rules="all" frame="box" cellpadding="5">
+<colgroup>
+<col span="2"/>
+</colgroup>
+<thead>
+<tr>
+<th>Class</th>
+<th>Before Resampling</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CN</td>
+<td>37.20&#x0025;</td>
+</tr>
+<tr>
+<td>MCI</td>
+<td>45.70&#x0025;</td>
+</tr>
+<tr>
+<td>AD</td>
+<td>17.10&#x0025;</td>
+</tr>
+</tbody>
+</table>
+</table-wrap></p>
+</sec>
+</sec>
+<sec id="sec3"><label>III.</label><title>Results</title>
+<p>In this section, we discuss the results of different models under different settings. Different experiments are conducted to check the effect of different decisions. The task is formulated as a three-class classification problem (i.e., CN vs. MCl vs. AD). Models are validated using the cross-validation technique. The reported results are the testing results using the unseen test data.</p>
+<sec id="sec3a"><label>A.</label><title>Experiment 1: Role of Data Balancing</title>
+<p>All models are trained using the raw imbalanced data. <xref ref-type="table" rid="table3">Table 3</xref> shows the results of LR, GB, AB, XGB, SVM, and NN classifiers. Results of Experiment 1, which uses all features from <xref ref-type="table" rid="table2">Table 2</xref>, we can see that the highest accuracy of 92.74&#x0025; is achieved by the GB algorithm for the 3-class classification task (i.e., CN vs. MCI vs. AD) with precision of 92.75&#x0025;, recall of 92.74&#x0025;, and F1 score of 92.74&#x0025;. Data balancing is a crucial step to train stable and not biased classifiers. Dataset is balanced using the SMOTE-Tomek method <xref ref-type="bibr" rid="ref6">[6]</xref>.
+<table-wrap id="table3"><label>Table III.</label><caption><title>Results before data balancing.</title></caption>
+<graphic xlink:href="10857489-table-3-source.tif"/>
+<table rules="all" frame="box" cellpadding="5">
+<colgroup>
+<col span="5"/>
+</colgroup>
+<thead>
+<tr>
+<th>Model</th>
+<th>Accuracy</th>
+<th>Precision</th>
+<th>Recall</th>
+<th>Fl Score</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LR</td>
+<td>0.6680</td>
+<td>0.6673</td>
+<td>0.668</td>
+<td>0.6665</td>
+</tr>
+<tr>
+<td><bold>GB</bold></td>
+<td><bold>0.9274</bold></td>
+<td><bold>0.9275</bold></td>
+<td><bold>0.9274</bold></td>
+<td><bold>0.9274</bold></td>
+</tr>
+<tr>
+<td>AB</td>
+<td>0.8154</td>
+<td>0.7051</td>
+<td>0.8154</td>
+<td>0.7518</td>
+</tr>
+<tr>
+<td>XGB</td>
+<td>0.9232</td>
+<td>0.9232</td>
+<td>0.9232</td>
+<td>0.9232</td>
+</tr>
+<tr>
+<td>SVM</td>
+<td>0.4876</td>
+<td>0.4293</td>
+<td>0.4876</td>
+<td>0.359</td>
+</tr>
+<tr>
+<td>NN</td>
+<td>0.3817</td>
+<td>0.5316</td>
+<td>0.3817</td>
+<td>0.2215</td>
+</tr>
+</tbody>
+</table>
+</table-wrap></p>
+<p>This approach begins with SMOTE, which generates synthetic samples for the minority class to achieve a balanced class distribution. Following this, Tomek Links are applied to refine the dataset. Specifically, Tomek Links identify pairs of samples from different classes that are close neighbors, which are likely to cause class overlap and introduce noise. By removing these pairs, Tomek Links help reduce boundary ambiguity, thereby improving the dataset&#x0027;s quality for training and enhancing the model&#x0027;s ability to distinguish between classes. The models are trained using the balanced dataset and have a fair comparison among the classifiers. This experiment and the previous one, we used the full feature set and the default hyperparameters. <xref ref-type="table" rid="table4">Table 4</xref> shows the results based on this balanced dataset. We can notice that XGBoost achieves the highest performance (i.e., accuracy of 95.13&#x0025;, precision of 95.14&#x0025;, recall of 95.13&#x0025;, and F1 score of 95.13&#x0025;).
+<table-wrap id="table4"><label>Table IV.</label><caption><title>Results after data balancing.</title></caption>
+<graphic xlink:href="10857489-table-4-source.tif"/>
+<table rules="all" frame="box" cellpadding="5">
+<colgroup>
+<col span="5"/>
+</colgroup>
+<thead>
+<tr>
+<th>Model</th>
+<th>Accuracy</th>
+<th>Precision</th>
+<th>Recall</th>
+<th>Fl Score</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LR</td>
+<td>0.9043</td>
+<td>0.9034</td>
+<td>0.9043</td>
+<td>0.9036</td>
+</tr>
+<tr>
+<td>GB</td>
+<td>0.9404</td>
+<td>0.9410</td>
+<td>0.9404</td>
+<td>0.9407</td>
+</tr>
+<tr>
+<td>AB</td>
+<td>0.8466</td>
+<td>0.8444</td>
+<td>0.9404</td>
+<td>0.8439</td>
+</tr>
+<tr>
+<td><bold>XGB</bold></td>
+<td><bold>0.9513</bold></td>
+<td><bold>0.9514</bold></td>
+<td><bold>0.9513</bold></td>
+<td><bold>0.9513</bold></td>
+</tr>
+<tr>
+<td>SVM</td>
+<td>0.8971</td>
+<td>0.8970</td>
+<td>0.8971</td>
+<td>0.8970</td>
+</tr>
+<tr>
+<td>NN</td>
+<td>0.9260</td>
+<td>0.9267</td>
+<td>0.9260</td>
+<td>0.9262</td>
+</tr>
+</tbody>
+</table>
+</table-wrap></p>
+<p>In <xref ref-type="table" rid="table5">Table 5</xref>, we explore the performance of different classifiers for each specific class. The performance using all features is generally better for models across all classes. LR achieves a precision of 0.9617, recall of 0.9778, and F1 score of 0.8772. This low performance suggests that LR may not perform well to distinguish MCI from AD. Generally, GB shows good performance across all classes, with a small drop in F1 score, proving a good performance in handling complex feature interactions.
+<table-wrap id="table5"><label>Table V.</label><caption><title>Detailed results for all feature.</title></caption>
+<graphic xlink:href="10857489-table-5-source.tif"/>
+<table rules="all" frame="box" cellpadding="5">
+<colgroup>
+<col span="5"/>
+</colgroup>
+<thead>
+<tr>
+<th>Model</th>
+<th>Class</th>
+<th>Precision</th>
+<th>Recall</th>
+<th>Fl Score</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LR</td>
+<td>CN</td>
+<td>0.9617</td>
+<td>0.9778</td>
+<td>0.9697</td>
+</tr>
+<tr>
+<td/>
+<td>MCI</td>
+<td>0.9163</td>
+<td>0.9300</td>
+<td>0.9231</td>
+</tr>
+<tr>
+<td/>
+<td>AD</td>
+<td>0.8929</td>
+<td>0.8621</td>
+<td>0.8772</td>
+</tr>
+<tr>
+<td>GB</td>
+<td>CN</td>
+<td>0.9888</td>
+<td>0.9778</td>
+<td>0.9832</td>
+</tr>
+<tr>
+<td/>
+<td>MCI</td>
+<td>0.9412</td>
+<td>0.9600</td>
+<td>0.9505</td>
+</tr>
+<tr>
+<td/>
+<td>AD</td>
+<td>0.9302</td>
+<td>0.9195</td>
+<td>0.9249</td>
+</tr>
+<tr>
+<td>AB</td>
+<td>CN</td>
+<td>0.9941</td>
+<td>0.9389</td>
+<td>0.9657</td>
+</tr>
+<tr>
+<td/>
+<td>MCI</td>
+<td>0.9038</td>
+<td>0.9400</td>
+<td>0.9216</td>
+</tr>
+<tr>
+<td/>
+<td>AD</td>
+<td>0.8693</td>
+<td>0.8793</td>
+<td>0.8743</td>
+</tr>
+<tr>
+<td><bold>XGB</bold></td>
+<td><bold>CN</bold></td>
+<td><bold>0.9888</bold></td>
+<td><bold>0.9778</bold></td>
+<td><bold>0.9832</bold></td>
+</tr>
+<tr>
+<td/>
+<td><bold>MCI</bold></td>
+<td><bold>0.9366</bold></td>
+<td><bold>0.9600</bold></td>
+<td><bold>0.9481</bold></td>
+</tr>
+<tr>
+<td/>
+<td><bold>AD</bold></td>
+<td><bold>0.9298</bold></td>
+<td><bold>0.9138</bold></td>
+<td><bold>0.9217</bold></td>
+</tr>
+<tr>
+<td>SVM</td>
+<td>CN</td>
+<td>0.9667</td>
+<td>0.9667</td>
+<td>0.9667</td>
+</tr>
+<tr>
+<td/>
+<td>MCI</td>
+<td>0.9192</td>
+<td>0.9100</td>
+<td>0.9146</td>
+</tr>
+<tr>
+<td/>
+<td>AD</td>
+<td>0.8636</td>
+<td>0.8736</td>
+<td>0.8686</td>
+</tr>
+<tr>
+<td>NN</td>
+<td>CN</td>
+<td>0.9337</td>
+<td>0.9389</td>
+<td>0.9363</td>
+</tr>
+<tr>
+<td/>
+<td>MCI</td>
+<td>0.9360</td>
+<td>0.9500</td>
+<td>0.9429</td>
+</tr>
+<tr>
+<td/>
+<td>AD</td>
+<td>0.8765</td>
+<td>0.8563</td>
+<td>0.8663</td>
+</tr>
+</tbody>
+</table>
+</table-wrap></p>
+<p>AB has better performance for detecting the CN class, but it has a notable performance drop for detecting MCI and AD, which might indicate that this method is more sensitive to noise. XGB presents the minimum drop between CN and MCI, indicating that it has the most stable and consistent performance among all classes. In summary, XGB achieves the highest performance compared to other techniques.</p>
+</sec>
+<sec id="sec3b"><label>B.</label><title>Experiment 2: Role of Feature Selection</title>
+<p>We explore the role of diverse and well-known feature selection optimization algorithms, including the RFE, SelectKBest with f_ classif, and SelectKBest with mutual_info. <xref ref-type="table" rid="table6">Table 6</xref> shows the results after applying these three techniques. RFE searches through the training dataset for a subset of features, beginning with all features and then removing features recursively until the desired features remain. It ranks features by importance, removing the least important ones and re-fitting the model. We see that the highest accuracy of 95.13&#x0025; for XGBoost also the same for precision, recall, and F1 score with 95.12&#x0025;. We conducted a performance comparison between the results before feature selection using RFE and after the selection to determine the presence of statistically significant differences. In the next experiment, we apply the feature selection using SelectKBest with f_classif that evaluates features by calculating their ANOVA F-value which measures the variance between classes. The f classif ranks features based on their F-values and selects the top k-features with the highest scores. This process starts with scoring all features, ranking them, and retaining only those with the highest F-values. As shown in <xref ref-type="table" rid="table6">Table 6</xref>, the highest accuracy of 94.04&#x0025; is achieved by the GB and XGB, also the same for precision, recall, and F1 score. <italic>In this experiment, we see that the selected features with f_class if are performing better than the selected features with RFE</italic>.
+<table-wrap id="table6"><label>Table VI.</label><caption><title>Role of feature selection optimizers.</title></caption>
+<graphic xlink:href="10857489-table-6-source.tif"/>
+<table rules="all" frame="box" cellpadding="5">
+<colgroup>
+<col span="6"/>
+</colgroup>
+<thead>
+<tr>
+<th/>
+<th>Model</th>
+<th>Accuracy</th>
+<th>Precision</th>
+<th>Recall</th>
+<th>Fl Score</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="6">RFE feature selection</td>
+<td>LR</td>
+<td>0.8917</td>
+<td>0.8905</td>
+<td>0.8917</td>
+<td>0.8904</td>
+</tr>
+<tr>
+<td><bold>GB</bold></td>
+<td><bold>0.9386</bold></td>
+<td><bold>0.9396</bold></td>
+<td><bold>0.9386</bold></td>
+<td><bold>0.939</bold></td>
+</tr>
+<tr>
+<td>AB</td>
+<td>0.7419</td>
+<td>0.7639</td>
+<td>0.7419</td>
+<td>0.7355</td>
+</tr>
+<tr>
+<td>XGB</td>
+<td><bold>0.9513</bold></td>
+<td><bold>0.9513</bold></td>
+<td><bold>0.9513</bold></td>
+<td><bold>0.9512</bold></td>
+</tr>
+<tr>
+<td>SVM</td>
+<td>0.9043</td>
+<td>0.9034</td>
+<td>0.9043</td>
+<td>0.9035</td>
+</tr>
+<tr>
+<td>NN</td>
+<td>0.9296</td>
+<td>0.93</td>
+<td>0.9296</td>
+<td>0.9298</td>
+</tr>
+<tr>
+<td rowspan="6">SelectKBest with f _classif</td>
+<td>LR</td>
+<td>0.9025</td>
+<td>0.9016</td>
+<td>0.9025</td>
+<td>0.9014</td>
+</tr>
+<tr>
+<td><bold>GB</bold></td>
+<td><bold>0.9404</bold></td>
+<td><bold>0.9406</bold></td>
+<td><bold>0.9404</bold></td>
+<td><bold>0.9405</bold></td>
+</tr>
+<tr>
+<td>AB</td>
+<td>0.7437</td>
+<td>0.7645</td>
+<td>0.7437</td>
+<td>0.736</td>
+</tr>
+<tr>
+<td>XGB</td>
+<td>0.9404</td>
+<td>0.9404</td>
+<td>0.9404</td>
+<td>0.9404</td>
+</tr>
+<tr>
+<td>SVM</td>
+<td>0.9152</td>
+<td>0.9145</td>
+<td>0.9152</td>
+<td>0.9145</td>
+</tr>
+<tr>
+<td>NN</td>
+<td>0.935</td>
+<td>0.9353</td>
+<td>0.935</td>
+<td>0.9349</td>
+</tr>
+<tr>
+<td rowspan="6"><bold>SelectKBest with mutual_info</bold></td>
+<td>LR</td>
+<td>0.9061</td>
+<td>0.9053</td>
+<td>0.9061</td>
+<td>0.9055</td>
+</tr>
+<tr>
+<td><bold>GB</bold></td>
+<td><bold>0.9458</bold></td>
+<td><bold>0.9461</bold></td>
+<td><bold>0.9458</bold></td>
+<td><bold>0.946</bold></td>
+</tr>
+<tr>
+<td>AB</td>
+<td>0.7437</td>
+<td>0.7645</td>
+<td>0.7437</td>
+<td>0.736</td>
+</tr>
+<tr>
+<td>XGB</td>
+<td>0.9440</td>
+<td>0.9442</td>
+<td>0.944</td>
+<td>0.9441</td>
+</tr>
+<tr>
+<td>SVM</td>
+<td>0.9097</td>
+<td>0.909</td>
+<td>0.9097</td>
+<td>0.9091</td>
+</tr>
+<tr>
+<td>NN</td>
+<td>0.9314</td>
+<td>0.9313</td>
+<td>0.9314</td>
+<td>0.9309</td>
+</tr>
+</tbody>
+</table>
+</table-wrap></p>
+<p>Finally, we explore the role of SelectKBest with mutual_info_classif in improving performance. This technique evaluates features by computing their mutual information score, which measures the dependency between each feature and the target variable. It ranks features based on these scores and selects the top k features with the highest mutual information. This involves scoring all features, ranking them, and retaining the ones with the highest scores. <xref ref-type="table" rid="table6">Table 6</xref> shows that the highest accuracy of 94.58&#x0025; for GB is also the same for precision, recall, and F1 score. It can be noticed that the mutual_info_classif gives a better performance than f_classif. In summary, the SelectKBest with mutual_info achieves the best results with all classifiers. As a result, in the next experiments, we depend on this selected feature set.</p>
+</sec>
+<sec id="sec3c"><label>C.</label><title>Experiment 3: Role of Hyperparameter Optimization</title>
+<p>We apply hyperparameter optimization using grid search which evaluates models&#x0027; performance by exhaustively trying all combinations of specified hyperparameters. It starts with a grid of parameter values, trains the model on each combination, and evaluates its performance using a scoring metric. The process involves testing all parameter sets, ranking their performance, and selecting the combination that yields the best results. After optimizing the hyperparameters and getting the best parameters for each algorithm we start training and evaluating the models on the best parameters, and we can see the results as shown in When we take a quick look at the results, we can see that the hyperparameter optimization with grid search positively affected the performance of models. As shown in <xref ref-type="table" rid="table7">Table 7</xref>, GB algorithm gives the best performance with an accuracy of 95.85&#x0025;, the same for precision, recall, and Fl-Score.
+<table-wrap id="table7"><label>Table VII.</label><caption><title>Hyperparameter optimization algorithms.</title></caption>
+<graphic xlink:href="10857489-table-7-source.tif"/>
+<table rules="all" frame="box" cellpadding="5">
+<colgroup>
+<col span="6"/>
+</colgroup>
+<thead>
+<tr>
+<th>Opt. algorithm</th>
+<th>Model</th>
+<th>Accuracy</th>
+<th>Precision</th>
+<th>Recall</th>
+<th>Fl Score</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="6">Grid search</td>
+<td>LR</td>
+<td>0.9224</td>
+<td>0.9228</td>
+<td>0.9208</td>
+<td>0.9215</td>
+</tr>
+<tr>
+<td><bold>GB</bold></td>
+<td><bold>0.9585</bold></td>
+<td><bold>0.9588</bold></td>
+<td><bold>0.9576</bold></td>
+<td><bold>0.9581</bold></td>
+</tr>
+<tr>
+<td>AB</td>
+<td>0.9206</td>
+<td>0.9224</td>
+<td>0.9194</td>
+<td>0.9205</td>
+</tr>
+<tr>
+<td>XGB</td>
+<td>0.9513</td>
+<td>0.9513</td>
+<td>0.9511</td>
+<td>0.9511</td>
+</tr>
+<tr>
+<td>SVM</td>
+<td>0.9386</td>
+<td>0.9378</td>
+<td>0.9378</td>
+<td>0.9378</td>
+</tr>
+<tr>
+<td>NN</td>
+<td>0.9386</td>
+<td>0.9385</td>
+<td>0.938</td>
+<td>0.9382</td>
+</tr>
+<tr>
+<td rowspan="6">Random search</td>
+<td>LR</td>
+<td>0.9224</td>
+<td>0.9228</td>
+<td>0.9208</td>
+<td>0.9215</td>
+</tr>
+<tr>
+<td><bold>GB</bold></td>
+<td>0.9495</td>
+<td>0.9493</td>
+<td>0.9485</td>
+<td>0.9489</td>
+</tr>
+<tr>
+<td>AB</td>
+<td>0.9061</td>
+<td>0.9099</td>
+<td>0.9073</td>
+<td>0.9073</td>
+</tr>
+<tr>
+<td>XGB</td>
+<td><bold>0.9549</bold></td>
+<td><bold>0.9551</bold></td>
+<td><bold>0.9537</bold></td>
+<td><bold>0.9543</bold></td>
+</tr>
+<tr>
+<td>SVM</td>
+<td>0.9386</td>
+<td>0.9377</td>
+<td>0.9377</td>
+<td>0.9377</td>
+</tr>
+<tr>
+<td>NN</td>
+<td>0.9368</td>
+<td>0.936</td>
+<td>0.9358</td>
+<td>0.9358</td>
+</tr>
+<tr>
+<td rowspan="6">Bayesian search</td>
+<td>LR</td>
+<td>0.9224</td>
+<td>0.9228</td>
+<td>0.9208</td>
+<td>0.9215</td>
+</tr>
+<tr>
+<td><bold>GB</bold></td>
+<td>0.9224</td>
+<td>0.9228</td>
+<td>0.9208</td>
+<td>0.9215</td>
+</tr>
+<tr>
+<td>AB</td>
+<td><bold>0.9513</bold></td>
+<td><bold>0.9519</bold></td>
+<td><bold>0.9502</bold></td>
+<td><bold>0.9509</bold></td>
+</tr>
+<tr>
+<td>XGB</td>
+<td>0.8917</td>
+<td>0.9045</td>
+<td>0.896</td>
+<td>0.8938</td>
+</tr>
+<tr>
+<td>SVM</td>
+<td><bold>0.9513</bold></td>
+<td><bold>0.9512</bold></td>
+<td><bold>0.9507</bold></td>
+<td><bold>0.9509</bold></td>
+</tr>
+<tr>
+<td>LR</td>
+<td>0.9332</td>
+<td>0.9323</td>
+<td>0.9323</td>
+<td>0.9323</td>
+</tr>
+</tbody>
+</table>
+</table-wrap></p>
+<p>Using the random search technique, it optimizes a model by randomly sampling combinations of hyperparameters from a predefined distribution. It begins by specifying ranges or distributions for each parameter, then randomly selects and evaluates combinations. The process involves sampling parameter sets, training the model, and identifying the combination that performs best based on a scoring metric. <xref ref-type="table" rid="table7">Table 7</xref> shows that the random search has an increase in the accuracy for all GB, AB, and NN. In conclusion, we see that the hyperparameter optimization using grid search gives better performance than random search.</p>
+<p>Using the Bayesian optimizer, this algorithm is one of hyperparameter optimization methods that involves the construction of a probabilistic model of the objective function. This approach starts with an initial set of configurations for the hyperparameters and evaluates their performance. Using the evaluations, it updates the model with an acquisition function that guides how the search should proceed to promising hyperparameter combinations. By iteratively updating the model in this manner, it can focus on high-potential areas and efficiently find the optimal hyperparameters while keeping the number of evaluations as low as possible. As we see in <xref ref-type="table" rid="table7">Table 7</xref>, the results of testing the models with best-selected parameters by Bayes search. As shown in <xref ref-type="table" rid="table7">Table 7</xref>, the results after hyperparameter optimization using Bayesian optimizer are higher than random search, which is very close to results of grid search. The result goes down in some models like Adaboost. Because grid search achieves the best results, <xref ref-type="table" rid="table8">Table 8</xref> shows the selected hyperparameters by this algorithm for all classifiers.</p>
+</sec>
+<sec id="sec3d"><label>D.</label><title>Experiment 4: the Role of Different Data Modalities</title>
+<p>In this experiment, we test the effect of different modalities of features. The feature set is divided into four categories: demographics, cognitive scores, neuropsychological battery, and MRI, see <xref ref-type="table" rid="table9">Table 9</xref>. To evaluate the role of each modality, we drop that modality and train the models on the rest of the modalities then measure and compare the performance. to know the importance of each category and how much these features affect the performance of the model. <xref ref-type="table" rid="table10">Table 10</xref> shows the results after removing each modality.</p>
+<p>In this experiment and based on the previous experiment&#x0027;s results, the best hyperparameter optimization method is grid search, so we used this grid search in this experiment to find the best parameters based on the input data modality to the model. After getting the best parameters, we used them to train models. As a result, all the following results are the testing results after hyperparameter optimization. By training the machine learning models on a dataset without demographics features, we notice no significant degradation in the performance, i.e., about less than 1&#x0025; difference on average, so the demographic features do not have a strong impact on the diagnosis process.
+<table-wrap id="table8"><label>Table VIII.</label><caption><title>Selected hyperparameters by the grid search.</title></caption>
+<graphic xlink:href="10857489-table-8-source.tif"/>
+<table rules="all" frame="box" cellpadding="5">
+<colgroup>
+<col span="2"/>
+</colgroup>
+<thead>
+<tr>
+<th>Model</th>
+<th>Best Parameters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LR</td>
+<td>&#x2018;C&#x2019;: 100, &#x2018;penalty&#x2019;: &#x2018;II&#x2019;</td>
+</tr>
+<tr>
+<td>GB</td>
+<td>&#x2018;max depth&#x2019;: 6, &#x2018;n estimators&#x2019;: 200</td>
+</tr>
+<tr>
+<td>AB</td>
+<td>&#x2018;learning rate&#x2019;: 0.001, &#x2018;n estimators&#x2019;: 200</td>
+</tr>
+<tr>
+<td>XGB</td>
+<td>&#x2018;learning rate&#x2019;: 0.1, &#x2018;max depth&#x2019;: 5</td>
+</tr>
+<tr>
+<td>SVM</td>
+<td>&#x2018;C&#x2019;: 10, &#x2018;kernel&#x2019;: &#x2018;rbf</td>
+</tr>
+<tr>
+<td>NN</td>
+<td>&#x2018;alpha&#x2019;: 0.0001, &#x2018;hidden layer sizes&#x2019;: (50,)</td>
+</tr>
+</tbody>
+</table>
+</table-wrap></p>
+<p>On the other hand, removing the cognitive scores features from the dataset has a significant impact on the results. As we see in <xref ref-type="table" rid="table9">Table 9</xref>, the absence of cognitive features strongly affects the performances of the models. We conduct a performance comparison between LR and the other models to determine the presence of statistically significant differences. We are talking about an average of 9&#x0025; loss in accuracy, precision, recall, and F1 score. As a result, we conclude that cognitive scores are effective markers to detect Alzheimer&#x0027;s disease.</p>
+<p>We remove neuropsychological battery features, and we conduct a comparison between performance before and after removing these features. The removal of neuropsychological battery features leads to notable performance changes across models. LR saw minor reduction in accuracy (-0.78&#x0025;), precision (-0.67&#x0025;), recall (-0.91&#x0025;), and F1 score (-0.88&#x0025;). GB and AB experienced significant declines, with accuracy dropping by 1.33&#x0025; and 3.53&#x0025;, respectively, indicating that the removed features were crucial. XGBoost showed a smaller decrease of 0.57&#x0025;, while SVM experienced a moderate decline. In contrast, NN is improved by 1.77&#x0025; in accuracy, suggesting that the removed features may have introduced noise or redundancy. Overall, the results confirm the importance of the removed features for most models.
+<table-wrap id="table9"><label>Table IX.</label><caption><title>Medical data modalities.</title></caption>
+<graphic xlink:href="10857489-table-9-source.tif"/>
+<table rules="all" frame="box" cellpadding="5">
+<colgroup>
+<col span="2"/>
+</colgroup>
+<thead>
+<tr>
+<th>Category</th>
+<th>Features</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Demographics features</td>
+<td>AGE, PTGENDER, PTEDUCAT, PTETHCAT, PTRACCAT</td>
+</tr>
+<tr>
+<td>Cognitive scores features</td>
+<td>APOE4, FDG, ABETA, TAU, PTAU, CDRSB, ADAS11, ADAS 13, ADASQ4, MMSE, RAVLT immediate, RAVLT learning, RAVLT _ forgetting, RAVLT_perc _ forgetting, FAQ, MOCA</td>
+</tr>
+<tr>
+<td>Neuropsychologic al battery features</td>
+<td>LDELTOTAL,DIGITSCOR,TRABSCOR,EcogPtMem, EcogPtLang, EcogPtVisspat, EcogPtPlan, EcogPtOrgan, EcogPtDivatt, EcogPtTotal, EcogSPMem, EcogSPLang, EcogSPVisspat, EcogSPPlan, EcogSPOrgan, EcogSPDivatt, EcogSPTotal, mPACCdigit, mPACCtrailsB</td>
+</tr>
+<tr>
+<td>MRI features</td>
+<td>Ventricles, Hippocampus, WholeBrain, Entorhinal, Fusiform, MidTemp, ICV</td>
+</tr>
+</tbody>
+</table>
+</table-wrap></p>
+<p>The last experiment studies the role of MRI features. In this experiment, MRI features are removed to assess their importance and evaluate their impact on models&#x0027; performance. Removing MRI features leads to notable changes in model performance.
+<table-wrap id="table10"><label>Table X.</label><caption><title>Role of different modalities.</title></caption>
+<graphic xlink:href="10857489-table-10-source.tif"/>
+<table rules="all" frame="box" cellpadding="5">
+<colgroup>
+<col span="6"/>
+</colgroup>
+<thead>
+<tr>
+<th>Removed modality</th>
+<th>Model</th>
+<th>Accuracy</th>
+<th>Precision</th>
+<th>Recall</th>
+<th>Fl-Score</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="6">Demographics</td>
+<td>LR</td>
+<td>0.9188</td>
+<td>0.9184</td>
+<td>0.9179</td>
+<td>0.9181</td>
+</tr>
+<tr>
+<td>GB</td>
+<td>0.9513</td>
+<td>0.9516</td>
+<td>0.9506</td>
+<td>0.951</td>
+</tr>
+<tr>
+<td>AB</td>
+<td>0.9206</td>
+<td>0.9224</td>
+<td>0.9194</td>
+<td>0.9205</td>
+</tr>
+<tr>
+<td>XGB</td>
+<td><bold>0.9422</bold></td>
+<td><bold>0.9421</bold></td>
+<td><bold>0.9417</bold></td>
+<td><bold>0.9419</bold></td>
+</tr>
+<tr>
+<td>SVM</td>
+<td>0.9224</td>
+<td>0.9222</td>
+<td>0.9225</td>
+<td>0.9222</td>
+</tr>
+<tr>
+<td>NN</td>
+<td>0.9116</td>
+<td>0.9104</td>
+<td>0.9103</td>
+<td>0.9104</td>
+</tr>
+<tr>
+<td rowspan="6">Cognitive scores</td>
+<td>LR</td>
+<td>0.8213</td>
+<td>0.8151</td>
+<td>0.8162</td>
+<td>0.8142</td>
+</tr>
+<tr>
+<td>GB</td>
+<td>0.8682</td>
+<td>0.8653</td>
+<td>0.8643</td>
+<td>0.8644</td>
+</tr>
+<tr>
+<td>AB</td>
+<td>0.8339</td>
+<td>0.8283</td>
+<td>0.8289</td>
+<td>0.8271</td>
+</tr>
+<tr>
+<td>XGB</td>
+<td>0.8718</td>
+<td>0.8695</td>
+<td>0.8677</td>
+<td>0.868</td>
+</tr>
+<tr>
+<td>SVM</td>
+<td>0.8375</td>
+<td>0.833</td>
+<td>0.8342</td>
+<td>0.8332</td>
+</tr>
+<tr>
+<td>NN</td>
+<td><bold>0.8736</bold></td>
+<td><bold>0.8710</bold></td>
+<td><bold>0.8708</bold></td>
+<td><bold>0.8709</bold></td>
+</tr>
+<tr>
+<td rowspan="6"><bold>Neuropsychol ogical battery</bold></td>
+<td>LR</td>
+<td>0.9170</td>
+<td>0.9174</td>
+<td>0.9149</td>
+<td>0.9152</td>
+</tr>
+<tr>
+<td>GB</td>
+<td>0.9404</td>
+<td>0.9411</td>
+<td>0.9401</td>
+<td>0.9403</td>
+</tr>
+<tr>
+<td>AB</td>
+<td>0.8881</td>
+<td>0.8925</td>
+<td>0.8894</td>
+<td>0.8897</td>
+</tr>
+<tr>
+<td>XGB</td>
+<td><bold>0.9459</bold></td>
+<td><bold>0.9463</bold></td>
+<td><bold>0.9456</bold></td>
+<td><bold>0.9456</bold></td>
+</tr>
+<tr>
+<td>SVM</td>
+<td>0.9116</td>
+<td>0.9117</td>
+<td>0.9113</td>
+<td>0.9115</td>
+</tr>
+<tr>
+<td>NN</td>
+<td>0.9332</td>
+<td>0.9327</td>
+<td>0.9316</td>
+<td>0.9317</td>
+</tr>
+<tr>
+<td rowspan="6">MRI</td>
+<td>LR</td>
+<td>0.9206</td>
+<td>0.9199</td>
+<td>0.9198</td>
+<td>0.9198</td>
+</tr>
+<tr>
+<td>GB</td>
+<td>0.9585</td>
+<td>0.9586</td>
+<td>0.9579</td>
+<td>0.9582</td>
+</tr>
+<tr>
+<td>AB</td>
+<td>0.9206</td>
+<td>0.9224</td>
+<td>0.9194</td>
+<td>0.9205</td>
+</tr>
+<tr>
+<td>XGB</td>
+<td><bold>0.9585</bold></td>
+<td><bold>0.9586</bold></td>
+<td><bold>0.9579</bold></td>
+<td><bold>0.9582</bold></td>
+</tr>
+<tr>
+<td>SVM</td>
+<td>0.9314</td>
+<td>0.9310</td>
+<td>0.9317</td>
+<td>0.9312</td>
+</tr>
+<tr>
+<td>NN</td>
+<td>0.9206</td>
+<td>0.9192</td>
+<td>0.9194</td>
+<td>0.9193</td>
+</tr>
+</tbody>
+</table>
+</table-wrap></p>
+<p>GB and XGB show an improved performance, with accuracy raised by 0.57&#x0025; and 0.76&#x0025;, respectively. SVM has a substantial increase of 1.57&#x0025; in accuracy, while NN shows a slight accuracy gain of 0.39&#x0025;. LR experiences a minor decline of 0.39&#x0025; in accuracy, but AB maintains consistent performance. These results suggest that MRI features have a varying impact across models, with some impact from their removal.</p>
+<p>Removing demographic features has a significant effect on model performance, as seen in <xref ref-type="table" rid="table11">Table 11</xref>, especially with LR. For instance, LR does not exhibit any decline in precision and recall for CN, while for MCI and AD classes, there is an obvious drop. The performance of GB and XGB remains resistant; although there is a slight decline in their performance in AD class; hence, demographic features contribute to enhancing the separation between the stages of cognitive decline. AB and the NN models similarly show performance drops in both MCI and AD classes, but the effect is somewhat limited for CN class. From these results, demographic information seems to play a supporting role in classifying MCl and AD classes, probably furnishing context helpful to outline subtle patterns due to the progress of the disease.
+<table-wrap id="table11"><label>Table XI.</label><caption><title>Results without demographics features.</title></caption>
+<graphic xlink:href="10857489-table-11-source.tif"/>
+<table rules="all" frame="box" cellpadding="5">
+<colgroup>
+<col span="5"/>
+</colgroup>
+<thead>
+<tr>
+<th>Model</th>
+<th>Class</th>
+<th>Precision</th>
+<th>Recall</th>
+<th>Fl Score</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LR</td>
+<td>0</td>
+<td>0.9667</td>
+<td>0.9667</td>
+<td>0.9667</td>
+</tr>
+<tr>
+<td/>
+<td>1</td>
+<td>0.9113</td>
+<td>0.9250</td>
+<td>0.9181</td>
+</tr>
+<tr>
+<td/>
+<td>2</td>
+<td>0.8772</td>
+<td>0.8621</td>
+<td>0.8696</td>
+</tr>
+<tr>
+<td>GB</td>
+<td>0</td>
+<td>0.9887</td>
+<td>0.9722</td>
+<td>0.9804</td>
+</tr>
+<tr>
+<td/>
+<td>1</td>
+<td>0.9412</td>
+<td>0.9600</td>
+<td>0.9505</td>
+</tr>
+<tr>
+<td/>
+<td>2</td>
+<td>0.9249</td>
+<td>0.9195</td>
+<td>0.9222</td>
+</tr>
+<tr>
+<td>AB</td>
+<td>0</td>
+<td>0.9941</td>
+<td>0.9389</td>
+<td>0.9657</td>
+</tr>
+<tr>
+<td/>
+<td>1</td>
+<td>0.9038</td>
+<td>0.9400</td>
+<td>0.9216</td>
+</tr>
+<tr>
+<td/>
+<td>2</td>
+<td>0.8693</td>
+<td>0.8793</td>
+<td>0.8743</td>
+</tr>
+<tr>
+<td>XGB</td>
+<td>0</td>
+<td>0.9778</td>
+<td>0.9778</td>
+<td>0.9778</td>
+</tr>
+<tr>
+<td/>
+<td>1</td>
+<td>0.9356</td>
+<td>0.9450</td>
+<td>0.9403</td>
+</tr>
+<tr>
+<td/>
+<td>2</td>
+<td>0.9128</td>
+<td>0.9023</td>
+<td>0.9075</td>
+</tr>
+<tr>
+<td>NN</td>
+<td>0</td>
+<td>0.9441</td>
+<td>0.9389</td>
+<td>0.9415</td>
+</tr>
+<tr>
+<td/>
+<td>1</td>
+<td>0.9300</td>
+<td>0.9300</td>
+<td>0.9300</td>
+</tr>
+<tr>
+<td/>
+<td>2</td>
+<td>0.8571</td>
+<td>0.8621</td>
+<td>0.8596</td>
+</tr>
+</tbody>
+</table>
+</table-wrap></p>
+<p>Excluding cognitive scores has a strong effect on model performance, particularly for the AD class. In <xref ref-type="table" rid="table12">Table 12</xref>, LR shows a high loss in both precision and recall for the AD class, while the cognitive score is an important factor in correctly identifying advanced cognitive impairment. GB has a less effect on cognitive scores but still has reduced F1 scores for the MCI and AD classes, indicating that cognitive scores would help in finer differentiation.
+<table-wrap id="table12"><label>Table XII.</label><caption><title>Results without cognitive scores.</title></caption>
+<graphic xlink:href="10857489-table-12-source.tif"/>
+<table rules="all" frame="box" cellpadding="5">
+<colgroup>
+<col span="5"/>
+</colgroup>
+<thead>
+<tr>
+<th>Model</th>
+<th>Class</th>
+<th>Precision</th>
+<th>Recall</th>
+<th>Fl Score</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LR</td>
+<td>CN</td>
+<td>0.8457</td>
+<td>0.8833</td>
+<td>0.8641</td>
+</tr>
+<tr>
+<td/>
+<td>MCI</td>
+<td>0.8545</td>
+<td>0.9100</td>
+<td>0.8814</td>
+</tr>
+<tr>
+<td/>
+<td>AD</td>
+<td>0.7451</td>
+<td>0.6552</td>
+<td>0.6972</td>
+</tr>
+<tr>
+<td>GB</td>
+<td>CN</td>
+<td>0.8977</td>
+<td>0.8778</td>
+<td>0.8876</td>
+</tr>
+<tr>
+<td/>
+<td>MCI</td>
+<td>0.8957</td>
+<td>0.9450</td>
+<td>0.9197</td>
+</tr>
+<tr>
+<td/>
+<td>AD</td>
+<td>0.8024</td>
+<td>0.7701</td>
+<td>0.7859</td>
+</tr>
+<tr>
+<td>AB</td>
+<td>CN</td>
+<td>0.8474</td>
+<td>0.8944</td>
+<td>0.8703</td>
+</tr>
+<tr>
+<td/>
+<td>MCI</td>
+<td>0.8679</td>
+<td>0.9200</td>
+<td>0.8932</td>
+</tr>
+<tr>
+<td/>
+<td>AD</td>
+<td>0.7697</td>
+<td>0.6724</td>
+<td>0.7178</td>
+</tr>
+<tr>
+<td>XGB</td>
+<td>CN</td>
+<td>0.9075</td>
+<td>0.8722</td>
+<td>0.8895</td>
+</tr>
+<tr>
+<td/>
+<td>MCI</td>
+<td>0.8925</td>
+<td>0.9550</td>
+<td>0.9227</td>
+</tr>
+<tr>
+<td/>
+<td>AD</td>
+<td>0.8084</td>
+<td>0.7759</td>
+<td>0.7918</td>
+</tr>
+<tr>
+<td>NN</td>
+<td>CN</td>
+<td>0.8876</td>
+<td>0.8778</td>
+<td>0.8827</td>
+</tr>
+<tr>
+<td/>
+<td>MCI</td>
+<td>0.9300</td>
+<td>0.9300</td>
+<td>0.9300</td>
+</tr>
+<tr>
+<td/>
+<td>AD</td>
+<td>0.7955</td>
+<td>0.8046</td>
+<td>0.8000</td>
+</tr>
+</tbody>
+</table>
+</table-wrap></p>
+<p>With the removed cognitive scores, XGB stays resilient, with only a very minor drop for the AD class, showing its strength even without cognitive data. AB and NN models are mostly affected, where the former has a high reduction in F1 score for the AD class. These results underline how valuable cognitive scores are toward the modeling of cognitive decline, given their relationship to the direct insight into a patient&#x0027;s cognitive state.</p>
+<p>In <xref ref-type="table" rid="table13">Table 13</xref>, the absence of neurophysiological battery features induces various degradations of performance, mostly in the AD class for some models. LR and AB have a significant drop in performance for the MCI and AD classes. GB and XGB have good performance across classes and lose very little performance; thus, there is compensation by leveraging other features when this information is missing. It is also seen that the F1 scores are dropped in the NN model, especially for the AD class, which further confirms that neurophysiological data supports the discrimination of cognitive impairments. Overall, neurophysiological features look very vital and enhance the performance of models in the MCI and AD classes, likely because they capture important biological and functional markers associated with cognitive decline.
+<table-wrap id="table13"><label>Table XIII.</label><caption><title>Results without neurophysiological battery features.</title></caption>
+<graphic xlink:href="10857489-table-13-source.tif"/>
+<table rules="all" frame="box" cellpadding="5">
+<colgroup>
+<col span="5"/>
+</colgroup>
+<thead>
+<tr>
+<th>Model</th>
+<th>Class</th>
+<th>Precision</th>
+<th>Recall</th>
+<th>Fl Score</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LR</td>
+<td>CN</td>
+<td>0.9514</td>
+<td>0.9778</td>
+<td>0.9644</td>
+</tr>
+<tr>
+<td/>
+<td>MCI</td>
+<td>0.8957</td>
+<td>0.9450</td>
+<td>0.9197</td>
+</tr>
+<tr>
+<td/>
+<td>AD</td>
+<td>0.9051</td>
+<td>0.8218</td>
+<td>0.8614</td>
+</tr>
+<tr>
+<td>GB</td>
+<td>CN</td>
+<td>0.9884</td>
+<td>0.9444</td>
+<td>0.9659</td>
+</tr>
+<tr>
+<td/>
+<td>MCI</td>
+<td>0.9497</td>
+<td>0.9450</td>
+<td>0.9474</td>
+</tr>
+<tr>
+<td/>
+<td>AD</td>
+<td>0.8852</td>
+<td>0.9310</td>
+<td>0.9076</td>
+</tr>
+<tr>
+<td>AB</td>
+<td>CN</td>
+<td>0.9941</td>
+<td>0.9389</td>
+<td>0.9657</td>
+</tr>
+<tr>
+<td/>
+<td>MCI</td>
+<td>0.8947</td>
+<td>0.8500</td>
+<td>0.8718</td>
+</tr>
+<tr>
+<td/>
+<td>AD</td>
+<td>0.7887</td>
+<td>0.8793</td>
+<td>0.8315</td>
+</tr>
+<tr>
+<td>XGB</td>
+<td>CN</td>
+<td>0.9884</td>
+<td>0.9500</td>
+<td>0.9688</td>
+</tr>
+<tr>
+<td/>
+<td>MCI</td>
+<td>0.9548</td>
+<td>0.9500</td>
+<td>0.9524</td>
+</tr>
+<tr>
+<td/>
+<td>AD</td>
+<td>0.8956</td>
+<td>0.9368</td>
+<td>0.9157</td>
+</tr>
+<tr>
+<td>NN</td>
+<td>CN</td>
+<td>0.9462</td>
+<td>0.9778</td>
+<td>0.9617</td>
+</tr>
+<tr>
+<td/>
+<td>MCI</td>
+<td>0.9317</td>
+<td>0.9550</td>
+<td>0.9432</td>
+</tr>
+<tr>
+<td/>
+<td>AD</td>
+<td>0.9202</td>
+<td>0.8621</td>
+<td>0.8902</td>
+</tr>
+</tbody>
+</table>
+</table-wrap></p>
+<p>In <xref ref-type="table" rid="table14">Table 14</xref>, the absence of MRI features decreases the overall performance for most models, with the biggest impact on AD classification. There are declines in precision and recall for the AD class by both the LR and NN models, which evidence that MRI data does indeed convey important information in the differentiation between more advanced stages of cognitive decline. GB and XGB retain relatively high performances, though the F1 scores for the MCI and AD classes are slightly decreased, which underlines their robustness even without MRI data.
+<table-wrap id="table14"><label>Table XIV.</label><caption><title>Results without MRI features.</title></caption>
+<graphic xlink:href="10857489-table-14-source.tif"/>
+<table rules="all" frame="box" cellpadding="5">
+<colgroup>
+<col span="5"/>
+</colgroup>
+<thead>
+<tr>
+<th>Model</th>
+<th>Class</th>
+<th>Precision</th>
+<th>Recall</th>
+<th>Fl Score</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LR</td>
+<td>CN</td>
+<td>0.9615</td>
+<td>0.9722</td>
+<td>0.9669</td>
+</tr>
+<tr>
+<td/>
+<td>MCI</td>
+<td>0.9158</td>
+<td>0.9250</td>
+<td>0.9204</td>
+</tr>
+<tr>
+<td/>
+<td>AD</td>
+<td>0.8824</td>
+<td>0.8621</td>
+<td>0.8721</td>
+</tr>
+<tr>
+<td>GB</td>
+<td>CN</td>
+<td>0.9888</td>
+<td>0.9778</td>
+<td>0.9832</td>
+</tr>
+<tr>
+<td/>
+<td>MCI</td>
+<td>0.9507</td>
+<td>0.9650</td>
+<td>0.9578</td>
+</tr>
+<tr>
+<td/>
+<td>AD</td>
+<td>0.9364</td>
+<td>0.9310</td>
+<td>0.9337</td>
+</tr>
+<tr>
+<td>AB</td>
+<td>CN</td>
+<td>0.9941</td>
+<td>0.9389</td>
+<td>0.9657</td>
+</tr>
+<tr>
+<td/>
+<td>MCI</td>
+<td>0.9038</td>
+<td>0.9400</td>
+<td>0.9216</td>
+</tr>
+<tr>
+<td/>
+<td>AD</td>
+<td>0.8693</td>
+<td>0.8793</td>
+<td>0.8743</td>
+</tr>
+<tr>
+<td>XGB</td>
+<td>CN</td>
+<td>0.9888</td>
+<td>0.9778</td>
+<td>0.9832</td>
+</tr>
+<tr>
+<td/>
+<td>MCI</td>
+<td>0.9507</td>
+<td>0.9650</td>
+<td>0.9578</td>
+</tr>
+<tr>
+<td/>
+<td>AD</td>
+<td>0.9364</td>
+<td>0.9310</td>
+<td>0.9337</td>
+</tr>
+<tr>
+<td>NN</td>
+<td>CN</td>
+<td>0.9389</td>
+<td>0.9389</td>
+<td>0.9389</td>
+</tr>
+<tr>
+<td/>
+<td>MCI</td>
+<td>0.9495</td>
+<td>0.9400</td>
+<td>0.9447</td>
+</tr>
+<tr>
+<td/>
+<td>AD</td>
+<td>0.8693</td>
+<td>0.8793</td>
+<td>0.8743</td>
+</tr>
+</tbody>
+</table>
+</table-wrap></p>
+<p>AB experiences a decrease for all classes; however, the impact is more in the case of AD. MRI features are instructive for the correct classification in advanced stages of cognitive impairment, as structural alterations in the brain represent significant biomarkers of AD.</p>
+</sec>
+<sec id="sec3e"><label>E.</label><title>Experiment 5: the Role of Model Explainability</title>
+<p>Model explainability is crucial to improve the decision understandability which improves the acceptance of the model by domain expert. In this experiment, we extend the models by providing some XAI features by using the LIME and SHAP models. The XAI features have been added for the best performing model (i.e., XGB). As shown in <xref ref-type="fig" rid="fig2">Figure 2</xref>, This figure presents the Local Interpretable Model-Agnostic Explanations (LIME) for an XGBoost model, used to predict Alzheimer&#x0027;s disease status across different classes. Each panel provides an interpretation of feature contributions for specific instances, highlighting key clinical and cognitive measures that impact the model&#x0027;s predictions. For example, in the first instance, a high prediction probability is associated with the CDRSB (Clinical Dementia Rating-Sum of Boxes) and MMSE (Mini-Mental State Examination) features, where lower CDRSB and higher MMSE values are associated with a lower probability of classifying the instance as 1, suggesting non-demented status. Conversely, for instances classified as 1, MMSE and mPACCdigit (a cognitive measure) contribute significantly to the prediction, where lower MMSE scores align with cognitive impairment typical in Alzheimer&#x0027;s. Additional clinical variables such as ADAS11 (Alzheimer&#x0027;s Disease Assessment Scale), Ecog scores (EcogSPPlan, EcogPtMem), and whole-brain volume are also influential in predicting Alzheimer&#x0027;s likelihood, either positively or negatively impacting the prediction based on their directionality. The figure underscores the significance of cognitive performance and neuroimaging features in diagnosing Alzheimer&#x0027;s, as well as the XGBoost model&#x0027;s capacity to leverage these multifaceted clinical inputs for accurate predictions. For the full definitions of the explained features, readers can consult the ADNI documentation at(<uri>https://dni.loni.usc.edu/</uri>).
+<fig id="fig2"><label>Fig. 2</label><caption><p>XAI for XGB model using LIME.</p></caption>
+<graphic xlink:href="10857489-fig-2-source.tif"/>
+</fig></p>
+<p><xref ref-type="fig" rid="fig3">Figure 3(A)</xref> is the SHAP summary that illustrates the feature importance for the AD class. The mean absolute SHAP values indicate the average impact each feature has on the model&#x0027;s output, with higher values representing greater influence. The CDRSB is the most critical feature, showing the highest impact on predicting AD, followed by the MMSE. These two features significantly contribute to the model&#x0027;s classification of AD cases, likely reflecting their relevance in measuring cognitive impairment. Other features with moderate contributions include LDLTOTAL, mPACCTrailsB, and mPACCdigit, which are associated with cognitive performance and possibly metabolic markers linked to Alzheimer&#x0027;s pathology. Additional features, such as FAQ, FDG, TRABSCOR, and various Ecog tests assessing everyday functioning and cognitive abilities, show smaller but noteworthy contributions.
+<fig id="fig3"><label>Fig. 3</label><caption><p>Feature importance using SHAP for the XGB model.</p></caption>
+<graphic xlink:href="10857489-fig-3-source.tif"/>
+</fig></p>
+<p>These results suggest that cognitive assessment scores and functional measures are central to the model&#x0027;s ability to classify Alzheimer&#x0027;s disease, with CDRSB and MMSE playing particularly pivotal roles in the predictive process. <xref ref-type="fig" rid="fig3">Figure 3(B)</xref> is the SHAP summary that represents feature importance for the MCI class. Here, the average absolute SHAP values highlight the key features influencing the model&#x0027;s prediction of MCI cases. The mPACCdigit feature has the highest impact, indicating its importance in distinguishing MCI from other classes, followed closely by CDRSB and MMSE, both of which are vital cognitive measures. The FAQ (Functional Activities Questionnaire) and mPACCTrailsB are also notable, suggesting that functional and cognitive performance assessments are crucial for MCI classification. Other features, such as EcogPtMem, ADAS13, and RAVLT_immediate, add moderate contributions, highlighting the relevance of memory and learning tests in identifying cognitive decline at the MCI stage. Additional variables, including MOCA, RAVLT_perc_forgetting, and various Ecog measures, contribute smaller impacts but still provide valuable information in the classification process. Overall, cognitive and functional assessments, especially those measuring memory and daily functioning, are central to the model&#x0027;s capability to identify MCI, with mPACCdigit, CDRSB, and MMSE being the primary contributors.</p>
+<p><xref ref-type="fig" rid="fig3">Figure 3(C)</xref> is This SHAP summary plot illustrates the feature importance for the CN class in a multi-class classification model for Alzheimer&#x0027;s disease. The CDRSB is the most influential feature, with a substantially higher impact on predicting CN status compared to other features, indicating its importance in differentiating cognitively normal individuals. LDLTOTAL, which may relate to metabolic factors, is the second most important feature but with a notably smaller effect than CDRSB. Other features such as mPACCTrailsB, RAVLT_immediate, and various Ecog measures (EcogSPMem, EcogPtVisspat, EcogSPTotal) contribute minor but relevant influences, suggesting that cognitive assessments and certain metabolic markers help reinforce the CN classification. Structural brain measures, such as hippocampal and whole-brain volume, and demographic factors like PTEDUCAT (education level) and AGE, add minimal contributions but remain part of the model&#x0027;s decision-making process. Overall, the model relies heavily on CDRSB for identifying cognitively normal, while other features play a smaller, supportive role.</p>
+</sec>
+</sec>
+<sec id="sec4"><label>IV.</label><title>Conclusion</title>
+<p>This paper presents the application of different algorithms of machine learning to improve the detection of Alzheimer&#x0027;s disease with the ADNI dataset. We have compared and implemented some optimization strategies in the process for Logistic Regression, Gradient Boosting, AdaBoost, XGBoost, Support Vector Machine, and Neural Networks for enhancing model performance. The <italic>key findings of the study include</italic>: (1) Balancing Data Impact: The balancing of the dataset by the SMOTE-Tomek method improved the model&#x0027;s performance. Gradient Boosting resulted in an accuracy of 92.74&#x0025; without class balancing. On the other hand, after resampling, XGBoost managed to reach the highest accuracy of 95.13&#x0025;, which shows that class balancing is an important factor in model training; (2) Feature Selection Techniques: Application of recursive feature elimination, SelectKBest with ANOVA F-value, and SelectKBest with mutual_info feature selection methods revealed that the choice of correct features is indeed very impactful. Mutual_info was most impactful and improved the accuracy of the model to 94.58&#x0025; with Gradient Boosting, outperforming the other techniques; (3) Hyperparameter Optimization: Grid Search proves to be the best process in tuning the hyperparameters. Gradient Boosting produced an accuracy as high as 95.85&#x0025;. Bayesian Optimization and Random Search did improve results, too, but Grid Search always turns out to be far better than these methods in most of the cases.</p>
+</sec>
+</body>
+<back>
+<ack>
+<title>Acknowledgment</title>
+<p>This study was funded by the National Research Foundation of Korea (NRF) grant funded by the Korea government (MSIT) (No. 2021R1A2C1011198), and the MSIT (Ministry of Science and ICT), Korea, under the ICT Creative Consilience Program (1ITP-2021-2020-0-01821) supervised by the IITP (Institute for Information &#x0026; communications Technology Planning &#x0026; Evaluation).</p>
+</ack>
+<ref-list>
+<title>References</title>
+<ref id="ref1"><label>[1]</label> <mixed-citation publication-type="periodical" publication-format="print"><person-group person-group-type="author"><string-name><given-names>W.</given-names> <surname>Wong</surname></string-name></person-group>, &#x201C;<article-title>Economic burden of Alzheimer disease and managed care considerations</article-title>.,&#x201D; <source>Am J Manag Care</source>, vol. <volume>26</volume> <issue>8</issue> Suppl, pp. <fpage>SI77</fpage>&#x2013;<lpage>S183</lpage>, <year>2020</year>, [Online]. Available: <uri>https://api.semanticscholar.org/CorpusID:221308149</uri></mixed-citation></ref>
+<ref id="ref2"><label>[2]</label> <mixed-citation publication-type="periodical" publication-format="print"><person-group person-group-type="author"><string-name><given-names>M. W.</given-names> <surname>Weiner</surname></string-name> and <string-name><given-names>D. P.</given-names> <surname>Veitch</surname></string-name></person-group>, &#x201C;<article-title>Introduction to special issue: Overview of Alzheimer&#x0027;s Disease Neuroimaging Initiative</article-title>,&#x201D; <source>Alzheimer&#x0027;s &#x0026; Dementia</source>, vol. <volume>11</volume>, no. <issue>7</issue>, pp. <fpage>730</fpage>&#x2013;<lpage>733</lpage>, <year>2015</year>, doi: <uri xlink:href="https://doi.org/10.1016/j.jalz.2015.05.007">https://doi.org/10.1016/j.jalz.2015.05.007</uri></mixed-citation></ref>
+<ref id="ref3"><label>[3]</label> <mixed-citation publication-type="confproc" publication-format="print"><person-group person-group-type="author"><string-name><given-names>A. Alickovic</given-names> <surname>Emina</surname></string-name> and <string-name><surname>Subasi</surname></string-name></person-group>, &#x201C;<article-title>Automatic Detection of Alzheimer Disease Based on Histogram and Random Forest</article-title>,&#x201D; in <source>CMBEBIH 2019</source>, <person-group person-group-type="editor"><string-name><surname>R.</surname></string-name> and <string-name><given-names>G. P. L. Badnjevic</given-names> <surname>Almir</surname></string-name> and <string-name><surname>&#x0160;krbi&#x0107;</surname></string-name>, Ed.</person-group>, <conf-loc>Cham</conf-loc>: <conf-sponsor>Springer International Publishing</conf-sponsor>, <conf-date>2020</conf-date>, pp. <fpage>91</fpage>&#x2013;<lpage>96</lpage>.</mixed-citation></ref>
+<ref id="ref4"><label>[4]</label> <mixed-citation publication-type="periodical" publication-format="print"><person-group person-group-type="author"><string-name><given-names>A. S.</given-names> <surname>Alatrany</surname></string-name>, <string-name><given-names>W.</given-names> <surname>Khan</surname></string-name>, <string-name><given-names>A.</given-names> <surname>Hussain</surname></string-name>, <string-name><given-names>H.</given-names> <surname>Kolivand</surname></string-name>, and <string-name><given-names>D.</given-names> <surname>Al-Jumeily</surname></string-name></person-group>, &#x201C;<article-title>An explainable machine learning approach for Alzheimer&#x0027;s disease classification</article-title>,&#x201D; <source>Sci Rep</source>, vol. <volume>14</volume>, no. <issue>1</issue>, p. <fpage>2637</fpage>, <year>2024</year>, doi: <pub-id pub-id-type="doi">10.1038/s41598-024-51985-w</pub-id>.</mixed-citation></ref>
+<ref id="ref5"><label>[5]</label> <mixed-citation publication-type="periodical" publication-format="print"><person-group person-group-type="author"><string-name><given-names>S.</given-names> <surname>Ei-Sappagh</surname></string-name>, <string-name><given-names>F.</given-names> <surname>Ali</surname></string-name>, <string-name><given-names>T.</given-names> <surname>Abuhmed</surname></string-name>, <string-name><given-names>J.</given-names> <surname>Singh</surname></string-name>, and <string-name><given-names>J. M.</given-names> <surname>Alonso</surname></string-name></person-group>, &#x201C;<article-title>Automatic detection of Alzheimer&#x0027;s disease progression: An efficient information fusion approach with heterogeneous ensemble classifiers</article-title>,&#x201D; <source>Neurocomputing</source>, vol. <volume>512</volume>, pp. <fpage>203</fpage>&#x2013;<lpage>224</lpage>, <year>2022</year>, doi: <uri xlink:href="https://doi.org/l0.l016/j.neucom.2022.09.009">https://doi.org/l0.l016/j.neucom.2022.09.009</uri></mixed-citation></ref>
+<ref id="ref6"><label>[6]</label> <mixed-citation publication-type="periodical" publication-format="print"><person-group person-group-type="author"><string-name><given-names>M.</given-names> <surname>Shelke</surname></string-name>, <string-name><given-names>P.</given-names> <surname>Deshmukh</surname></string-name>, and <string-name><given-names>V.</given-names> <surname>Shandilya</surname></string-name></person-group>, &#x201C;<article-title>A review on imbalanced data handling using undersampling and oversampling technique</article-title>,&#x201D; <source>International Journal of Recent Trends in Engineering and Research</source>, vol. <volume>3</volume>, no. <issue>4</issue>, pp. <fpage>444</fpage>&#x2013;<lpage>449</lpage>, <year>2017</year>.</mixed-citation></ref>
+</ref-list>
+</back>
+</conf-article>

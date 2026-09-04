@@ -1,0 +1,188 @@
+{
+  "abstract": {
+    "textEnglish": "Low-Frequency oscillations in wind farms, caused by interactions between power converters and transmission lines, must be addressed quickly to prevent grid instability. While past studies using Convolutional Neural Networks (CNNs) have focused on high-magnitude oscillation detection, these methods often demand substantial data and computational resources, delaying detection and causing substantial damage to the grid. Moreover, the issue of low-frequency oscillations, which can lead to high-frequency resonance and potential power outages, remains underexplored. In this paper, we propose a dual detection system that swiftly identifies high-magnitude oscillations through time-domain analysis and detects low-frequency oscillations using Fast Fourier Transform-based frequency-domain analysis. We employ Hyperdimensional Computing (HDC) along with one-class SVM introducing True Positive Confidence (TPC) and False Positive Confidence (FPC) metrics to enhance reliability. Our findings show HDC surpasses One class SVM model, performing 6x faster on GPU and 16x on FPGA achieving at least 99% confidence in TPC and FPC for the oscillation types of interest in this work. This positions HDC as an optimal solution for real-time wind farm applications, offering significant advantages in speed and accuracy. Most importantly, the proposed solutions can detect oscillations within tens of microseconds, significantly ahead of the critical time window of 500/800 \u03bc$s$ from the onset of the oscillation, ensuring timely and reliable fault detection."
+  },
+  "authors": [
+    {
+      "affiliation": [
+        {
+          "affPubRaw": "*, California State University, San Marcos, CA, 92096, USA"
+        }
+      ],
+      "attrib": {
+        "email": "yathi001@csusm.edu"
+      },
+      "name": {
+        "given_name": "Shyam",
+        "native_lang": "Shyam Yathirajam",
+        "surname": "Yathirajam"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubRaw": "*, California State University, San Marcos, CA, 92096, USA"
+        }
+      ],
+      "attrib": {
+        "email": "peigh001@csusm.edu"
+      },
+      "name": {
+        "given_name": "Arash",
+        "native_lang": "Arash Peighambari",
+        "surname": "Peighambari"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubRaw": "*, California State University, San Marcos, CA, 92096, USA"
+        }
+      ],
+      "attrib": {
+        "email": "balaj004@csusm.edu"
+      },
+      "name": {
+        "given_name": "Nikil",
+        "native_lang": "Nikil Balaji",
+        "surname": "Balaji"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubRaw": "*, California State University, San Marcos, CA, 92096, USA"
+        }
+      ],
+      "attrib": {
+        "email": "man006@csusm.edu"
+      },
+      "name": {
+        "given_name": "Owen",
+        "native_lang": "Owen Man",
+        "surname": "Man"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubRaw": "*, California State University, San Marcos, CA, 92096, USA"
+        }
+      ],
+      "attrib": {
+        "email": "hnademi@csusm.edu"
+      },
+      "name": {
+        "given_name": "Hamed",
+        "native_lang": "Hamed Nademi",
+        "surname": "Nademi"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubRaw": "*, California State University, San Marcos, CA, 92096, USA"
+        }
+      ],
+      "attrib": {
+        "email": "sgutta@csusm.edu"
+      },
+      "name": {
+        "given_name": "Sreedevi",
+        "native_lang": "Sreedevi Gutta",
+        "surname": "Gutta"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubRaw": "*, California State University, San Marcos, CA, 92096, USA"
+        }
+      ],
+      "attrib": {
+        "email": "justinmorris@csusm.edu"
+      },
+      "name": {
+        "given_name": "Justin",
+        "native_lang": "Justin Morris",
+        "surname": "Morris"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubRaw": "*, California State University, San Marcos, CA, 92096, USA"
+        }
+      ],
+      "attrib": {
+        "email": "aahmadinia@csusm.edu"
+      },
+      "name": {
+        "given_name": "Ali",
+        "native_lang": "Ali Ahmadinia",
+        "surname": "Ahmadinia"
+      }
+    }
+  ],
+  "copyright": {
+    "statement": "\u00a92025 ",
+    "status": true
+  },
+  "funding": [
+    {
+      "agencyname": "National Science Foundation",
+      "awardnumber": "2334256"
+    }
+  ],
+  "pagination": {
+    "firstPage": "7640",
+    "lastPage": "5"
+  },
+  "persistentIDs": [
+    {
+      "DOI": "10.1109/GreenTech62170.2025.10977640",
+      "ISBN": [
+        {
+          "isbnString": "979-8-3315-2018-2",
+          "pubtype": "electronic"
+        }
+      ]
+    }
+  ],
+  "pubDate": {
+    "printDate": "2025-03-28"
+  },
+  "publication": {
+    "confDates": "26 03 2025 - 28 03 2025",
+    "confLocation": "Wichita, KS, USA",
+    "pubName": "2025 IEEE Green Technologies Conference (GreenTech), 26 03 2025 - 28 03 2025, Wichita, KS, USA",
+    "pubYear": "2025",
+    "volumeNum": "00"
+  },
+  "recordData": {
+    "createdTime": "",
+    "loadFormat": "IEEE",
+    "loadLocation": "",
+    "loadType": "fromFile",
+    "parsedTime": "2026-09-03T16:03:16.907343Z",
+    "recordOrigin": ""
+  },
+  "references": [
+    "<ref id=\"ref1\"><label>[1]</label> <mixed-citation publication-format=\"print\" publication-type=\"confproc\"><person-group person-group-type=\"author\"><string-name><given-names>T.</given-names> <surname>Bengtsson</surname></string-name>, <string-name><given-names>S.</given-names> <surname>Roxenborg</surname></string-name>, <string-name><given-names>M. M.</given-names> <surname>Saha</surname></string-name>, <string-name><given-names>P.-O.</given-names> <surname>Lindstr\u00f6m</surname></string-name>, <string-name><given-names>H.</given-names> <surname>Eriksson</surname></string-name>, and <string-name><given-names>M.</given-names> <surname>Lindstr\u00f6m</surname></string-name></person-group>, \u201c<article-title>Case studies and experiences with sub-synchronous resonance (ssr) detection technique</article-title>,\u201d in <source>2016 Power Systems Computation Conference (PSCC)</source>, pp. <fpage>1</fpage>\u2013<lpage>6</lpage>, <conf-sponsor>IEEE</conf-sponsor>, <year>2016</year>.</mixed-citation></ref>",
+    "<ref id=\"ref2\"><label>[2]</label> <mixed-citation publication-format=\"print\" publication-type=\"periodical\"><person-group person-group-type=\"author\"><string-name><given-names>B.</given-names> <surname>Zhang</surname></string-name> and <string-name><given-names>H.</given-names> <surname>Nademi</surname></string-name></person-group>, \u201c<article-title>Modeling and harmonic stability of mmc-hvdc with passive circulating current filters</article-title>,\u201d <source specific-use=\"IEEE\">Ieee Access</source>, vol. <volume>8</volume>, pp. <fpage>129372</fpage>\u2013<lpage>129386</lpage>, <year>2020</year>.</mixed-citation></ref>",
+    "<ref id=\"ref3\"><label>[3]</label> <mixed-citation publication-format=\"print\" publication-type=\"book\"><person-group person-group-type=\"author\"><string-name><given-names>J.</given-names> <surname>Rose</surname></string-name> <etal/></person-group>, \u201c<chapter-title>Wind energy systems sub-synchronous oscillations: Events and modeling</chapter-title>,\u201d <source specific-use=\"IEEE\">IEEE Power &amp; Energy Society: Piscataway</source>, <publisher-loc>NJ, USA</publisher-loc>, <year>2020</year>.</mixed-citation></ref>",
+    "<ref id=\"ref4\"><label>[4]</label> <mixed-citation publication-format=\"print\" publication-type=\"periodical\"><person-group person-group-type=\"author\"><string-name><given-names>C.</given-names> <surname>Buchhagen</surname></string-name>, <string-name><given-names>C.</given-names> <surname>Rauscher</surname></string-name>, <string-name><given-names>A.</given-names> <surname>Menze</surname></string-name>, and <string-name><given-names>J.</given-names> <surname>Jung</surname></string-name></person-group>, \u201c<article-title>Borwin1-first experi-ences with harmonic interactions in converter dominated grids</article-title>,\u201d in <source>International ETG Congress 2015; Die Energiewende-Blueprints for the new energy age</source>, pp. <fpage>1</fpage>\u2013<lpage>7</lpage>, VDE, <year>2015</year>.</mixed-citation></ref>",
+    "<ref id=\"ref5\"><label>[5]</label> <mixed-citation publication-format=\"print\" publication-type=\"periodical\"><person-group person-group-type=\"author\"><string-name><given-names>X.</given-names> <surname>Zhang</surname></string-name>, <string-name><given-names>X.</given-names> <surname>Xie</surname></string-name>, <string-name><given-names>J.</given-names> <surname>Shair</surname></string-name>, <string-name><given-names>H.</given-names> <surname>Liu</surname></string-name>, <string-name><given-names>Y.</given-names> <surname>Li</surname></string-name>, and <string-name><given-names>Y.</given-names> <surname>Li</surname></string-name></person-group>, \u201c<article-title>A grid-side subsynchronous damping controller to mitigate unstable ssci and its hardware-in-the-loop tests</article-title>,\u201d <source specific-use=\"IEEE\">IEEE Transactions on Sustainable Energy</source>, vol. <volume>11</volume>, no. <issue>3</issue>, pp. <fpage>1548</fpage>\u2013<lpage>1558</lpage>, <year>2019</year>.</mixed-citation></ref>",
+    "<ref id=\"ref6\"><label>[6]</label> <mixed-citation publication-format=\"print\" publication-type=\"periodical\"><person-group person-group-type=\"author\"><string-name><given-names>H.</given-names> <surname>Ghaffarzdeh</surname></string-name> and <string-name><given-names>A.</given-names> <surname>Mehrizi-Sani</surname></string-name></person-group>, \u201c<article-title>Mitigation of subsynchronous resonance induced by a type iii wind system</article-title>,\u201d <source specific-use=\"IEEE\">IEEE Transactions on sustainable Energy</source>, vol. <volume>11</volume>,no. <issue>3</issue>,pp. <fpage>1717</fpage>\u2013<lpage>1727</lpage>, <year>2019</year>.</mixed-citation></ref>",
+    "<ref id=\"ref7\"><label>[7]</label> <mixed-citation publication-format=\"print\" publication-type=\"confproc\"><person-group person-group-type=\"author\"><string-name><given-names>S.</given-names> <surname>Yathirajam</surname></string-name>, <string-name><given-names>A.</given-names> <surname>Peighambari</surname></string-name>, <string-name><given-names>R.</given-names> <surname>Roberts</surname></string-name>, <string-name><given-names>H.</given-names> <surname>Nademi</surname></string-name>, <string-name><given-names>S.</given-names> <surname>Gutta</surname></string-name>, <string-name><given-names>J.</given-names> <surname>Morris</surname></string-name>, and <string-name><given-names>A.</given-names> <surname>Ahmadinia</surname></string-name></person-group>, \u201c<article-title>Windfarm forced oscillation detection using hyperdimensional computing</article-title>,\u201d in <source specific-use=\"IEEE\">2023 IEEE International Conference on Big Data (BigData)</source>, pp. <fpage>3965</fpage>\u2013<lpage>3972</lpage>, <conf-sponsor>IEEE</conf-sponsor>, <year>2023</year>.</mixed-citation></ref>",
+    "<ref id=\"ref8\"><label>[8]</label> <mixed-citation publication-format=\"print\" publication-type=\"periodical\"><person-group person-group-type=\"author\"><string-name><given-names>J.</given-names> <surname>M\u0169noz-Mar\u00ed</surname></string-name>, <string-name><given-names>F.</given-names> <surname>Bovolo</surname></string-name>, <string-name><given-names>L.</given-names> <surname>G\u00f3mez-Chova</surname></string-name>, <string-name><given-names>L.</given-names> <surname>Bruzzone</surname></string-name>, and <string-name><given-names>G.</given-names> <surname>Camp-Valls</surname></string-name></person-group>, \u201c<article-title>Semisupervised one-class support vector machines for classification of remote sensing data</article-title>,\u201d <source specific-use=\"IEEE\">IEEE transactions on geoscience and remote sensing</source>, vol. <volume>48</volume>, no. <issue>8</issue>,pp. <fpage>3188</fpage>\u2013<lpage>3197</lpage>, <year>2010</year>.</mixed-citation></ref>",
+    "<ref id=\"ref9\"><label>[9]</label> <mixed-citation publication-format=\"print\" publication-type=\"confproc\"><person-group person-group-type=\"author\"><string-name><given-names>M.</given-names> <surname>Imani</surname></string-name>, <string-name><given-names>J.</given-names> <surname>Morris</surname></string-name>, <string-name><given-names>J.</given-names> <surname>Messerly</surname></string-name>, <string-name><given-names>H.</given-names> <surname>Shu</surname></string-name>, <string-name><given-names>Y.</given-names> <surname>Deng</surname></string-name>, and <string-name><given-names>T.</given-names> <surname>Rosing</surname></string-name></person-group>, \u201c<article-title>Bric: Locality-based encoding for energy-efficient brain-inspired hyperdimensional computing</article-title>,\u201d in <source>Proceedings of the 56th Annual Design Automation Conference</source>, pp. <fpage>1</fpage>\u2013<lpage>6</lpage>, <year>2019</year>.</mixed-citation></ref>",
+    "<ref id=\"ref10\"><label>[10]</label> <mixed-citation publication-format=\"print\" publication-type=\"periodical\"><person-group person-group-type=\"author\"><string-name><given-names>E.</given-names> <surname>Ko\u00e7</surname></string-name> and <string-name><given-names>A.</given-names> <surname>Ko\u00e7</surname></string-name></person-group>, \u201c<article-title>Fractional fourier transform in time series prediction</article-title>,\u201d <source specific-use=\"IEEE\">IEEE Signal Processing Letters</source>, vol. <volume>29</volume>, pp. <fpage>2542</fpage>\u2013<lpage>2546</lpage>, <year>2022</year>.</mixed-citation></ref>",
+    "<ref id=\"ref11\"><label>[11]</label> <mixed-citation publication-format=\"print\" publication-type=\"periodical\"><person-group person-group-type=\"author\"><string-name><given-names>T.</given-names> <surname>Feist</surname></string-name></person-group>, \u201c<article-title>Vivado design suite</article-title>,\u201d <source>White Paper</source>, vol. <volume>5</volume>, <year>2012</year>.</mixed-citation></ref>"
+  ],
+  "title": {
+    "textEnglish": "Improved Subsynchronous Frequency Oscillations Detection in Wind Farms Using AI-based Fourier Transformation and Advanced Metrics"
+  }
+}
+
+

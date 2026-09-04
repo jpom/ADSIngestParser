@@ -1,7 +1,4 @@
 # Parser for IEEE conference XML
-# XML documentation: https://www.ieee.org/publications/services/services-resources
-
-# New IEEE deliveries at: /proj/ads_abstracts/sources/IEEE/ftp/[DATE]
 
 import logging
 import re
@@ -33,8 +30,11 @@ class IEEEParser(BaseBeautifulSoupParser):
         self.back = None  # Acknowledgments & References: <conf-article> <back>
 
     def _parse_abstract(self):
-        if self.article.find("abstract"):
-            self.base_metadata["abstract"] = self.article.find("abstract").get_text(strip=True)
+        abstract = self.article.find("abstract")
+        if abstract:
+            ab = self._remove_latex(abstract)
+            abstract = ab.text.strip()
+            self.base_metadata["abstract"] = abstract
 
     def _parse_authors(self):
         # Parse authors from <contrib-group> section
@@ -139,22 +139,41 @@ class IEEEParser(BaseBeautifulSoupParser):
         for keywordset in self.article.find_all("kwd-group"):
             keyword_type = keywordset.get("kwd-group-type", "")
 
-            for keyword in keywordset.find_all("kwd"):
-                if keyword.string:
+            for kwd in keywordset.find_all("kwd"):
+                kwd = self._remove_latex(kwd)
+                keyword = kwd.get_text(strip=True)
+                if keyword:
                     keywords.append(
                         {
                             "system": keyword_type,
-                            "string": self._clean_output(keyword.string.strip()),
+                            "string": self._clean_output(keyword),
                         }
                     )
+
         if keywords:
             self.base_metadata["keywords"] = keywords
 
     def _parse_page(self):
-        if self.article.find("fpage"):
-            self.base_metadata["page_first"] = self.article.find("fpage").get_text(strip=True)
-        if self.article.find("lpage"):
-            self.base_metadata["page_last"] = self.article.find("lpage").get_text(strip=True)
+        fpage = self.article.find("fpage")
+        lpage = self.article.find("lpage")
+        article_id = self.article.find("xplore-article-id")
+
+        fpage_num = fpage.get_text(strip=True) if fpage else None
+
+        # if fpage = 1, use document id instead, if it exists
+        if fpage_num in ("1", "01"):
+            if article_id:
+                id_num = article_id.get_text(strip=True)
+                # cut or pad article_id to 4 chars
+                if len(id_num) > 4:
+                    id_num = id_num[-4:]
+                else:
+                    id_num = id_num.rjust(4, ".")
+                self.base_metadata["page_first"] = id_num
+        elif fpage_num:
+            self.base_metadata["page_first"] = fpage_num
+        if lpage:
+            self.base_metadata["page_last"] = lpage.get_text(strip=True)
 
     def _parse_permissions(self):
         # Check for open-access and permissions information
@@ -311,17 +330,20 @@ class IEEEParser(BaseBeautifulSoupParser):
             ref_results = []
         for r in ref_results:
             # output raw XML for reference service to parse later
-            s = str(r.extract()).replace("\n", " ").replace("\xa0", " ")
-            ref_list_text.append(s)
+            s = self._remove_latex(r)
+            t = str(s.extract()).replace("\n", " ").replace("\xa0", " ")
+            ref_list_text.append(t)
         self.base_metadata["references"] = ref_list_text
 
     def _parse_title(self):
         # Article title
-        if self.article.find("title-group"):
-            if self.article.find("title-group").find("article-title"):
-                self.base_metadata["title"] = (
-                    self.article.find("title-group").find("article-title").get_text(strip=True)
-                )
+        tg = self.article.find("title-group")
+        if tg:
+            at = tg.find("article-title")
+            if at:
+                at = self._remove_latex(at)
+                title = at.text.strip()
+                self.base_metadata["title"] = title
 
     def parse(self, text):
         """

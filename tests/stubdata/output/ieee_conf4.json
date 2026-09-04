@@ -1,0 +1,155 @@
+{
+  "abstract": {
+    "textEnglish": "The evolution of array signal processing technologies is progressing toward the deployment of compact, densely arranged sensors to form extremely large aperture arrays (ELAA), aiming to significantly improve angular resolution and beamforming gain. In this paper, we propose a wideband near-field sensing system that combines orthogonal frequency-division multiplexing (OFDM) signaling with ELAA technology. The ELAA transmitter emits wideband signals, while the radar receiver processes the echoes to estimate critical target parameters, including location, velocity, and radar cross-section. We then derive the generalized Cram\u00e9r-Rao lower bound (CRB) to assess the OFDM system\u2019s estimation performance. Numerical experiments reveal that the proposed wideband near-field sensing system outperforms its far-field and narrowband counterparts by achieving lower CRB values."
+  },
+  "authors": [
+    {
+      "affiliation": [
+        {
+          "affPubRaw": "Interdisciplinary Centre for Security, Reliability and Trust (SnT), University of Luxembourg"
+        }
+      ],
+      "attrib": {
+        "corresp": true
+      },
+      "name": {
+        "given_name": "Tong",
+        "native_lang": "Tong\nWei",
+        "surname": "Wei"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubRaw": "Interdisciplinary Centre for Security, Reliability and Trust (SnT), University of Luxembourg"
+        }
+      ],
+      "name": {
+        "given_name": "Kumar Vijay",
+        "native_lang": "Kumar Vijay\nMishra",
+        "surname": "Mishra"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubRaw": "Interdisciplinary Centre for Security, Reliability and Trust (SnT), University of Luxembourg"
+        }
+      ],
+      "name": {
+        "given_name": "Linlong",
+        "native_lang": "Linlong\nWu",
+        "surname": "Wu"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubRaw": "Interdisciplinary Centre for Security, Reliability and Trust (SnT), University of Luxembourg"
+        }
+      ],
+      "name": {
+        "given_name": "Bhavani Shankar Mysore Rama",
+        "native_lang": "Bhavani Shankar Mysore Rama\nRao",
+        "surname": "Rao"
+      }
+    }
+  ],
+  "copyright": {
+    "statement": "\u00a92025 IEEE",
+    "status": true
+  },
+  "keywords": [
+    {
+      "keyString": "Cram\u00e9r-Rao bound",
+      "keySystem": "AuthorFree"
+    },
+    {
+      "keyString": "extremely large-scale antenna array",
+      "keySystem": "AuthorFree"
+    },
+    {
+      "keyString": "near-field",
+      "keySystem": "AuthorFree"
+    },
+    {
+      "keyString": "sensing",
+      "keySystem": "AuthorFree"
+    },
+    {
+      "keyString": "wideband",
+      "keySystem": "AuthorFree"
+    }
+  ],
+  "pagination": {
+    "firstPage": "9350",
+    "lastPage": "5"
+  },
+  "persistentIDs": [
+    {
+      "DOI": "10.1109/ICASSP49660.2025.10889350",
+      "ISBN": [
+        {
+          "isbnString": "979-8-3503-6874-1",
+          "pubtype": "electronic"
+        }
+      ]
+    }
+  ],
+  "pubDate": {
+    "printDate": "2025-04-11"
+  },
+  "publication": {
+    "confDates": "06 April 2025 - 11 April 2025",
+    "confLocation": "Hyderabad, India",
+    "pubName": "ICASSP 2025 - 2025 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 06 April 2025 - 11 April 2025, Hyderabad, India",
+    "pubYear": "2025",
+    "volumeNum": "00"
+  },
+  "recordData": {
+    "createdTime": "",
+    "loadFormat": "IEEE",
+    "loadLocation": "",
+    "loadType": "fromFile",
+    "parsedTime": "2026-09-03T16:18:20.284189Z",
+    "recordOrigin": ""
+  },
+  "references": [
+    "<ref id=\"ref1\"> <label>[1]</label> <mixed-citation publication-format=\"print\" publication-type=\"periodical\"> <person-group person-group-type=\"author\"> <string-name> <given-names>A. M.</given-names> <surname>Elbir</surname> </string-name>,  <string-name> <given-names>K. V.</given-names> <surname>Mishra</surname> </string-name>,  <string-name> <given-names>S.</given-names> <surname>Chatzinotas</surname> </string-name>, and  <string-name> <given-names>M.</given-names> <surname>Bennis</surname> </string-name> </person-group>, \u201c<article-title>Terahertz-band integrated sensing and communications: Challenges and opportunities</article-title>,\u201d <source specific-use=\"IEEE\">IEEE Aerospace and Electronic Systems Magazine</source>, vol. <volume>39</volume>, no. <issue>12</issue>, pp. <fpage>38</fpage>\u2013<lpage>49</lpage>, <year>2024</year>. </mixed-citation> </ref>",
+    "<ref id=\"ref2\"> <label>[2]</label> <mixed-citation publication-format=\"print\" publication-type=\"periodical\"> <person-group person-group-type=\"author\"> <string-name> <given-names>A. M.</given-names> <surname>Elbir</surname> </string-name>,  <string-name> <given-names>K. V.</given-names> <surname>Mishra</surname> </string-name>,  <string-name> <given-names>A.</given-names> <surname>Celik</surname> </string-name>, and  <string-name> <given-names>A. M.</given-names> <surname>Eltawil</surname> </string-name> </person-group>, \u201c<article-title>The curse of beam-squint in ISAC: Causes, implications, and mitigation strategies</article-title>,\u201d <source specific-use=\"IEEE\">IEEE Communications Magazine</source>, vol. <volume>62</volume>, no. <issue>9</issue>, pp. <fpage>52</fpage>\u2013<lpage>58</lpage>, <year>2024</year>. </mixed-citation> </ref>",
+    "<ref id=\"ref3\"> <label>[3]</label> <mixed-citation publication-format=\"print\" publication-type=\"periodical\"> <person-group person-group-type=\"author\"> <string-name> <given-names>C.-X.</given-names> <surname>Wang</surname> </string-name>,  <string-name> <given-names>X.</given-names> <surname>You</surname> </string-name>,  <string-name> <given-names>X.</given-names> <surname>Gao</surname> </string-name>,  <string-name> <given-names>X.</given-names> <surname>Zhu</surname> </string-name>,  <string-name> <given-names>Z.</given-names> <surname>Li</surname> </string-name>,  <string-name> <given-names>C.</given-names> <surname>Zhang</surname> </string-name>,  <string-name> <given-names>H.</given-names> <surname>Wang</surname> </string-name>,  <string-name> <given-names>Y.</given-names> <surname>Huang</surname> </string-name>,  <string-name> <given-names>Y.</given-names> <surname>Chen</surname> </string-name>,  <string-name> <given-names>H.</given-names> <surname>Haas</surname> </string-name>,  <string-name> <given-names>J. S.</given-names> <surname>Thompson</surname> </string-name>,  <string-name> <given-names>E. G.</given-names> <surname>Larsson</surname> </string-name>,  <string-name> <given-names>M. D.</given-names> <surname>Renzo</surname> </string-name>,  <string-name> <given-names>W.</given-names> <surname>Tong</surname> </string-name>,  <string-name> <given-names>P.</given-names> <surname>Zhu</surname> </string-name>,  <string-name> <given-names>X.</given-names> <surname>Shen</surname> </string-name>,  <string-name> <given-names>H. V.</given-names> <surname>Poor</surname> </string-name>, and  <string-name> <given-names>L.</given-names> <surname>Hanzo</surname> </string-name> </person-group>, \u201c<article-title>On the road to 6G: Visions, requirements, key technologies, and testbeds</article-title>,\u201d <source specific-use=\"IEEE\">IEEE Communications Surveys &amp; Tutorials</source>, vol. <volume>25</volume>, no. <issue>2</issue>, pp. <fpage>905</fpage>\u2013<lpage>974</lpage>, <year>2023</year>. </mixed-citation> </ref>",
+    "<ref id=\"ref4\"> <label>[4]</label> <mixed-citation publication-format=\"print\" publication-type=\"book\"> <person-group person-group-type=\"author\"> <string-name> <given-names>K. V.</given-names> <surname>Mishra</surname> </string-name>,  <string-name> <given-names>M.</given-names> <surname>Bhavani Shankar</surname> </string-name>,  <string-name> <given-names>B.</given-names> <surname>Ottersten</surname> </string-name>, and  <string-name> <given-names>A. L.</given-names> <surname>Swindlehurst</surname> </string-name> </person-group>, <source>Signal processing for joint radar-communications</source>. <publisher-name>Wiley-IEEE Press</publisher-name>, <year>2024</year>. </mixed-citation> </ref>",
+    "<ref id=\"ref5\"> <label>[5]</label> <mixed-citation publication-format=\"print\" publication-type=\"periodical\"> <person-group person-group-type=\"author\"> <string-name> <given-names>K. V.</given-names> <surname>Mishra</surname> </string-name>,  <string-name> <given-names>M. R.</given-names> <surname>Bhavani Shankar</surname> </string-name>,  <string-name> <given-names>V.</given-names> <surname>Koivunen</surname> </string-name>,  <string-name> <given-names>B.</given-names> <surname>Ottersten</surname> </string-name>, and  <string-name> <given-names>S. A.</given-names> <surname>Vorobyov</surname> </string-name> </person-group>, \u201c<article-title>Toward millimeter wave joint radar communications: A signal processing perspective</article-title>,\u201d <source specific-use=\"IEEE\">IEEE Signal Processing Magazine</source>, vol. <volume>36</volume>, no. <issue>5</issue>, pp. <fpage>100</fpage>\u2013<lpage>114</lpage>, <year>2019</year>. </mixed-citation> </ref>",
+    "<ref id=\"ref6\"> <label>[6]</label> <mixed-citation publication-format=\"print\" publication-type=\"periodical\"> <person-group person-group-type=\"author\"> <string-name> <given-names>T.</given-names> <surname>Wei</surname> </string-name>,  <string-name> <given-names>L.</given-names> <surname>Wu</surname> </string-name>,  <string-name> <given-names>K. V.</given-names> <surname>Mishra</surname> </string-name>, and  <string-name> <given-names>B.</given-names> <surname>Shankar</surname> </string-name> <string-name> <given-names>M.</given-names> <surname>R</surname> </string-name></person-group>., \u201c<article-title>RIS-aided wideband holographic DFRC</article-title>,\u201d <source specific-use=\"IEEE\">IEEE Transactions on Aerospace and Electronic Systems</source>, vol. <volume>60</volume>, no. <issue>4</issue>, pp. <fpage>4241</fpage>\u2013<lpage>4256</lpage>, <year>2024</year>. </mixed-citation> </ref>",
+    "<ref id=\"ref7\"> <label>[7]</label> <mixed-citation publication-format=\"print\" publication-type=\"periodical\"> <person-group person-group-type=\"author\"> <string-name> <given-names>E.</given-names> <surname>Vargas</surname> </string-name>,  <string-name> <given-names>K. V.</given-names> <surname>Mishra</surname> </string-name>,  <string-name> <given-names>R.</given-names> <surname>Jacome</surname> </string-name>,  <string-name> <given-names>B. M.</given-names> <surname>Sadler</surname> </string-name>, and  <string-name> <given-names>H.</given-names> <surname>Arguello</surname> </string-name> </person-group>, \u201c<article-title>Dual-blind deconvolution for overlaid radar-communications systems</article-title>,\u201d <source specific-use=\"IEEE\">IEEE Journal on Selected Areas in Information Theory</source>, vol. <volume>4</volume>, pp. <fpage>75</fpage>\u2013<lpage>93</lpage>, <year>2023</year>. </mixed-citation> </ref>",
+    "<ref id=\"ref8\"> <label>[8]</label> <mixed-citation publication-format=\"print\" publication-type=\"periodical\"> <person-group person-group-type=\"author\"> <string-name> <given-names>S.</given-names> <surname>Nayemuzzaman</surname> </string-name>,  <string-name> <given-names>K. V.</given-names> <surname>Mishra</surname> </string-name>,  <string-name> <given-names>J.</given-names> <surname>Liu</surname> </string-name>, and  <string-name> <given-names>M.</given-names> <surname>Saquib</surname> </string-name> </person-group>, \u201c<article-title>Co-designing statistical MIMO radar and in-band full-duplex multi-user MIMO communications\u2013part III: Multi-target tracking</article-title>,\u201d <italic>arXiv preprint arXiv:2403.19120</italic>, <year>2024</year>. </mixed-citation> </ref>",
+    "<ref id=\"ref9\"> <label>[9]</label> <mixed-citation publication-format=\"print\" publication-type=\"book\"> <person-group person-group-type=\"author\"> <string-name> <given-names>C. A.</given-names> <surname>Balanis</surname> </string-name> </person-group>, <source>Modern antenna handbook</source>. <publisher-name>Wiley</publisher-name>, <year>2011</year>. </mixed-citation> </ref>",
+    "<ref id=\"ref10\"> <label>[10]</label> <mixed-citation publication-format=\"print\" publication-type=\"periodical\"> <person-group person-group-type=\"author\"> <string-name> <given-names>A. M.</given-names> <surname>Elbir</surname> </string-name>, <string-name> <given-names>\u00d6. T.</given-names> <surname>Demir</surname> </string-name>,  <string-name> <given-names>K. V.</given-names> <surname>Mishra</surname> </string-name>,  <string-name> <given-names>S.</given-names> <surname>Chatzinotas</surname> </string-name>, and  <string-name> <given-names>M.</given-names> <surname>Haardt</surname> </string-name> </person-group>, \u201c<article-title>Near-field signal processing: Unleashing the power of proximity</article-title>,\u201d <source specific-use=\"IEEE\">IEEE Signal Processing Magazine</source>, <year>2025</year>, in press. </mixed-citation> </ref>",
+    "<ref id=\"ref11\"> <label>[11]</label> <mixed-citation publication-format=\"print\" publication-type=\"periodical\"> <person-group person-group-type=\"author\"> <string-name> <given-names>R.</given-names> <surname>Boyer</surname> </string-name> </person-group>, \u201c<article-title>Performance bounds and angular resolution limit for the moving colocated MIMO radar</article-title>,\u201d <source specific-use=\"IEEE\">IEEE Transactions on Signal Processing</source>, vol. <volume>59</volume>, no. <issue>4</issue>, pp. <fpage>1539</fpage>\u2013<lpage>1552</lpage>, <year>2011</year>. </mixed-citation> </ref>",
+    "<ref id=\"ref12\"> <label>[12]</label> <mixed-citation publication-format=\"print\" publication-type=\"periodical\"> <person-group person-group-type=\"author\"> <string-name> <given-names>M. D.</given-names> <surname>Larsen</surname> </string-name>,  <string-name> <given-names>A. L.</given-names> <surname>Swindlehurst</surname> </string-name>, and  <string-name> <given-names>T.</given-names> <surname>Svantesson</surname> </string-name> </person-group>, \u201c<article-title>Performance bounds for MIMO-OFDM channel estimation</article-title>,\u201d <source specific-use=\"IEEE\">IEEE Transactions on Signal Processing</source>, vol. <volume>57</volume>, no. <issue>5</issue>, pp. <fpage>1901</fpage>\u2013<lpage>1916</lpage>, <year>2009</year>. </mixed-citation> </ref>",
+    "<ref id=\"ref13\"> <label>[13]</label> <mixed-citation publication-format=\"print\" publication-type=\"book\"> <person-group person-group-type=\"author\"> <string-name> <given-names>H. L.</given-names> <surname>Van Trees</surname> </string-name>,  <string-name> <given-names>K. L.</given-names> <surname>Bell</surname> </string-name>, and  <string-name> <given-names>Z.</given-names> <surname>Tian</surname> </string-name> </person-group>, <source>Detection Estimation and Modulation Theory, Part I: Detection, Estimation, and Filtering Theory</source>, <edition>2nd</edition> ed. <publisher-name>Wiley</publisher-name>, <year>2013</year>. </mixed-citation> </ref>",
+    "<ref id=\"ref14\"> <label>[14]</label> <mixed-citation publication-format=\"print\" publication-type=\"periodical\"> <person-group person-group-type=\"author\"> <string-name> <given-names>A.</given-names> <surname>Zeira</surname> </string-name> and  <string-name> <given-names>P. M.</given-names> <surname>Schultheiss</surname> </string-name> </person-group>, \u201c<article-title>Realizable lower bounds for time delay estimation</article-title>,\u201d <source specific-use=\"IEEE\">IEEE transactions on signal processing</source>, vol. <volume>41</volume>, no. <issue>11</issue>, pp. <fpage>3102</fpage>\u2013<lpage>3113</lpage>, <year>1993</year>. </mixed-citation> </ref>",
+    "<ref id=\"ref15\"> <label>[15]</label> <mixed-citation publication-format=\"print\" publication-type=\"periodical\"> <person-group person-group-type=\"author\"> <string-name> <given-names>Y.</given-names> <surname>Lu</surname> </string-name> and  <string-name> <given-names>L.</given-names> <surname>Dai</surname> </string-name> </person-group>, \u201c<article-title>Near-field channel estimation in mixed LoS/NLoS environments for extremely large-scale MIMO systems</article-title>,\u201d <source specific-use=\"IEEE\">IEEE Transactions on Communications</source>, vol. <volume>71</volume>, no. <issue>6</issue>, pp. <fpage>3694</fpage>\u2013<lpage>3707</lpage>, <year>2023</year>. </mixed-citation> </ref>",
+    "<ref id=\"ref16\"> <label>[16]</label> <mixed-citation publication-format=\"print\" publication-type=\"periodical\"> <person-group person-group-type=\"author\"> <string-name> <given-names>M.</given-names> <surname>Kleinsteuber</surname> </string-name> and <string-name> <given-names>A.-K.</given-names> <surname>Seghouane</surname> </string-name> </person-group>, \u201c<article-title>On the deterministic CRB for DOA estimation in unknown noise fields using sparse sensor arrays</article-title>,\u201d <source specific-use=\"IEEE\">IEEE Transactions on Signal Processing</source>, vol. <volume>56</volume>, no. <issue>2</issue>, pp. <fpage>860</fpage>\u2013<lpage>864</lpage>, <year>2008</year>. </mixed-citation> </ref>",
+    "<ref id=\"ref17\"> <label>[17]</label> <mixed-citation publication-format=\"print\" publication-type=\"periodical\"> <person-group person-group-type=\"author\"> <string-name> <given-names>Y.</given-names> <surname>Liang</surname> </string-name>,  <string-name> <given-names>W.</given-names> <surname>Cui</surname> </string-name>,  <string-name> <given-names>Q.</given-names> <surname>Shen</surname> </string-name>,  <string-name> <given-names>W.</given-names> <surname>Liu</surname> </string-name>, and  <string-name> <given-names>S.</given-names> <surname>Wu</surname> </string-name> </person-group>, \u201c<article-title>Cram\u00e9r-rao bound analysis of underdetermined wideband DOA estimation under the subband model via frequency decomposition</article-title>,\u201d <source specific-use=\"IEEE\">IEEE Transactions on Signal Processing</source>, vol. <volume>69</volume>, pp. <fpage>4132</fpage>\u2013<lpage>4148</lpage>, <year>2021</year>. </mixed-citation> </ref>",
+    "<ref id=\"ref18\"> <label>[18]</label> <mixed-citation publication-format=\"print\" publication-type=\"periodical\"> <person-group person-group-type=\"author\"> <string-name> <given-names>Y.</given-names> <surname>Chen</surname> </string-name> and  <string-name> <given-names>R. S.</given-names> <surname>Blum</surname> </string-name> </person-group>, \u201c<article-title>On the impact of unknown signals on delay, doppler, amplitude, and phase parameter estimation</article-title>,\u201d <source specific-use=\"IEEE\">IEEE Transactions on Signal Processing</source>, vol. <volume>67</volume>, no. <issue>2</issue>, pp. <fpage>431</fpage>\u2013<lpage>443</lpage>, <year>2019</year>. </mixed-citation> </ref>",
+    "<ref id=\"ref19\"> <label>[19]</label> <mixed-citation publication-format=\"print\" publication-type=\"periodical\"> <person-group person-group-type=\"author\"> <string-name> <given-names>H.</given-names> <surname>Hua</surname> </string-name>,  <string-name> <given-names>J.</given-names> <surname>Xu</surname> </string-name>, and  <string-name> <given-names>Y. C.</given-names> <surname>Eldar</surname> </string-name> </person-group>, \u201c<article-title>Near-field 3D localization via MIMO radar: Cram\u00e9r-Rao bound analysis and estimator design</article-title>,\u201d <source specific-use=\"IEEE\">IEEE Transactions on Signal Processing</source>, vol. <volume>72</volume>, pp. <fpage>3879</fpage>\u2013<lpage>3895</lpage>, <year>2024</year>. </mixed-citation> </ref>",
+    "<ref id=\"ref20\"> <label>[20]</label> <mixed-citation publication-format=\"print\" publication-type=\"periodical\"> <person-group person-group-type=\"author\"> <string-name> <given-names>H.</given-names> <surname>Wang</surname> </string-name>,  <string-name> <given-names>Z.</given-names> <surname>Xiao</surname> </string-name>, and  <string-name> <given-names>Y.</given-names> <surname>Zeng</surname> </string-name> </person-group>, \u201c<article-title>Cram\u00e9r-Rao bounds for near-field sensing with extremely large-scale MIMO</article-title>,\u201d <source specific-use=\"IEEE\">IEEE Transactions on Signal Processing</source>, vol. <volume>72</volume>, pp. <fpage>701</fpage>\u2013<lpage>717</lpage>, <year>2024</year>. </mixed-citation> </ref>",
+    "<ref id=\"ref21\"> <label>[21]</label> <mixed-citation publication-format=\"print\" publication-type=\"periodical\"> <person-group person-group-type=\"author\"> <string-name> <given-names>M.</given-names> <surname>Wang</surname> </string-name> and  <string-name> <given-names>A.</given-names> <surname>Nehorai</surname> </string-name> </person-group>, \u201c<article-title>Coarrays, MUSIC, and the Cram\u00e9r\u2013Rao bound</article-title>,\u201d <source specific-use=\"IEEE\">IEEE Transactions on Signal Processing</source>, vol. <volume>65</volume>, no. <issue>4</issue>, pp. <fpage>933</fpage>\u2013<lpage>946</lpage>, <year>2017</year>. </mixed-citation> </ref>",
+    "<ref id=\"ref22\"> <label>[22]</label> <mixed-citation publication-format=\"print\" publication-type=\"periodical\"> <person-group person-group-type=\"author\"> <string-name> <given-names>Y.</given-names> <surname>Liu</surname> </string-name>,  <string-name> <given-names>G.</given-names> <surname>Liao</surname> </string-name>,  <string-name> <given-names>Y.</given-names> <surname>Chen</surname> </string-name>,  <string-name> <given-names>J.</given-names> <surname>Xu</surname> </string-name>, and  <string-name> <given-names>Y.</given-names> <surname>Yin</surname> </string-name> </person-group>, \u201c<article-title>Super-resolution range and velocity estimations with OFDM integrated radar and communications waveform</article-title>,\u201d <source specific-use=\"IEEE\">IEEE Transactions on Vehicular Technology</source>, vol. <volume>69</volume>, no. <issue>10</issue>, pp. <fpage>11 659</fpage>\u2013<lpage>11 672</lpage>, <year>2020</year>. </mixed-citation> </ref>",
+    "<ref id=\"ref23\"> <label>[23]</label> <mixed-citation publication-format=\"print\" publication-type=\"periodical\"> <person-group person-group-type=\"author\"> <string-name> <given-names>L.</given-names> <surname>Zheng</surname> </string-name> and  <string-name> <given-names>X.</given-names> <surname>Wang</surname> </string-name> </person-group>, \u201c<article-title>Super-resolution delay-doppler estimation for OFDM passive radar</article-title>,\u201d <source specific-use=\"IEEE\">IEEE Transactions on Signal Processing</source>, vol. <volume>65</volume>, no. <issue>9</issue>, pp. <fpage>2197</fpage>\u2013<lpage>2210</lpage>, <year>2017</year>. </mixed-citation> </ref>",
+    "<ref id=\"ref24\"> <label>[24]</label> <mixed-citation publication-format=\"print\" publication-type=\"periodical\"> <person-group person-group-type=\"author\"> <string-name> <given-names>M. F.</given-names> <surname>Keskin</surname> </string-name>,  <string-name> <given-names>V.</given-names> <surname>Koivunen</surname> </string-name>, and  <string-name> <given-names>H.</given-names> <surname>Wymeersch</surname> </string-name> </person-group>, \u201c<article-title>Limited feed-forward waveform design for OFDM dual-functional radar-communications</article-title>,\u201d <source specific-use=\"IEEE\">IEEE Transactions on Signal Processing</source>, vol. <volume>69</volume>, pp. <fpage>2955</fpage>\u2013<lpage>2970</lpage>, <year>2021</year>. </mixed-citation> </ref>",
+    "<ref id=\"ref25\"> <label>[25]</label> <mixed-citation publication-format=\"print\" publication-type=\"periodical\"> <person-group person-group-type=\"author\"> <string-name> <given-names>S.</given-names> <surname>Sun</surname> </string-name>,  <string-name> <given-names>Y.</given-names> <surname>Hu</surname> </string-name>,  <string-name> <given-names>K. V.</given-names> <surname>Mishra</surname> </string-name>, and  <string-name> <given-names>A. P.</given-names> <surname>Petropulu</surname> </string-name> </person-group>, \u201c<article-title>Widely separated MIMO radar using matrix completion</article-title>,\u201d <source specific-use=\"IEEE\">IEEE Transactions on Radar Systems</source>, vol. <volume>2</volume>, pp. <fpage>180</fpage>\u2013<lpage>196</lpage>, <year>2024</year>. </mixed-citation> </ref>",
+    "<ref id=\"ref26\"> <label>[26]</label> <mixed-citation publication-format=\"print\" publication-type=\"confproc\"> <person-group person-group-type=\"author\"> <string-name> <given-names>S.</given-names> <surname>Sun</surname> </string-name>,  <string-name> <given-names>K. V.</given-names> <surname>Mishra</surname> </string-name>, and  <string-name> <given-names>A. P.</given-names> <surname>Petropulu</surname> </string-name> </person-group>, \u201c<article-title>Target estimation by exploiting low rank structure in widely separated MIMO radar</article-title>,\u201d in <source specific-use=\"IEEE\">2019 IEEE Radar Conference (RadarConf)</source>, <conf-date>2019</conf-date>, pp. <fpage>1</fpage>\u2013<lpage>6</lpage>. </mixed-citation> </ref>",
+    "<ref id=\"ref27\"> <label>[27]</label> <mixed-citation publication-format=\"print\" publication-type=\"periodical\"> <person-group person-group-type=\"author\"> <string-name> <given-names>K.</given-names> <surname>Dovelos</surname> </string-name>,  <string-name> <given-names>M.</given-names> <surname>Matthaiou</surname> </string-name>,  <string-name> <given-names>H. Q.</given-names> <surname>Ngo</surname> </string-name>, and  <string-name> <given-names>B.</given-names> <surname>Bellalta</surname> </string-name> </person-group>, \u201c<article-title>Channel estimation and hybrid combining for wideband terahertz massive MIMO systems</article-title>,\u201d <source specific-use=\"IEEE\">IEEE Journal on Selected Areas in Communications</source>, vol. <volume>39</volume>, no. <issue>6</issue>, pp. <fpage>1604</fpage>\u2013<lpage>1620</lpage>, <year>2021</year>. </mixed-citation> </ref>",
+    "<ref id=\"ref28\"> <label>[28]</label> <mixed-citation publication-format=\"print\" publication-type=\"periodical\"> <person-group person-group-type=\"author\"> <string-name> <given-names>J.</given-names> <surname>Xu</surname> </string-name>,  <string-name> <given-names>L.</given-names> <surname>You</surname> </string-name>,  <string-name> <given-names>G. C.</given-names> <surname>Alexandropoulos</surname> </string-name>,  <string-name> <given-names>X.</given-names> <surname>Yi</surname> </string-name>,  <string-name> <given-names>W.</given-names> <surname>Wang</surname> </string-name>, and  <string-name> <given-names>X.</given-names> <surname>Gao</surname> </string-name> </person-group>, \u201c<article-title>Near-field wideband extremely large-scale mimo transmissions with holographic metasurface-based antenna arrays</article-title>,\u201d <source specific-use=\"IEEE\">IEEE Transactions on Wireless Communications</source>, pp. <fpage>1</fpage>\u2013<lpage>1</lpage>, <year>2024</year>. </mixed-citation> </ref>",
+    "<ref id=\"ref29\"> <label>[29]</label> <mixed-citation publication-format=\"print\" publication-type=\"book\"> <person-group person-group-type=\"author\"> <string-name> <given-names>P.</given-names> <surname>Stoica</surname> </string-name> and  <string-name> <given-names>R.</given-names> <surname>Moses</surname> </string-name> </person-group>, <source>Spectral analysis of signals</source>. <publisher-name>Pearson Prentice Hall</publisher-name>, <year>2005</year>. </mixed-citation> </ref>",
+    "<ref id=\"ref30\"> <label>[30]</label> <mixed-citation publication-format=\"print\" publication-type=\"periodical\"> <person-group person-group-type=\"author\"> <string-name> <given-names>S. H.</given-names> <surname>Dokhanchi</surname> </string-name>,  <string-name> <given-names>B. S.</given-names> <surname>Mysore</surname> </string-name>,  <string-name> <given-names>K. V.</given-names> <surname>Mishra</surname> </string-name>, and  <string-name> <given-names>B.</given-names> <surname>Ottersten</surname> </string-name> </person-group>, \u201c<article-title>A mmwave automotive joint radar-communications system</article-title>,\u201d <source specific-use=\"IEEE\">IEEE Transactions on Aerospace and Electronic Systems</source>, vol. <volume>55</volume>, no. <issue>3</issue>, pp. <fpage>1241</fpage>\u2013<lpage>1260</lpage>, <year>2019</year>. </mixed-citation> </ref>",
+    "<ref id=\"ref31\"> <label>[31]</label> <mixed-citation publication-format=\"print\" publication-type=\"book\"> <person-group person-group-type=\"author\"> <string-name> <given-names>A.</given-names> <surname>Hjrungnes</surname> </string-name> </person-group>, <source>Complex-Valued Matrix Derivatives: With Applications in Signal Processing and Communications</source>, <edition>1st</edition> ed. <publisher-loc>USA</publisher-loc>: <publisher-name>Cambridge University Press</publisher-name>, <year>2011</year>. </mixed-citation> </ref>"
+  ],
+  "title": {
+    "textEnglish": "Cram\u00e9r-Rao Bounds for Wideband Near-Field Sensing"
+  }
+}
+
+

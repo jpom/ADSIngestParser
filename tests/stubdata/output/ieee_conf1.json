@@ -1,0 +1,154 @@
+{
+  "abstract": {
+    "textEnglish": "Hyperspectral images and optical signatures acquired by NASA's Airborne Visible/Infrared Imaging Spectrometer (AVIRIS) from multiple locations are examined. The spectral responses obtained are used to promote the development of physics-based models for these signatures with future application in improvements in hyperspectral sensing."
+  },
+  "authors": [
+    {
+      "affiliation": [
+        {
+          "affPubRaw": "ElectroScience Laboratory, The Ohio State University, Columbus, OH, USA"
+        }
+      ],
+      "attrib": {
+        "email": "emon.1@osu.edu"
+      },
+      "name": {
+        "given_name": "Emraul Islam",
+        "native_lang": "Emraul Islam Emon",
+        "surname": "Emon"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubRaw": "ElectroScience Laboratory, The Ohio State University, Columbus, OH, USA"
+        }
+      ],
+      "name": {
+        "given_name": "Afia Mubassira",
+        "native_lang": "Afia Mubassira Islam",
+        "surname": "Islam"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubRaw": "ElectroScience Laboratory, The Ohio State University, Columbus, OH, USA"
+        }
+      ],
+      "name": {
+        "given_name": "Christopher",
+        "native_lang": "Christopher Ball",
+        "surname": "Ball"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubRaw": "ElectroScience Laboratory, The Ohio State University, Columbus, OH, USA"
+        }
+      ],
+      "name": {
+        "given_name": "Joel T.",
+        "native_lang": "Joel T. Johnson",
+        "surname": "Johnson"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubRaw": "Department of Earth, Environmental, and Geospatial Science, Saint Louis University, Saint Louis, MO, USA"
+        }
+      ],
+      "name": {
+        "given_name": "Vasit",
+        "native_lang": "Vasit Sagan",
+        "surname": "Sagan"
+      }
+    }
+  ],
+  "copyright": {
+    "statement": "\u00a92025 ",
+    "status": true
+  },
+  "funding": [
+    {
+      "agencyname": "US Department of Defense Multi-Disciplinary University"
+    }
+  ],
+  "keywords": [
+    {
+      "keyString": "AVIRIS",
+      "keySystem": "AuthorFree"
+    },
+    {
+      "keyString": "hyperspectral data",
+      "keySystem": "AuthorFree"
+    },
+    {
+      "keyString": "reflectance",
+      "keySystem": "AuthorFree"
+    }
+  ],
+  "pagination": {
+    "firstPage": "832",
+    "lastPage": "835"
+  },
+  "persistentIDs": [
+    {
+      "DOI": "10.1109/IGARSS55030.2025.11314062",
+      "ISBN": [
+        {
+          "isbnString": "979-8-3315-0810-4",
+          "pubtype": "electronic"
+        }
+      ]
+    }
+  ],
+  "pubDate": {
+    "printDate": "2025-08-08"
+  },
+  "publication": {
+    "confDates": "03 08 2025 - 08 08 2025",
+    "confLocation": "Brisbane, Australia",
+    "pubName": "IGARSS 2025 - 2025 IEEE International Geoscience and Remote Sensing Symposium, 03 08 2025 - 08 08 2025, Brisbane, Australia",
+    "pubYear": "2025",
+    "volumeNum": "00"
+  },
+  "recordData": {
+    "createdTime": "",
+    "loadFormat": "IEEE",
+    "loadLocation": "",
+    "loadType": "fromFile",
+    "parsedTime": "2026-09-03T15:34:19.360071Z",
+    "recordOrigin": ""
+  },
+  "references": [
+    "<ref id=\"ref1\"><label>[1]</label> <mixed-citation publication-format=\"print\" publication-type=\"confproc\"><person-group person-group-type=\"author\"><string-name><given-names>S.</given-names> <surname>Prasad</surname></string-name>, <string-name><given-names>J.</given-names> <surname>Chanussot</surname></string-name>, <string-name><given-names>J. E.</given-names> <surname>Fowler</surname></string-name>, <string-name><given-names>J.</given-names> <surname>Bioucas-Dias</surname></string-name>, and <string-name><given-names>C. D.</given-names> <surname>Creuserre</surname></string-name></person-group>, \u201c<article-title>Introduction to the Issue on Advances in Hyperspectral Data Processing and Analysis</article-title>,\u201d <source specific-use=\"IEEE\">IEEE Journal of Selected Topics in Signal Processing</source>, vol. <volume>9</volume>, no. <issue>6</issue>, pp. <fpage>961</fpage>\u2013<lpage>963</lpage>, <month>Sep.</month> <year>2015</year>, doi: <pub-id pub-id-type=\"doi\">10.1109/JSTSP.2015.2457631</pub-id>.</mixed-citation></ref>",
+    "<ref id=\"ref2\"><label>[2]</label> <mixed-citation publication-format=\"print\" publication-type=\"periodical\" publisher-type=\"government\">\u201c<source>EO-1 Hyperion.</source>\u201d Accessed: <date-in-citation><month>Jan.</month> <day>06</day>, <year>2025</year></date-in-citation>. [Online]. Available: <uri>https://cmr.earthdata.nasa.gov/search/concepts/C1220567951USGS_LTA.html</uri>.</mixed-citation></ref>",
+    "<ref id=\"ref3\"><label>[3]</label> <mixed-citation publication-format=\"print\" publication-type=\"periodical\" publisher-type=\"government\">\u201c<source>AVIRIS - Airborne Visible / Infrared Imaging Spectrometer.</source>\u201d Accessed: <date-in-citation><month>Jan.</month> <day>06</day>, <year>2025</year></date-in-citation>. [Online]. Available: <uri>https://aviris.jpl.nasa.gov/index.html</uri>.</mixed-citation></ref>",
+    "<ref id=\"ref4\"><label>[4]</label> <mixed-citation publication-format=\"print\" publication-type=\"periodical\" publisher-type=\"government\">\u201c<source>AVIRIS-Next Generation.</source>\u201d Accessed: <date-in-citation><month>Jan.</month> <day>06</day>, <year>2025</year></date-in-citation>. [Online]. Available: <uri>https://avirisng.jpl.nasa.gov/specifications.html</uri>.</mixed-citation></ref>",
+    "<ref id=\"ref5\"><label>[5]</label> <mixed-citation publication-format=\"print\" publication-type=\"periodical\">\u201c<source>PRISMA (Hyperspectral) - eoPortal.</source>\u201d Accessed: <date-in-citation><month>Jan.</month> <day>06</day>, <year>2025</year></date-in-citation>. [Online]. Available: <uri>https://www.eoportal.org/satellite-missions/prisma-hyperspectral</uri>.</mixed-citation></ref>",
+    "<ref id=\"ref6\"><label>[6]</label> <mixed-citation publication-format=\"print\" publication-type=\"periodical\">\u201c<source>Mission - EnMAP.</source>\u201d Accessed: <date-in-citation><month>Jan.</month> <day>06</day>, <year>2025</year></date-in-citation>. [Online]. Available: <uri>https://www.enmap.org/mission</uri>.</mixed-citation></ref>",
+    "<ref id=\"ref7\"><label>[7]</label> <mixed-citation publication-format=\"print\" publication-type=\"periodical\">\u201c<source>Hyperspectral Imaging Satellites | Planet.</source>\u201d Accessed: <date-in-citation><month>Jan.</month> <day>06</day>, <year>2025</year></date-in-citation>. [Online]. Available: <uri>https://www.planet.com/products/hyperspectral/</uri>.</mixed-citation></ref>",
+    "<ref id=\"ref8\"><label>[8]</label> <mixed-citation publication-format=\"print\" publication-type=\"periodical\">\u201c<source>Pixxel Hyperspectral Imaging Constellation - eoPortal.</source>\u201d Accessed: <date-in-citation><month>Jan.</month> <day>06</day>, <year>2025</year></date-in-citation>. [Online]. Available: <uri>https://www.eoportal.org/satellitemissions/pixxel</uri>.</mixed-citation></ref>",
+    "<ref id=\"ref9\"><label>[9]</label> <mixed-citation publication-format=\"print\" publication-type=\"periodical\" publisher-type=\"government\">\u201c<article-title>Welcome to HyspIRI Mission Study Site</article-title>,\u201d <source>Hyspiri.</source> Accessed: <date-in-citation><month>Jan.</month> <day>06</day>, <year>2025</year></date-in-citation>. [Online]. Available: <uri>https://hyspiri.jpl.nasa.gov</uri>.</mixed-citation></ref>",
+    "<ref id=\"ref10\"><label>[10]</label> <mixed-citation publication-format=\"print\" publication-type=\"periodical\"><person-group person-group-type=\"author\"><string-name><given-names>R. O.</given-names> <surname>Green</surname></string-name> <etal>et al.</etal></person-group>, \u201c<article-title>Imaging Spectroscopy and the Airborne Visible/Infrared Imaging Spectrometer (AVIRIS)</article-title>,\u201d <source>Remote Sensing of Environment</source>, vol. <volume>65</volume>, no. <issue>3</issue>, pp. <fpage>227</fpage>\u2013<lpage>248</lpage>, <month>Sep.</month> <year>1998</year>, doi: <pub-id pub-id-type=\"doi\">10.1016/S0034-4257(98)00064-9</pub-id>.</mixed-citation></ref>",
+    "<ref id=\"ref11\"><label>[11]</label> <mixed-citation publication-format=\"print\" publication-type=\"periodical\" publisher-type=\"government\">\u201c<source>AVIRIS - Airborne Visible / Infrared Imaging Spectrometer.</source>\u201d Accessed: <date-in-citation><month>Jan.</month> <day>05</day>, <year>2025</year></date-in-citation>. [Online]. Available: <uri>https://aviris.jpl.nasa.gov/</uri>.</mixed-citation></ref>",
+    "<ref id=\"ref12\"><label>[12]</label> <mixed-citation publication-format=\"print\" publication-type=\"periodical\"><person-group person-group-type=\"author\"><string-name><given-names>C. E.</given-names> <surname>Miller</surname></string-name> <etal>et al.</etal></person-group>, \u201c<article-title>Arctic-Boreal Vulnerability Experiment (ABoVE)ABoVE: Hyperspectral Imagery from AVIRIS-NG, Alaskan and Canadian Arctic, 2017\u20132019</article-title>,\u201d <month>Apr.</month> <day>23</day>, <year>2018</year>, <source>ORNL Distributed Active Archive Center.</source> doi: <pub-id pub-id-type=\"doi\">10.3334/ORNLDAAC/1569</pub-id>.</mixed-citation></ref>",
+    "<ref id=\"ref13\"><label>[13]</label> <mixed-citation publication-format=\"print\" publication-type=\"periodical\" publisher-type=\"government\">\u201c<source>JPL | AVIRIS Data Portal.</source>\u201d Accessed: <date-in-citation><month>Jan.</month> <day>05</day>, <year>2025</year></date-in-citation>. [Online]. Available: <uri>https://aviris.jpl.nasa.gov/dataportal/</uri>.</mixed-citation></ref>",
+    "<ref id=\"ref14\"><label>[14]</label> <mixed-citation publication-format=\"print\" publication-type=\"periodical\"><person-group person-group-type=\"author\"><string-name><given-names>R. O.</given-names> <surname>Green</surname></string-name></person-group>, \u201c<source>Measuring the Spectral Expression of Carbon Dioxide in the Solar Reflected Spectrum with AVIRIS</source>\u201d.</mixed-citation></ref>",
+    "<ref id=\"ref15\"><label>[15]</label> <mixed-citation publication-format=\"print\" publication-type=\"book\"><person-group person-group-type=\"author\"><string-name><given-names>A. R.</given-names> <surname>Huete</surname></string-name></person-group>, \u201c<chapter-title>11 - REMOTE SENSING FOR ENVIRONMENTAL MONITORING</chapter-title>,\u201d in <source>Environmental Monitoring and Characterization</source>, <person-group person-group-type=\"editor\"><string-name><given-names>J. F.</given-names> <surname>Artiola</surname></string-name>, <string-name><given-names>I. L.</given-names> <surname>Pepper</surname></string-name>, and <string-name><given-names>M. L.</given-names> <surname>Brusseau</surname></string-name></person-group>, Eds., <publisher-loc>Burlington</publisher-loc>: <publisher-name>Academic Press</publisher-name>, <year>2004</year>, pp. <fpage>183</fpage>\u2013<lpage>206</lpage>. doi: <pub-id pub-id-type=\"doi\">10.1016/B978-012064477-3/50013-8</pub-id>.</mixed-citation></ref>",
+    "<ref id=\"ref16\"><label>[16]</label> <mixed-citation publication-format=\"print\" publication-type=\"periodical\"><person-group person-group-type=\"author\"><string-name><given-names>T.</given-names> <surname>Dindaroglu</surname></string-name>, <string-name><given-names>E.</given-names> <surname>Babur</surname></string-name>, <string-name><given-names>T.</given-names> <surname>Yakupoglu</surname></string-name>, <string-name><given-names>J.</given-names> <surname>Rodrigo-Comino</surname></string-name>, and <string-name><given-names>A.</given-names> <surname>Cerd\u00e0</surname></string-name></person-group>, \u201c<article-title>Evaluation of geomorphometric characteristics and soil properties after a wildfire using Sentinel-2 MSI imagery for future firesafe forest</article-title>,\u201d <source>Fire Safety Journal</source>, vol. <volume>122</volume>, p. <fpage>103318</fpage>, <month>Jun.</month> <year>2021</year>, doi: <pub-id pub-id-type=\"doi\">10.1016/j.firesaf.2021.103318</pub-id>.</mixed-citation></ref>",
+    "<ref id=\"ref17\"><label>[17]</label> <mixed-citation publication-format=\"print\" publication-type=\"periodical\"><person-group person-group-type=\"author\"><string-name><given-names>B.</given-names> <surname>Zhou</surname></string-name>, <string-name><given-names>S.</given-names> <surname>Gao</surname></string-name>, <string-name><given-names>Y.</given-names> <surname>Yin</surname></string-name>, and <string-name><given-names>Y.</given-names> <surname>Zhong</surname></string-name></person-group>, \u201c<article-title>Enhancing active fire detection in Sentinel 2 imagery using GLCM texture features in random forest models</article-title>,\u201d <source>Sci Rep</source>, vol. <volume>14</volume>, no. <issue>1</issue>, p. <fpage>31076</fpage>, <month>Dec.</month> <year>2024</year>, doi: <pub-id pub-id-type=\"doi\">10.1038/s41598\u2013024-81976-w</pub-id>.</mixed-citation></ref>",
+    "<ref id=\"ref18\"><label>[18]</label> <mixed-citation publication-format=\"print\" publication-type=\"periodical\"><person-group person-group-type=\"author\"><string-name><given-names>D.</given-names> <surname>Haboudane</surname></string-name></person-group>, \u201c<article-title>Hyperspectral vegetation indices and novel algorithms for predicting green LAI of crop canopies: Modeling and validation in the context of precision agriculture</article-title>,\u201d <source>Remote Sensing of Environment</source>, vol. <volume>90</volume>, no. <issue>3</issue>, pp. <fpage>337</fpage>\u2013<lpage>352</lpage>, <month>Apr.</month> <year>2004</year>, doi: <pub-id pub-id-type=\"doi\">10.1016/j.rse.2003.12.013</pub-id>.</mixed-citation></ref>",
+    "<ref id=\"ref19\"><label>[19]</label> <mixed-citation publication-format=\"print\" publication-type=\"periodical\"><person-group person-group-type=\"author\"><string-name><given-names>B.</given-names> <surname>Gao</surname></string-name></person-group>, \u201c<article-title>NDWI-A normalized difference water index for remote sensing of vegetation liquid water from space</article-title>,\u201d <source>Remote Sensing of Environment</source>, vol. <volume>58</volume>, no. <issue>3</issue>, pp. <fpage>257</fpage>\u2013<lpage>266</lpage>, <month>Dec.</month> <year>1996</year>, doi: <pub-id pub-id-type=\"doi\">10.1016/S0034-4257(96)00067-3</pub-id>.</mixed-citation></ref>",
+    "<ref id=\"ref20\"><label>[20]</label> <mixed-citation publication-format=\"print\" publication-type=\"periodical\"><person-group person-group-type=\"author\"><string-name><given-names>S. K.</given-names> <surname>McFEETERS</surname></string-name></person-group>, \u201c<article-title>The use of the Normalized Difference Water Index (NDWI) in the delineation of open water features</article-title>,\u201d <source>International Journal of Remote Sensing</source>, vol. <volume>17</volume>, no. <issue>7</issue>, pp. <fpage>1425</fpage>\u2013<lpage>1432</lpage>, <month>May</month> <year>1996</year>, doi: <pub-id pub-id-type=\"doi\">10.1080/01431169608948714</pub-id>.</mixed-citation></ref>",
+    "<ref id=\"ref21\"><label>[21]</label> <mixed-citation publication-format=\"print\" publication-type=\"periodical\">\u201c<source>NDWI: Index Formula, Value Range, And Uses In Agriculture.</source>\u201d Accessed: <date-in-citation><month>Jan.</month> <day>13</day>, <year>2025</year></date-in-citation>. [Online]. Available: <uri>https://eos.com/make-ananalysis/ndwi/</uri>.</mixed-citation></ref>"
+  ],
+  "title": {
+    "textEnglish": "Empirical Studies of the Aviris Hyperspectral Data Signatures of Different Earth Terrains"
+  }
+}
+
+

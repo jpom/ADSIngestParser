@@ -66,7 +66,7 @@ class IEEEParser(BaseBeautifulSoupParser):
             return
         else:
             fg = self.article.find("funding-group")
-            funding_stmt = fg.find("funding-statement", "").get_text(strip=True)
+            # funding_stmt = fg.find("funding-statement", "").get_text(strip=True)
             award_groups = fg.find_all("award-group")
 
             for ag in award_groups:
@@ -114,7 +114,6 @@ class IEEEParser(BaseBeautifulSoupParser):
         isbn_all = self.confprocmeta.find_all("isbn")
         isbns = []
         for i in isbn_all:
-            content_type = None
             if i.get("publication-format", ""):
                 pub_format = i.get("publication-format")
             isbns.append({"type": pub_format, "isbn_str": self._detag(i, [])})
@@ -180,16 +179,14 @@ class IEEEParser(BaseBeautifulSoupParser):
         if self.article.find("permissions"):
             permissions = self.article.find("permissions")
 
-            if permissions.find("copyright-statement"):
-                copyright_statement = permissions.find("copyright-statement", "").get_text(
-                    strip=True
-                )
-            if permissions.find("copyright-year"):
-                copyright_year = permissions.find("copyright-year", "").get_text(strip=True)
-            if permissions.find("copyright-holder"):
-                copyright_holder = permissions.find("copyright-holder", "").get_text(strip=True)
-            if permissions.find("license"):
-                license = permissions.find("license", "").get_text(strip=True)
+            # cs = permissions.find("copyright-statement")
+            cy = permissions.find("copyright-year")
+            if cy:
+                copyright_year = cy.get_text(strip=True)
+            ch = permissions.find("copyright-holder")
+            if ch:
+                copyright_holder = ch.get_text(strip=True)
+            # lic = permissions.find("license")
 
             # Format copyright string
             copyright_text = (

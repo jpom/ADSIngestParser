@@ -76,7 +76,9 @@ class XOAIParser(BaseBeautifulSoupParser):
             return []
         return [
             text
-            for text in (f.get_text().strip() for f in el.find_all("field", attrs={"name": field_name}))
+            for text in (
+                f.get_text().strip() for f in el.find_all("field", attrs={"name": field_name})
+            )
             if text
         ]
 
@@ -132,7 +134,9 @@ class XOAIParser(BaseBeautifulSoupParser):
         name_parser = utils.AuthorNames()
 
         if self.dc is not None:
-            creator_elements = self.dc.find_all("element", attrs={"name": "creator"}, recursive=False)
+            creator_elements = self.dc.find_all(
+                "element", attrs={"name": "creator"}, recursive=False
+            )
         else:
             creator_elements = []
 
@@ -154,7 +158,9 @@ class XOAIParser(BaseBeautifulSoupParser):
                 # but on some instances a real ORCID does end up in this field,
                 # so only use it if it actually looks like one
                 orcid = None
-                authority_field = lang_el.find("field", attrs={"name": "authority"}, recursive=False)
+                authority_field = lang_el.find(
+                    "field", attrs={"name": "authority"}, recursive=False
+                )
                 if authority_field:
                     candidate = authority_field.get_text().strip()
                     if orcid_format.match(candidate):
@@ -225,7 +231,8 @@ class XOAIParser(BaseBeautifulSoupParser):
                 values = [
                     text
                     for text in (
-                        f.get_text().strip() for f in child.find_all("field", attrs={"name": "value"})
+                        f.get_text().strip()
+                        for f in child.find_all("field", attrs={"name": "value"})
                     )
                     if text
                 ]
@@ -329,7 +336,11 @@ class XOAIParser(BaseBeautifulSoupParser):
 
         if note_parts:
             note = ", ".join(note_parts)
-            note = "Thesis ({}), {}.".format(note, grantor) if grantor else "Thesis ({}).".format(note)
+            note = (
+                "Thesis ({}), {}.".format(note, grantor)
+                if grantor
+                else "Thesis ({}).".format(note)
+            )
             comments = self.base_metadata.setdefault("comments", [])
             comments.append({"text": note})
 
@@ -339,7 +350,9 @@ class XOAIParser(BaseBeautifulSoupParser):
             return
 
         original_bundle = None
-        for bundle_el in self.bundles.find_all("element", attrs={"name": "bundle"}, recursive=False):
+        for bundle_el in self.bundles.find_all(
+            "element", attrs={"name": "bundle"}, recursive=False
+        ):
             name_field = bundle_el.find("field", attrs={"name": "name"}, recursive=False)
             if name_field and name_field.get_text().strip() == "ORIGINAL":
                 original_bundle = bundle_el
@@ -353,7 +366,9 @@ class XOAIParser(BaseBeautifulSoupParser):
             return
 
         pdf_url = None
-        for bitstream_el in bitstreams_el.find_all("element", attrs={"name": "bitstream"}, recursive=False):
+        for bitstream_el in bitstreams_el.find_all(
+            "element", attrs={"name": "bitstream"}, recursive=False
+        ):
             fmt_field = bitstream_el.find("field", attrs={"name": "format"}, recursive=False)
             url_field = bitstream_el.find("field", attrs={"name": "url"}, recursive=False)
             primary_field = bitstream_el.find("field", attrs={"name": "primary"}, recursive=False)
@@ -362,7 +377,9 @@ class XOAIParser(BaseBeautifulSoupParser):
                 continue
 
             is_pdf = fmt_field is not None and "pdf" in fmt_field.get_text().lower()
-            is_primary = primary_field is not None and primary_field.get_text().strip().lower() == "true"
+            is_primary = (
+                primary_field is not None and primary_field.get_text().strip().lower() == "true"
+            )
 
             if is_pdf and (is_primary or pdf_url is None):
                 pdf_url = url_field.get_text().strip()
@@ -371,7 +388,6 @@ class XOAIParser(BaseBeautifulSoupParser):
 
         if pdf_url:
             self.base_metadata["esources"] = [("pub_pdf", pdf_url)]
-
 
     def parse(self, text):
         """
@@ -400,7 +416,7 @@ class XOAIParser(BaseBeautifulSoupParser):
         self.dc = self._get_element(self.root, "dc")
         self.thesis = self._get_element(self.root, "thesis")
         self.others = self._get_element(self.root, "others")
-        #self.bundles = self._get_element(self.root, "bundles")
+        # self.bundles = self._get_element(self.root, "bundles")
 
         if self.dc is None:
             raise NoSchemaException("No XOAI 'dc' metadata block found.")
@@ -412,10 +428,10 @@ class XOAIParser(BaseBeautifulSoupParser):
         self._parse_keywords()
         self._parse_ids()
         self._parse_permissions()
-        #self._parse_rights()
+        # self._parse_rights()
         self._parse_thesis_info()
         self._parse_title()
-        #self._parse_esources()
+        # self._parse_esources()
 
         self.base_metadata = self._entity_convert(self.base_metadata)
 

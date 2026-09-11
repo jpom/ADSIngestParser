@@ -1,0 +1,13 @@
+{
+  "recordData": {
+    "createdTime": "",
+    "loadFormat": "OtherXML",
+    "loadLocation": "",
+    "loadType": "fromFile",
+    "parsedTime": "",
+    "recordOrigin": ""
+  },
+  "title": {
+    "textEnglish": "This is a \"test\" '...' because some metadata is afflicted by ligatures."
+  }
+}

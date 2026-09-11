@@ -1,3 +1,4 @@
+import os
 import unittest
 
 import pytest
@@ -8,6 +9,9 @@ from adsingestp.parsers import base
 @pytest.mark.filterwarnings("ignore::bs4.MarkupResemblesLocatorWarning")
 class TestBase(unittest.TestCase):
     def setUp(self):
+        stubdata_dir = os.path.join(os.path.dirname(__file__), "stubdata/")
+        self.inputdir = os.path.join(stubdata_dir, "input")
+        self.outputdir = os.path.join(stubdata_dir, "output")
         self.maxDiff = None
 
     def test_basebs4(self):

@@ -314,6 +314,13 @@ class ElsevierParser(BaseBeautifulSoupParser):
                 # In case given-name is present, but no surname is available, put the given name in the surname
                 author_tmp["surname"] = author.find("ce:given-name")
             author_tmp["orcid"] = author.get("orcid", "")
+            if not author_tmp.get("orcid", None):
+                for k, v in affs_xref.items():
+                    if "orcid.org" in v:
+                        orcid_id = v.split("/")[-1]
+                        author_tmp["orcid"] = orcid_id
+                        del affs_xref[k]
+                        break
             if (
                 author.find("ce:e-address")
                 and author.find("ce:e-address").get("type", "") == "email"

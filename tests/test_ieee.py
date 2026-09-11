@@ -54,4 +54,3 @@ class TestIEEE(unittest.TestCase):
 
             self.maxDiff = None
             self.assertEqual(parsed, output_data)
-

@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE conf-article PUBLIC "-//IEEE//IEEE Conferences JATS-based DTD v2.0//EN" "conferences.dtd">
+<conf-article article-type="research" content-type="orig-research" dtd-version="2.0" open-access="no" xml:lang="eng" show-flag="show" peer-reviewed="yes" lifecycle="final" xmlns:ali="http://www.niso.org/schemas/ali/1.0/" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<!-- Article Processing Date: 12/30/2025 -->
+<!-- Vendor Name: Aptara -->
+<!-- IEEE XML JATS Tagging Guidelines version: 20241024 -->
+<!-- IEEE Math Coding Requirements and Guidelines for Vendors version: v2.4 -->
+<conf-front>
+<conf-proc-meta>
+<conf-proc-id conf-proc-id-type="conf-acronym">IGARSS</conf-proc-id>
+<conf-proc-title-group>
+<conf-full-title>IGARSS 2025 - 2025 IEEE International Geoscience and Remote Sensing Symposium</conf-full-title>
+<conf-normalized-title>Geoscience and Remote Sensing Symposium, IGARSS 2025 - 2025 IEEE International</conf-normalized-title>
+</conf-proc-title-group>
+<volume>00</volume>
+<isbn publication-format="electronic">979-8-3315-0810-4</isbn>
+</conf-proc-meta>
+<conf-meta>
+<conf-name>IGARSS 2025 - 2025 IEEE International Geoscience and Remote Sensing Symposium</conf-name>
+<conf-start iso-8601-date="2025-08-03"><day>03</day><month>08</month><year>2025</year></conf-start>
+<conf-end iso-8601-date="2025-08-08"><day>08</day><month>08</month><year>2025</year></conf-end>
+<conf-loc><city>Brisbane</city>, <country>Australia</country></conf-loc>
+</conf-meta>
+<conf-article-meta>
+<article-id pub-id-type="doi">10.1109/IGARSS55030.2025.11314062</article-id>
+<xplore-article-id>11314062</xplore-article-id>
+<xplore-issue>11242244</xplore-issue>
+<xplore-pub-id>11242230</xplore-pub-id>
+<title-group>
+<article-title>Empirical Studies of the Aviris Hyperspectral Data Signatures of Different Earth Terrains</article-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" id="contrib1"><name-alternatives><string-name specific-use="display"><given-names>Emraul Islam</given-names> <surname>Emon</surname></string-name> <string-name specific-use="index"><given-names>Emraul Islam</given-names> <surname>Emon</surname></string-name></name-alternatives>
+<email>emon.1@osu.edu</email>
+<xref ref-type="aff" rid="aff1"><sup>1</sup></xref>
+</contrib>
+<contrib contrib-type="author" id="contrib2"><name-alternatives><string-name specific-use="display"><given-names>Afia Mubassira</given-names> <surname>Islam</surname></string-name> <string-name specific-use="index"><given-names>Afia Mubassira</given-names> <surname>Islam</surname></string-name></name-alternatives>
+<xref ref-type="aff" rid="aff1"><sup>1</sup></xref>
+</contrib>
+<contrib contrib-type="author" id="contrib3"><name-alternatives><string-name specific-use="display"><given-names>Christopher</given-names> <surname>Ball</surname></string-name> <string-name specific-use="index"><given-names>Christopher</given-names> <surname>Ball</surname></string-name></name-alternatives>
+<xref ref-type="aff" rid="aff1"><sup>1</sup></xref>
+</contrib>
+<contrib contrib-type="author" id="contrib4"><name-alternatives><string-name specific-use="display"><given-names>Joel T.</given-names> <surname>Johnson</surname></string-name> <string-name specific-use="index"><given-names>Joel T.</given-names> <surname>Johnson</surname></string-name></name-alternatives>
+<xref ref-type="aff" rid="aff1"><sup>1</sup></xref>
+</contrib>
+<contrib contrib-type="author" id="contrib5"><name-alternatives><string-name specific-use="display"><given-names>Vasit</given-names> <surname>Sagan</surname></string-name> <string-name specific-use="index"><given-names>Vasit</given-names> <surname>Sagan</surname></string-name></name-alternatives>
+<xref ref-type="aff" rid="aff2"><sup>2</sup></xref>
+</contrib>
+</contrib-group>
+<aff id="aff1"><sup>1</sup>
+<institution-wrap>
+<institution content-type="division">ElectroScience Laboratory</institution>
+<institution content-type="institution">The Ohio State University</institution>
+</institution-wrap>
+<city>Columbus</city>
+<state>OH</state>
+<country>USA</country>
+</aff>
+<aff id="aff2"><sup>2</sup>
+<institution-wrap>
+<institution content-type="department">Department of Earth, Environmental, and Geospatial Science</institution>
+<institution content-type="institution">Saint Louis University</institution>
+</institution-wrap>
+<city>Saint Louis</city>
+<state>MO</state>
+<country>USA</country>
+</aff>
+<pub-date date-type="cover" pub-type="print" iso-8601-date="2025-08-08"><day>8</day><month>Aug.</month><year>2025</year></pub-date>
+<fpage>832</fpage>
+<lpage>835</lpage>
+<permissions>
+<copyright-statement>979-8-3315-0810-4/25/$31.00 &#x00A9;2025 IEEE</copyright-statement>
+<copyright-year>2025</copyright-year>
+<copyright-holder copyright-owner="IEEE"></copyright-holder>
+<license license-type="IEEE">
+<ali:license_ref></ali:license_ref>
+<license-p><price currency="USD">31.00</price></license-p>
+</license>
+</permissions>
+<self-uri content-type="xml">11314062_ft.xml</self-uri>
+<self-uri content-type="print">0000832.pdf</self-uri>
+<abstract xml:lang="en">
+<p>Hyperspectral images and optical signatures acquired by NASA&#x0027;s Airborne Visible/Infrared Imaging Spectrometer (AVIRIS) from multiple locations are examined. The spectral responses obtained are used to promote the development of physics-based models for these signatures with future application in improvements in hyperspectral sensing.</p>
+</abstract>
+<kwd-group kwd-group-type="AuthorFree">
+<kwd>AVIRIS</kwd>
+<kwd>hyperspectral data</kwd>
+<kwd>reflectance</kwd>
+</kwd-group>
+<funding-group>
+<award-group>
+<funding-source><institution-wrap><institution>US Department of Defense Multi-Disciplinary University</institution>
+</institution-wrap>
+</funding-source>
+</award-group>
+<funding-statement>This research is supported by a grant from the US Department of Defense Multi-Disciplinary University Research Initiative (MURI).</funding-statement>
+</funding-group>
+<counts>
+<fig-count count="9"/>
+<table-count count="1"/>
+<equation-count count="4"/>
+<ref-count count="21"/>
+<page-count count="4"/>
+</counts>
+</conf-article-meta>
+</conf-front>
+<body>
+<sec id="sec1">
+<label>I.</label><title>Introduction</title>
+<p>Hyperspectral visible/infrared sensors capture images using hundreds of narrow continuous spectral bands that span a wide portion of the optical and infrared spectrum. Such data provide a better spectral characterization of objects that can be used to improve the sensing of various material and/or scene properties <xref ref-type="bibr" rid="ref1">[1]</xref>. A variety of hyperspectral systems have been or are currently available from satellite and aerial vehicle platforms, as summarized in <xref ref-type="table" rid="table1">Table I</xref>.
+<table-wrap id="table1"><label>Table I.</label>
+<caption><title>List of recent satellite or airborne missions employing hyperspectral imaging sensors</title></caption>
+<graphic position="float" orientation="portrait" xlink:href="11314062-table-1-source.tif"/>
+<table rules="all" frame="box" cellpadding="5">
+<colgroup>
+<col span="7"/>
+</colgroup>
+<thead>
+<tr>
+<th>Sensors</th>
+<th>Status</th>
+<th>Spatial Resolution (m)</th>
+<th>Number of Bands</th>
+<th>Spectral Sampling Bandwidth (nm)</th>
+<th>Spectral Wavelength (nm)</th>
+<th>Ref.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hyperion</td>
+<td>Inactive</td>
+<td>30</td>
+<td>220</td>
+<td>10</td>
+<td>356-2576</td>
+<td><xref ref-type="bibr" rid="ref2">[2]</xref></td>
+</tr>
+<tr>
+<td>AVIRISClassic</td>
+<td>Active</td>
+<td>20</td>
+<td>224</td>
+<td>10</td>
+<td>400-2500</td>
+<td><xref ref-type="bibr" rid="ref3">[3]</xref></td>
+</tr>
+<tr>
+<td>AVIRISNG</td>
+<td>Active</td>
+<td>5</td>
+<td>425</td>
+<td>5</td>
+<td>380-2510</td>
+<td><xref ref-type="bibr" rid="ref4">[4]</xref></td>
+</tr>
+<tr>
+<td>PRISMA</td>
+<td>Active</td>
+<td>30</td>
+<td>239</td>
+<td>12</td>
+<td>400-2505</td>
+<td><xref ref-type="bibr" rid="ref5">[5]</xref></td>
+</tr>
+<tr>
+<td>EnMAP</td>
+<td>Active</td>
+<td>30</td>
+<td>246</td>
+<td>6.5, 10</td>
+<td>420-2450</td>
+<td><xref ref-type="bibr" rid="ref6">[6]</xref></td>
+</tr>
+<tr>
+<td>Tanager</td>
+<td>Active</td>
+<td>30</td>
+<td>400</td>
+<td>5</td>
+<td>420-2500</td>
+<td><xref ref-type="bibr" rid="ref7">[7]</xref></td>
+</tr>
+<tr>
+<td>Pixxel</td>
+<td>Active</td>
+<td>10</td>
+<td>250</td>
+<td>nan</td>
+<td>450-900</td>
+<td><xref ref-type="bibr" rid="ref8">[8]</xref></td>
+</tr>
+<tr>
+<td>HysPIRI</td>
+<td>Planned</td>
+<td>60</td>
+<td>242</td>
+<td>10,90</td>
+<td>380-2500, 3000-12000</td>
+<td><xref ref-type="bibr" rid="ref9">[9]</xref></td>
+</tr></tbody>
+</table>
+</table-wrap></p>
+<p>Data from NASA&#x0027;s Airborne Visible/Infrared Imaging Spectrometer (AVIRIS) system have been used in various applications, including mapping vegetation health, geology, soil analysis, and monitoring environmental hazards, establishing it as a valuable resource for hyperspectral imaging <xref ref-type="bibr" rid="ref10">[10]</xref>. AVIRIS has flown extensively across North America, Europe, and in portions of South America to detect and monitor Earth&#x0027;s surface and atmospheric elements <xref ref-type="bibr" rid="ref11">[11]</xref>. Its successor, AVIRIS-NG, has expanded these efforts with extensive investigations in locations like Alaska and Canada, particularly through the Arctic-Boreal Vulnerability Experiment (ABoVE) <xref ref-type="bibr" rid="ref12">[12]</xref>.</p>
+<p>Hyperspectral remote sensing typically maps and monitors changes in Earth&#x0027;s terrain using statistical and empirical models focused on bio-geophysical variables (vegetation, topography, active layer thickness, etc.). The models applied in this process typically result from data-oriented approaches with only limited regard for the underlying physical mechanisms causing the observed reflectance signatures. A physics-based modeling approach can be valuable for improving hyperspectral sensing, but often can be difficult due to the many factors that can impact the reflection, scattering, and propagation of optical and infrared signals. A combination of physics-based approaches that leverage insights from empirical studies is therefore well motivated. Here we report an analysis of example images from multiple locations with the objective of understanding how we may use empirical investigations to support ongoing development of a physics-based forward model.</p>
+</sec>
+<sec id="sec2">
+<label>II.</label><title>Example Cases</title>
+<p>Four example images acquired from AVIRIS flights over Fairbanks, Alaska, USA; Colville Forest, Washington, USA; Greenland; and the Norwegian Sea are examined. All of the images were obtained from the AVIRIS data portal <xref ref-type="bibr" rid="ref13">[13]</xref>, with each depicting a distinct environmental scenario. It should be noted that the analysis spans the 400 nm to 2500 nm range of observations available, which includes visible, near-infrared (NIR), and short-wave infrared (SWIR) wavelengths. Because hyperspectral data is susceptible to atmospheric water vapor and CO<sub>2</sub> absorption around 1400, 1900, and 2000 nm <xref ref-type="bibr" rid="ref14">[14]</xref>, data from wavelengths 1300-1500 nm and 1800-2050 nm is discarded in the following discussion.</p>
+<sec id="sec2a">
+<label>A.</label><title>Fairbanks, Alaska, USA</title>
+<p>The left portion of <xref ref-type="fig" rid="fig1">Fig. 1</xref> is an RGB composite image of an area of Fairbanks, Alaska taken on Aug 01, 2023, with corresponding spectral data on the right. The reflectance values are first averaged over three samples along the central image line and then normalized across the entire spectrum for each location coordinate. The image shows vegetation with thin clouds and their associated shadows. For pixels with vegetation and no clouds, the corresponding response in the visible spectrum between 400 and 700 nm is dominated by light absorption of leaf pigments <xref ref-type="bibr" rid="ref15">[15]</xref> and by similar strong leaf pigment and cellulose reflections in the 700 nm-1300 nm region. The higher wavelength region (1500 nm-2500 nm) is dominated by soil and leaf water absorption, resulting in reduced reflected radiation in this portion of the spectrum. <xref ref-type="fig" rid="fig1">Fig. 1</xref> also shows that clouds produce a strong reflectance response at wavelengths less than 1300 nm.</p>
+</sec>
+<sec id="sec2b">
+<label>B.</label><title>Colville Forest, Washington, USA</title>
+<p><xref ref-type="fig" rid="fig2">Fig. 2</xref> presents an image with a fire event in the Colville forest taken on September 8, 2022. Pixels with non-burning vegetation and no clouds or smoke exhibit values similar to those in <xref ref-type="fig" rid="fig1">Fig. 1</xref>. The forest fire appears in the center of the RGB composite image on the left side of <xref ref-type="fig" rid="fig2">Fig. 2</xref>. The normalized reflectance curve reveals high values in the SWIR range (1500-2500 nm) for the associated pixels. The reflectance outcome for the smoke is quite similar to the cloud response seen in <xref ref-type="fig" rid="fig1">Fig. 1</xref>. The vegetated area has also been reduced and appears to be bare soil in the image.
+<fig id="fig1" position="float" orientation="portrait">
+<label>Fig. 1.</label>
+<caption><p>Spectral data along a flight path in fairbanks, alaska: geospatial rgb composite image (left) and normalized reflectance profile by location (right).</p></caption>
+<graphic position="float" orientation="portrait" xlink:href="11314062-fig-1-source.tif"/>
+</fig>
+<fig id="fig2" position="float" orientation="portrait">
+<label>Fig. 2.</label>
+<caption><p>Spectral data along a flight path in colville forest, washington: geospatial rgb composite image (left) and normalized reflectance profile by location (right).</p></caption>
+<graphic position="float" orientation="portrait" xlink:href="11314062-fig-2-source.tif"/>
+</fig></p>
+</sec>
+<sec id="sec2c">
+<label>C.</label><title>Norwegian Sea</title>
+<p>The image taken in the Norwegian Sea on May 16, 2021 consists of cloud covered sea water. The spectral response is shown in <xref ref-type="fig" rid="fig3">Fig. 3</xref> and indicates that clouds completely obscure the image. As a result, high reflectance values are observed in the 400 nm-1300 nm range, which is typical of a white object. Because of the cloud&#x0027;s inconsistencies, the reflectance varies slightly as the location changes.
+<fig id="fig3" position="float" orientation="portrait">
+<label>Fig. 3.</label>
+<caption><p>Spectral data along a flight path in the norwegian sea: geospatial rgb composite image (left) and normalized reflectance profile by location (right).</p></caption>
+<graphic position="float" orientation="portrait" xlink:href="11314062-fig-3-source.tif"/>
+</fig>
+<fig id="fig4" position="float" orientation="portrait">
+<label>Fig. 4.</label>
+<caption><p>Spectral data along a flight path in greenland: geospatial rgb composite image (left) and normalized reflectance profile by location (right).</p></caption>
+<graphic position="float" orientation="portrait" xlink:href="11314062-fig-4-source.tif"/>
+</fig></p>
+</sec>
+<sec id="sec2d">
+<label>D.</label><title>Greenland</title>
+<p>The final image of a snowy area of Greenland (taken on September 4, 2019) appears completely white. As a result, a near-spatially constant response is seen in <xref ref-type="fig" rid="fig4">Fig. 4</xref>. The response is somewhat similar to that of the cloud-covered sea water in <xref ref-type="fig" rid="fig3">Fig. 3</xref>.</p>
+<p>To compare the reflective response from various geographic locations with wavelength, different pixels from these four images were chosen. The reflectance values for each spectral band were first averaged over a 10 -pixel radius around the intended point to eliminate the effect of noise and outliers. The reflectance curves of these pixels of different environments were then plotted against wavelength in <xref ref-type="fig" rid="fig5">Fig. 5</xref>. The regions represent various locations, including a vegetated area in Fairbanks; a fireaffected region, a vegetated area, and a bare soil area in the Colville Forest; a snowy site in Greenland; and cloud-covered seawater in the Norwegian Sea. The figure shows that vegetation from Fairbanks retains the expected shape of low reflectance in the visible spectrum and high reflectance in the NIR region. Moreover, a similar response is observed from the vegetated area in the Colville forest. Another pixel taken from a burned area has a reflectance value that gradually increases from visible to NIR to SWIR. The response coincides with other reported studies <xref ref-type="bibr" rid="ref16">[16]</xref>, <xref ref-type="bibr" rid="ref17">[17]</xref>. The other pixel from this forest was taken in an area with little vegetation and resembles bare soil. The flat response of reflectance across the entire spectrum is indicative of dry soil <xref ref-type="bibr" rid="ref15">[15]</xref>. The pixel containing a snowy zone has a high reflective value in the visible spectrum but gradually decreases until the end of the NIR band. The cloud-covered sea water responds similarly to the snow, but with a lower value in the visible spectrum due to the uneven clouds. However, the values in the SWIR are higher than those in other pixels due to the presence of water droplets.
+<fig id="fig5" position="float" orientation="portrait">
+<label>Fig. 5.</label>
+<caption><p>Reflectance values of different locations against wavelengths.</p></caption>
+<graphic position="float" orientation="portrait" xlink:href="11314062-fig-5-source.tif"/>
+</fig></p>
+</sec>
+</sec>
+<sec id="sec3">
+<label>III.</label><title>Spectral Index Calculations</title>
+<p>The reflectance response we obtained from various environments has wavelength-dependent characteristics. We can use various indices to highlight these signatures. One of the most commonly used indices is the Normalized Difference Vegetation Index (NDVI). The index is calculated using bands in the NIR and visible red using
+<disp-formula id="deqn1"><tex-math notation="LaTeX">\begin{equation*}
+N D V I=\frac{N I R_{800}-R E D_{670}}{N I R_{800}+R E D_{670}}
+\tag{1}\end{equation*}</tex-math></disp-formula>where subscript values represent reflectance at a specific wavelength (nm) <xref ref-type="bibr" rid="ref18">[18]</xref>. As the name suggests, NDVI ranges from -1 to 1, and measures how vegetated an area is, with higher values indicating greater vegetation.</p>
+<p>Another useful index is the Normalized Difference Water Index
+<disp-formula id="deqn2"><tex-math notation="LaTeX">\begin{equation*}
+N D W I=\frac{N I R_{860}-S W I R_{1240}}{N I R_{860}+S W I R_{1240}}
+\tag{2}\end{equation*}</tex-math></disp-formula>for which high values are intended to indicate the presence of water content in vegetation <xref ref-type="bibr" rid="ref19">[19]</xref>. However, wavelengths of Green and NIR bands are used to detect water bodies <xref ref-type="bibr" rid="ref20">[20]</xref>, <xref ref-type="bibr" rid="ref21">[21]</xref>. The subscripts here denote the approximate corresponding center wavelengths used in this study.
+<disp-formula id="deqn3"><tex-math notation="LaTeX">\begin{equation*}
+N D W I=\frac{\text{GREEN}_{\sim 560}-N I R \sim 850}{\text{GREEN}_{\sim 560}+N I R_{\sim 850}}
+\tag{3}\end{equation*}</tex-math></disp-formula></p>
+<p>We can also calculate the Normalized Difference Snow Index <xref ref-type="bibr" rid="ref20">[20]</xref>, using Green and SWIR bands that could range from 545 nm and 565 nm and 1628 nm and 1652 nm, respectively.
+<disp-formula id="deqn4"><tex-math notation="LaTeX">\begin{equation*}
+N D S I=\frac{\text{GREEN}_{\sim 550}-S W I R_{\sim 1640}}{G R E E N_{\sim 550}+S W I R_{\sim 1640}}
+\tag{4}\end{equation*}</tex-math></disp-formula></p>
+<p>We computed the three indices for the first two images under investigation along the track for the center pixels using (1), (2), and (4). <xref ref-type="fig" rid="fig6">Fig. 6</xref> illustrates these results for Fairbanks. High values of NDVI (around 0.8) can be observed except for the dips that occur when clouds are present. The NDWI is close to zero, and the NDSI is less than zero much of the track. However, greater than zero values can be observed for NDSI when the cloud is very thick.
+<fig id="fig6" position="float" orientation="portrait">
+<label>Fig. 6.</label>
+<caption><p>NDVI, ndwi, and ndsi along central line (fairbanks, alaska)</p></caption>
+<graphic position="float" orientation="portrait" xlink:href="11314062-fig-6-source.tif"/>
+</fig></p>
+<p>Similarly, <xref ref-type="fig" rid="fig7">Fig. 7</xref> shows the indices for the Colville forest. Again, high values of NDVI are typically obtained that decrease in smoke-obscured or burned areas. The NDWI and NDSI follow trends similar to those in <xref ref-type="fig" rid="fig6">Fig. 6</xref>, while NDSI&gt;0 appears to be responsive to the presence of smoke.
+<fig id="fig7" position="float" orientation="portrait">
+<label>Fig. 7.</label>
+<caption><p>NDVI, ndwi, and ndsi along central line (colville forest, washington)</p></caption>
+<graphic position="float" orientation="portrait" xlink:href="11314062-fig-7-source.tif"/>
+</fig></p>
+<p><xref ref-type="fig" rid="fig8">Fig. 8</xref> and <xref ref-type="fig" rid="fig9">Fig. 9</xref> depict the indices for cloud-covered seawater from the Norwegian Sea and the snowy region from Greenland, respectively. In these scenarios, (3) was used instead of (2) to compute the NDWI. <xref ref-type="fig" rid="fig8">Fig. 8</xref> shows higher NDSI values than NDWI due to the image&#x0027;s dense cloud coverage. The NDVI and NDWI are closer to 0. On the other hand, the NDSI index is able to capture the snowy condition in <xref ref-type="fig" rid="fig9">Fig. 9</xref>. The NDSI values are higher, as expected, while the NDVI values are closer to 0. The presence of water molecules causes NDWI values to be slightly greater than 0. The NDSI values in <xref ref-type="fig" rid="fig9">Fig. 9</xref> are greater than those in <xref ref-type="fig" rid="fig8">Fig. 8</xref>, indicating that the snowy zones can be distinguished correctly from the cloud.
+<fig id="fig8" position="float" orientation="portrait">
+<label>Fig. 8.</label>
+<caption><p>NDVI, ndwi, and ndsi along central line (cloud-covered norwegian sea)</p></caption>
+<graphic position="float" orientation="portrait" xlink:href="11314062-fig-8-source.tif"/>
+</fig>
+<fig id="fig9" position="float" orientation="portrait">
+<label>Fig. 9.</label>
+<caption><p>NDVI, ndwi, and ndsi along central line (greenland)</p></caption>
+<graphic position="float" orientation="portrait" xlink:href="11314062-fig-9-source.tif"/>
+</fig></p>
+</sec>
+<sec id="sec4">
+<label>IV.</label><title>Conclusion</title>
+<p>The examples presented here demonstrate some of the properties of hyperspectral data under different environmental conditions. Existing data-driven approaches are available to exploit such datasets in sensing applications. Our ongoing work seeks to use the insights obtained from these analyses to promote the development of a physics-based approach to support continuing improvements in Earth remote sensing.</p>
+</sec>
+</body>
+<back>
+<ref-list>
+<title>References</title>
+<ref id="ref1"><label>[1]</label> <mixed-citation publication-type="confproc" publication-format="print"><person-group person-group-type="author"><string-name><given-names>S.</given-names> <surname>Prasad</surname></string-name>, <string-name><given-names>J.</given-names> <surname>Chanussot</surname></string-name>, <string-name><given-names>J. E.</given-names> <surname>Fowler</surname></string-name>, <string-name><given-names>J.</given-names> <surname>Bioucas-Dias</surname></string-name>, and <string-name><given-names>C. D.</given-names> <surname>Creuserre</surname></string-name></person-group>, &#x201C;<article-title>Introduction to the Issue on Advances in Hyperspectral Data Processing and Analysis</article-title>,&#x201D; <source specific-use="IEEE">IEEE Journal of Selected Topics in Signal Processing</source>, vol. <volume>9</volume>, no. <issue>6</issue>, pp. <fpage>961</fpage>&#x2013;<lpage>963</lpage>, <month>Sep.</month> <year>2015</year>, doi: <pub-id pub-id-type="doi">10.1109/JSTSP.2015.2457631</pub-id>.</mixed-citation></ref>
+<ref id="ref2"><label>[2]</label> <mixed-citation publication-type="periodical" publication-format="print" publisher-type="government">&#x201C;<source>EO-1 Hyperion.</source>&#x201D; Accessed: <date-in-citation><month>Jan.</month> <day>06</day>, <year>2025</year></date-in-citation>. [Online]. Available: <uri>https://cmr.earthdata.nasa.gov/search/concepts/C1220567951USGS_LTA.html</uri>.</mixed-citation></ref>
+<ref id="ref3"><label>[3]</label> <mixed-citation publication-type="periodical" publication-format="print" publisher-type="government">&#x201C;<source>AVIRIS - Airborne Visible / Infrared Imaging Spectrometer.</source>&#x201D; Accessed: <date-in-citation><month>Jan.</month> <day>06</day>, <year>2025</year></date-in-citation>. [Online]. Available: <uri>https://aviris.jpl.nasa.gov/index.html</uri>.</mixed-citation></ref>
+<ref id="ref4"><label>[4]</label> <mixed-citation publication-type="periodical" publication-format="print" publisher-type="government">&#x201C;<source>AVIRIS-Next Generation.</source>&#x201D; Accessed: <date-in-citation><month>Jan.</month> <day>06</day>, <year>2025</year></date-in-citation>. [Online]. Available: <uri>https://avirisng.jpl.nasa.gov/specifications.html</uri>.</mixed-citation></ref>
+<ref id="ref5"><label>[5]</label> <mixed-citation publication-type="periodical" publication-format="print">&#x201C;<source>PRISMA (Hyperspectral) - eoPortal.</source>&#x201D; Accessed: <date-in-citation><month>Jan.</month> <day>06</day>, <year>2025</year></date-in-citation>. [Online]. Available: <uri>https://www.eoportal.org/satellite-missions/prisma-hyperspectral</uri>.</mixed-citation></ref>
+<ref id="ref6"><label>[6]</label> <mixed-citation publication-type="periodical" publication-format="print">&#x201C;<source>Mission - EnMAP.</source>&#x201D; Accessed: <date-in-citation><month>Jan.</month> <day>06</day>, <year>2025</year></date-in-citation>. [Online]. Available: <uri>https://www.enmap.org/mission</uri>.</mixed-citation></ref>
+<ref id="ref7"><label>[7]</label> <mixed-citation publication-type="periodical" publication-format="print">&#x201C;<source>Hyperspectral Imaging Satellites | Planet.</source>&#x201D; Accessed: <date-in-citation><month>Jan.</month> <day>06</day>, <year>2025</year></date-in-citation>. [Online]. Available: <uri>https://www.planet.com/products/hyperspectral/</uri>.</mixed-citation></ref>
+<ref id="ref8"><label>[8]</label> <mixed-citation publication-type="periodical" publication-format="print">&#x201C;<source>Pixxel Hyperspectral Imaging Constellation - eoPortal.</source>&#x201D; Accessed: <date-in-citation><month>Jan.</month> <day>06</day>, <year>2025</year></date-in-citation>. [Online]. Available: <uri>https://www.eoportal.org/satellitemissions/pixxel</uri>.</mixed-citation></ref>
+<ref id="ref9"><label>[9]</label> <mixed-citation publication-type="periodical" publication-format="print" publisher-type="government">&#x201C;<article-title>Welcome to HyspIRI Mission Study Site</article-title>,&#x201D; <source>Hyspiri.</source> Accessed: <date-in-citation><month>Jan.</month> <day>06</day>, <year>2025</year></date-in-citation>. [Online]. Available: <uri>https://hyspiri.jpl.nasa.gov</uri>.</mixed-citation></ref>
+<ref id="ref10"><label>[10]</label> <mixed-citation publication-type="periodical" publication-format="print"><person-group person-group-type="author"><string-name><given-names>R. O.</given-names> <surname>Green</surname></string-name> <etal>et al.</etal></person-group>, &#x201C;<article-title>Imaging Spectroscopy and the Airborne Visible/Infrared Imaging Spectrometer (AVIRIS)</article-title>,&#x201D; <source>Remote Sensing of Environment</source>, vol. <volume>65</volume>, no. <issue>3</issue>, pp. <fpage>227</fpage>&#x2013;<lpage>248</lpage>, <month>Sep.</month> <year>1998</year>, doi: <pub-id pub-id-type="doi">10.1016/S0034-4257(98)00064-9</pub-id>.</mixed-citation></ref>
+<ref id="ref11"><label>[11]</label> <mixed-citation publication-type="periodical" publication-format="print" publisher-type="government">&#x201C;<source>AVIRIS - Airborne Visible / Infrared Imaging Spectrometer.</source>&#x201D; Accessed: <date-in-citation><month>Jan.</month> <day>05</day>, <year>2025</year></date-in-citation>. [Online]. Available: <uri>https://aviris.jpl.nasa.gov/</uri>.</mixed-citation></ref>
+<ref id="ref12"><label>[12]</label> <mixed-citation publication-type="periodical" publication-format="print"><person-group person-group-type="author"><string-name><given-names>C. E.</given-names> <surname>Miller</surname></string-name> <etal>et al.</etal></person-group>, &#x201C;<article-title>Arctic-Boreal Vulnerability Experiment (ABoVE)ABoVE: Hyperspectral Imagery from AVIRIS-NG, Alaskan and Canadian Arctic, 2017&#x2013;2019</article-title>,&#x201D; <month>Apr.</month> <day>23</day>, <year>2018</year>, <source>ORNL Distributed Active Archive Center.</source> doi: <pub-id pub-id-type="doi">10.3334/ORNLDAAC/1569</pub-id>.</mixed-citation></ref>
+<ref id="ref13"><label>[13]</label> <mixed-citation publication-type="periodical" publication-format="print" publisher-type="government">&#x201C;<source>JPL | AVIRIS Data Portal.</source>&#x201D; Accessed: <date-in-citation><month>Jan.</month> <day>05</day>, <year>2025</year></date-in-citation>. [Online]. Available: <uri>https://aviris.jpl.nasa.gov/dataportal/</uri>.</mixed-citation></ref>
+<ref id="ref14"><label>[14]</label> <mixed-citation publication-type="periodical" publication-format="print"><person-group person-group-type="author"><string-name><given-names>R. O.</given-names> <surname>Green</surname></string-name></person-group>, &#x201C;<source>Measuring the Spectral Expression of Carbon Dioxide in the Solar Reflected Spectrum with AVIRIS</source>&#x201D;.</mixed-citation></ref>
+<ref id="ref15"><label>[15]</label> <mixed-citation publication-type="book" publication-format="print"><person-group person-group-type="author"><string-name><given-names>A. R.</given-names> <surname>Huete</surname></string-name></person-group>, &#x201C;<chapter-title>11 - REMOTE SENSING FOR ENVIRONMENTAL MONITORING</chapter-title>,&#x201D; in <source>Environmental Monitoring and Characterization</source>, <person-group person-group-type="editor"><string-name><given-names>J. F.</given-names> <surname>Artiola</surname></string-name>, <string-name><given-names>I. L.</given-names> <surname>Pepper</surname></string-name>, and <string-name><given-names>M. L.</given-names> <surname>Brusseau</surname></string-name></person-group>, Eds., <publisher-loc>Burlington</publisher-loc>: <publisher-name>Academic Press</publisher-name>, <year>2004</year>, pp. <fpage>183</fpage>&#x2013;<lpage>206</lpage>. doi: <pub-id pub-id-type="doi">10.1016/B978-012064477-3/50013-8</pub-id>.</mixed-citation></ref>
+<ref id="ref16"><label>[16]</label> <mixed-citation publication-type="periodical" publication-format="print"><person-group person-group-type="author"><string-name><given-names>T.</given-names> <surname>Dindaroglu</surname></string-name>, <string-name><given-names>E.</given-names> <surname>Babur</surname></string-name>, <string-name><given-names>T.</given-names> <surname>Yakupoglu</surname></string-name>, <string-name><given-names>J.</given-names> <surname>Rodrigo-Comino</surname></string-name>, and <string-name><given-names>A.</given-names> <surname>Cerd&#x00E0;</surname></string-name></person-group>, &#x201C;<article-title>Evaluation of geomorphometric characteristics and soil properties after a wildfire using Sentinel-2 MSI imagery for future firesafe forest</article-title>,&#x201D; <source>Fire Safety Journal</source>, vol. <volume>122</volume>, p. <fpage>103318</fpage>, <month>Jun.</month> <year>2021</year>, doi: <pub-id pub-id-type="doi">10.1016/j.firesaf.2021.103318</pub-id>.</mixed-citation></ref>
+<ref id="ref17"><label>[17]</label> <mixed-citation publication-type="periodical" publication-format="print"><person-group person-group-type="author"><string-name><given-names>B.</given-names> <surname>Zhou</surname></string-name>, <string-name><given-names>S.</given-names> <surname>Gao</surname></string-name>, <string-name><given-names>Y.</given-names> <surname>Yin</surname></string-name>, and <string-name><given-names>Y.</given-names> <surname>Zhong</surname></string-name></person-group>, &#x201C;<article-title>Enhancing active fire detection in Sentinel 2 imagery using GLCM texture features in random forest models</article-title>,&#x201D; <source>Sci Rep</source>, vol. <volume>14</volume>, no. <issue>1</issue>, p. <fpage>31076</fpage>, <month>Dec.</month> <year>2024</year>, doi: <pub-id pub-id-type="doi">10.1038/s41598&#x2013;024-81976-w</pub-id>.</mixed-citation></ref>
+<ref id="ref18"><label>[18]</label> <mixed-citation publication-type="periodical" publication-format="print"><person-group person-group-type="author"><string-name><given-names>D.</given-names> <surname>Haboudane</surname></string-name></person-group>, &#x201C;<article-title>Hyperspectral vegetation indices and novel algorithms for predicting green LAI of crop canopies: Modeling and validation in the context of precision agriculture</article-title>,&#x201D; <source>Remote Sensing of Environment</source>, vol. <volume>90</volume>, no. <issue>3</issue>, pp. <fpage>337</fpage>&#x2013;<lpage>352</lpage>, <month>Apr.</month> <year>2004</year>, doi: <pub-id pub-id-type="doi">10.1016/j.rse.2003.12.013</pub-id>.</mixed-citation></ref>
+<ref id="ref19"><label>[19]</label> <mixed-citation publication-type="periodical" publication-format="print"><person-group person-group-type="author"><string-name><given-names>B.</given-names> <surname>Gao</surname></string-name></person-group>, &#x201C;<article-title>NDWI-A normalized difference water index for remote sensing of vegetation liquid water from space</article-title>,&#x201D; <source>Remote Sensing of Environment</source>, vol. <volume>58</volume>, no. <issue>3</issue>, pp. <fpage>257</fpage>&#x2013;<lpage>266</lpage>, <month>Dec.</month> <year>1996</year>, doi: <pub-id pub-id-type="doi">10.1016/S0034-4257(96)00067-3</pub-id>.</mixed-citation></ref>
+<ref id="ref20"><label>[20]</label> <mixed-citation publication-type="periodical" publication-format="print"><person-group person-group-type="author"><string-name><given-names>S. K.</given-names> <surname>McFEETERS</surname></string-name></person-group>, &#x201C;<article-title>The use of the Normalized Difference Water Index (NDWI) in the delineation of open water features</article-title>,&#x201D; <source>International Journal of Remote Sensing</source>, vol. <volume>17</volume>, no. <issue>7</issue>, pp. <fpage>1425</fpage>&#x2013;<lpage>1432</lpage>, <month>May</month> <year>1996</year>, doi: <pub-id pub-id-type="doi">10.1080/01431169608948714</pub-id>.</mixed-citation></ref>
+<ref id="ref21"><label>[21]</label> <mixed-citation publication-type="periodical" publication-format="print">&#x201C;<source>NDWI: Index Formula, Value Range, And Uses In Agriculture.</source>&#x201D; Accessed: <date-in-citation><month>Jan.</month> <day>13</day>, <year>2025</year></date-in-citation>. [Online]. Available: <uri>https://eos.com/make-ananalysis/ndwi/</uri>.</mixed-citation></ref>
+</ref-list>
+</back>
+</conf-article>

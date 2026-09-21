@@ -35,6 +35,8 @@ class IEEEParser(BaseBeautifulSoupParser):
             ab = self._remove_latex(abstract)
             abstract = ab.text.strip()
             self.base_metadata["abstract"] = abstract
+        else:
+            logger.warning("No abstract found")
 
     def _parse_authors(self):
         # Parse authors from <contrib-group> section
@@ -47,15 +49,24 @@ class IEEEParser(BaseBeautifulSoupParser):
                 given = auth.get("given") or ""
                 if given.strip():
                     auth["given"] = " ".join(given.split())
+                else:
+                    logger.warning("No given name found")
 
                 surname = auth.get("surname") or ""
                 if surname.strip():
                     auth["surname"] = " ".join(surname.split())
+                else:
+                    logger.warning("No surname found")
 
                 middle = auth.get("middle") or ""
                 if middle.strip():
                     auth["middle"] = " ".join(middle.split())
+                else:
+                    logger.warning("No middle name found")
+
             self.base_metadata["authors"] = aa_output_dict["authors"]
+        else:
+            logger.warning("No authors found")
 
     def _parse_funding(self):
         funding = []
@@ -64,6 +75,7 @@ class IEEEParser(BaseBeautifulSoupParser):
 
         if not self.article.find("funding-group"):
             return
+            logger.warning("No funding-group found")
         else:
             fg = self.article.find("funding-group")
             # funding_stmt = fg.find("funding-statement", "").get_text(strip=True)
@@ -116,6 +128,8 @@ class IEEEParser(BaseBeautifulSoupParser):
         for i in isbn_all:
             if i.get("publication-format", ""):
                 pub_format = i.get("publication-format")
+            else:
+                logger.warning("No ISBN found")
             isbns.append({"type": pub_format, "isbn_str": self._detag(i, [])})
         self.base_metadata["isbn"] = isbns
 
@@ -127,6 +141,8 @@ class IEEEParser(BaseBeautifulSoupParser):
             self.base_metadata["ids"]["doi"] = self.article.find(
                 "article-id", {"pub-id-type": "doi"}
             ).get_text(strip=True)
+        else:
+            logger.warning("No DOI found")
 
         # Possible TO DO: Add publication DOIs
         # IEEE XML old DTD has these, new version does not?
@@ -151,6 +167,8 @@ class IEEEParser(BaseBeautifulSoupParser):
 
         if keywords:
             self.base_metadata["keywords"] = keywords
+        else:
+            logger.warning("No keywords found")
 
     def _parse_page(self):
         fpage = self.article.find("fpage")
@@ -171,8 +189,13 @@ class IEEEParser(BaseBeautifulSoupParser):
                 self.base_metadata["page_first"] = id_num
         elif fpage_num:
             self.base_metadata["page_first"] = fpage_num
+        else:
+            logger.warning("No first page found")
+
         if lpage:
             self.base_metadata["page_last"] = lpage.get_text(strip=True)
+        else:
+            logger.warning("No last page found")
 
     def _parse_permissions(self):
         # Check for open-access and permissions information
@@ -193,6 +216,8 @@ class IEEEParser(BaseBeautifulSoupParser):
                 "©" + copyright_year + " " + copyright_holder
             )  # + ". " + copyright_statement
             self.base_metadata["copyright"] = copyright_text
+        else:
+            logger.warning("No permissions found")
 
             """
             # TO DO: Are any IEEE conference articles OA?
@@ -215,6 +240,8 @@ class IEEEParser(BaseBeautifulSoupParser):
         # Volume
         if self.confprocmeta.find("volume"):
             self.base_metadata["volume"] = self.confprocmeta.find("volume").get_text(strip=True)
+        else:
+            logger.warning("No volume found")
 
         # Conference location
         if self.confmeta.find("conf-loc"):
@@ -230,6 +257,8 @@ class IEEEParser(BaseBeautifulSoupParser):
             location = ", ".join(loc_parts)
 
             self.base_metadata["conf_location"] = location
+        else:
+            logger.warning("No conference location found")
 
         # Conference dates in <conf-meta> section
         conf_start = self.confmeta.find("conf-start")
@@ -239,6 +268,8 @@ class IEEEParser(BaseBeautifulSoupParser):
             start_month = startdate_info.get("month", "")
             start_day = startdate_info.get("day", "")
             start_date = f"{start_day} {start_month} {start_year}"
+        else:
+            logger.warning("No conference start date found")
 
         conf_end = self.confmeta.find("conf-end")
         if conf_end:
@@ -247,6 +278,8 @@ class IEEEParser(BaseBeautifulSoupParser):
             end_month = enddate_info.get("month", "")
             end_day = enddate_info.get("day", "")
             end_date = f"{end_day} {end_month} {end_year}"
+        else:
+            logger.warning("No conference end date found")
 
         # Assemble conference dates
         date_parts = [p for p in (start_date, end_date) if p]
@@ -314,6 +347,8 @@ class IEEEParser(BaseBeautifulSoupParser):
                 self.base_metadata["pubdate_print"] = iso_date
             elif date_type == "electronic":
                 self.base_metadata["pubdate_electronic"] = iso_date
+            else:
+                logger.warning("No pub-date found")
 
     def _parse_references(self):
         if not self.back:
@@ -325,6 +360,7 @@ class IEEEParser(BaseBeautifulSoupParser):
             ref_results = self.back.find("ref-list").find_all("ref")
         else:
             ref_results = []
+            logger.warning("No references found")
         for r in ref_results:
             # output raw XML for reference service to parse later
             s = self._remove_latex(r)
@@ -341,6 +377,11 @@ class IEEEParser(BaseBeautifulSoupParser):
                 at = self._remove_latex(at)
                 title = at.text.strip()
                 self.base_metadata["title"] = title
+            else:
+                logger.warning("No article-title found")
+        else:
+            logger.warning("No title-group found")
+
 
     def parse(self, text):
         """
@@ -366,11 +407,21 @@ class IEEEParser(BaseBeautifulSoupParser):
                 if self.confarticle.find("conf-article-meta", None):
                     self.article = self.confarticle.find("conf-article-meta")
 
+            else:
+                logger.warning("No conf-front found")
+
             if self.confarticle.find("body", None):
                 self.body = self.confarticle.find("body")
+            else:
+                logger.warning("No body found")
 
             if self.confarticle.find("back", None):
                 self.back = self.confarticle.find("back")
+            else:
+                logger.warning("No back found")
+
+        else:
+            logger.warning("No conf-article found")
 
         self._parse_abstract()
         self._parse_authors()

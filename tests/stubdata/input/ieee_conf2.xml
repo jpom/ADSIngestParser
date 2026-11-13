@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE conf-article PUBLIC "-//IEEE//IEEE Conferences JATS-based DTD v2.0//EN" "conferences.dtd">
+<conf-article article-type="research" content-type="orig-research" dtd-version="2.0" open-access="no" xml:lang="eng" show-flag="show" peer-reviewed="yes" lifecycle="final" xmlns:ali="http://www.niso.org/schemas/ali/1.0/" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<!-- Article Processing Date: 04/27/2025 -->
+<!-- Vendor Name: Aptara -->
+<!-- IEEE XML JATS Tagging Guidelines version: 20241024 -->
+<!-- IEEE Math Coding Requirements and Guidelines for Vendors version: v2.4 -->
+<conf-front>
+<conf-proc-meta>
+<conf-proc-id conf-proc-id-type="conf-acronym">GREENTECH</conf-proc-id>
+<conf-proc-title-group>
+<conf-full-title>2025 IEEE Green Technologies Conference (GreenTech)</conf-full-title>
+<conf-normalized-title>Green Technologies Conference (GreenTech), 2025 IEEE</conf-normalized-title>
+</conf-proc-title-group>
+<volume>00</volume>
+<isbn publication-format="electronic">979-8-3315-2018-2</isbn>
+</conf-proc-meta>
+<conf-meta>
+<conf-name>2025 IEEE Green Technologies Conference (GreenTech)</conf-name>
+<conf-start iso-8601-date="2025-03-26"><day>26</day><month>03</month><year>2025</year></conf-start>
+<conf-end iso-8601-date="2025-03-28"><day>28</day><month>03</month><year>2025</year></conf-end>
+<conf-loc><city>Wichita</city>, <state>KS</state>, <country>USA</country></conf-loc>
+</conf-meta>
+<conf-article-meta>
+<article-id pub-id-type="doi">10.1109/GreenTech62170.2025.10977640</article-id>
+<xplore-article-id>10977640</xplore-article-id>
+<xplore-issue>10977574</xplore-issue>
+<xplore-pub-id>10977060</xplore-pub-id>
+<title-group>
+<article-title>Improved Subsynchronous Frequency Oscillations Detection in Wind Farms Using AI-based Fourier Transformation and Advanced Metrics</article-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" id="contrib1"><name-alternatives><string-name specific-use="display"><given-names>Shyam</given-names> <surname>Yathirajam</surname></string-name>
+<string-name specific-use="index"><given-names>Shyam</given-names> <surname>Yathirajam</surname></string-name></name-alternatives>
+<email>yathi001@csusm.edu</email>
+<xref ref-type="aff" rid="aff1">*</xref></contrib>
+<contrib contrib-type="author" id="contrib2"><name-alternatives><string-name specific-use="display"><given-names>Arash</given-names> <surname>Peighambari</surname></string-name>
+<string-name specific-use="index"><given-names>Arash</given-names> <surname>Peighambari</surname></string-name></name-alternatives>
+<email>peigh001@csusm.edu</email>
+<xref ref-type="aff" rid="aff1">*</xref></contrib>
+<contrib contrib-type="author" id="contrib3"><name-alternatives><string-name specific-use="display"><given-names>Nikil</given-names> <surname>Balaji</surname></string-name>
+<string-name specific-use="index"><given-names>Nikil</given-names> <surname>Balaji</surname></string-name></name-alternatives>
+<email>balaj004@csusm.edu</email>
+<xref ref-type="aff" rid="aff1">*</xref></contrib>
+<contrib contrib-type="author" id="contrib4"><name-alternatives><string-name specific-use="display"><given-names>Owen</given-names> <surname>Man</surname></string-name>
+<string-name specific-use="index"><given-names>Owen</given-names> <surname>Man</surname></string-name></name-alternatives>
+<email>man006@csusm.edu</email>
+<xref ref-type="aff" rid="aff1">*</xref></contrib>
+<contrib contrib-type="author" id="contrib5"><name-alternatives><string-name specific-use="display"><given-names>Hamed</given-names> <surname>Nademi</surname></string-name>
+<string-name specific-use="index"><given-names>Hamed</given-names> <surname>Nademi</surname></string-name></name-alternatives>
+<email>hnademi@csusm.edu</email>
+<xref ref-type="aff" rid="aff1">*</xref></contrib>
+<contrib contrib-type="author" id="contrib6"><name-alternatives><string-name specific-use="display"><given-names>Sreedevi</given-names> <surname>Gutta</surname></string-name>
+<string-name specific-use="index"><given-names>Sreedevi</given-names> <surname>Gutta</surname></string-name></name-alternatives>
+<email>sgutta@csusm.edu</email>
+<xref ref-type="aff" rid="aff1">*</xref></contrib>
+<contrib contrib-type="author" id="contrib7"><name-alternatives><string-name specific-use="display"><given-names>Justin</given-names> <surname>Morris</surname></string-name>
+<string-name specific-use="index"><given-names>Justin</given-names> <surname>Morris</surname></string-name></name-alternatives>
+<email>justinmorris@csusm.edu</email>
+<xref ref-type="aff" rid="aff1">*</xref></contrib>
+<contrib contrib-type="author" id="contrib8"><name-alternatives><string-name specific-use="display"><given-names>Ali</given-names> <surname>Ahmadinia</surname></string-name>
+<string-name specific-use="index"><given-names>Ali</given-names> <surname>Ahmadinia</surname></string-name></name-alternatives>
+<email>aahmadinia@csusm.edu</email>
+<xref ref-type="aff" rid="aff1">*</xref></contrib>
+</contrib-group>
+<aff id="aff1">
+*
+<institution-wrap>
+<institution content-type="institution">California State University</institution>
+</institution-wrap>
+<city>San Marcos</city>
+<state>CA</state>
+<post-code>92096</post-code>
+<country>USA</country>
+</aff>
+<pub-date date-type="cover" pub-type="print" iso-8601-date="2025-03-28"><day>28</day><month>March</month><year>2025</year></pub-date>
+<fpage>1</fpage>
+<lpage>5</lpage>
+<permissions>
+<copyright-statement>979-8-3315-2018-2/25/$31.00 &#x00A9;2025 IEEE</copyright-statement>
+<copyright-year>2025</copyright-year>
+<copyright-holder copyright-owner="IEEE"></copyright-holder>
+<license license-type="IEEE">
+<ali:license_ref></ali:license_ref>
+<license-p><price currency="USD">31.00</price></license-p>
+</license>
+</permissions>
+<self-uri content-type="xml">10977640_ft.xml</self-uri>
+<self-uri content-type="print">p223-yathirajam.pdf</self-uri>
+<abstract xml:lang="en">
+<p>Low-Frequency oscillations in wind farms, caused by interactions between power converters and transmission lines, must be addressed quickly to prevent grid instability. While past studies using Convolutional Neural Networks (CNNs) have focused on high-magnitude oscillation detection, these methods often demand substantial data and computational resources, delaying detection and causing substantial damage to the grid. Moreover, the issue of low-frequency oscillations, which can lead to high-frequency resonance and potential power outages, remains underexplored. In this paper, we propose a dual detection system that swiftly identifies high-magnitude oscillations through time-domain analysis and detects low-frequency oscillations using Fast Fourier Transform-based frequency-domain analysis. We employ Hyperdimensional Computing (HDC) along with one-class SVM introducing True Positive Confidence (TPC) and False Positive Confidence (FPC) metrics to enhance reliability. Our findings show HDC surpasses One class SVM model, performing 6x faster on GPU and 16x on FPGA achieving at least 99&#x0025; confidence in TPC and FPC for the oscillation types of interest in this work. This positions HDC as an optimal solution for real-time wind farm applications, offering significant advantages in speed and accuracy. Most importantly, the proposed solutions can detect oscillations within tens of microseconds, significantly ahead of the critical time window of 500/800 &#x03BC;<inline-formula><tex-math notation="LaTeX">$s$</tex-math></inline-formula> from the onset of the oscillation, ensuring timely and reliable fault detection.</p>
+</abstract>
+<funding-group>
+<award-group>
+<funding-source><institution-wrap><institution>National Science Foundation</institution><institution-id institution-id-type="fundref">10.13039/100000001</institution-id></institution-wrap></funding-source>
+<award-id>2334256</award-id>
+</award-group>
+<funding-statement>This work was supported by the National Science Foundation (NSF) through Grant #2334256. Authors would also like to thank the Oklahoma Gas and Electric Utility for providing the real-field data from the Texas Panhandle wind farm.</funding-statement>
+</funding-group>
+<counts>
+<fig-count count="3"/>
+<table-count count="2"/>
+<equation-count count="3"/>
+<ref-count count="11"/>
+<page-count count="5"/>
+</counts>
+</conf-article-meta>
+</conf-front>
+<body>
+<sec id="sec1">
+<label>I.</label>
+<title>Introduction</title>
+<p>The control of power electronic converters exhibits bidirectional interaction between the renewable power generation plant and the series capacitors of the transmission line, hence provoking the presence of sub-synchronous oscillation <xref ref-type="bibr" rid="ref1">[1]</xref>&#x2013;<xref ref-type="bibr" rid="ref2"/><xref ref-type="bibr" rid="ref3">[3]</xref>. For instance, low-frequency oscillations, e.g., less than 10Hz, have been reported in multiple wind farms around the world over the last decade, with immediate power outages correspondingly <xref ref-type="bibr" rid="ref4">[4]</xref>&#x2013;<xref ref-type="bibr" rid="ref5"/><xref ref-type="bibr" rid="ref6">[6]</xref>. <xref ref-type="fig" rid="fig1">Fig 1</xref> illustrates these oscillations, contrasting normal waveforms with forced oscillations, which are critical for evaluating True Positive Confidence (TPC). It is thus crucial to strengthen the reliable operation of wind power generation plants by developing comprehensive control and monitoring schemes via optimization control of wind-turbine induction generators and power electronics converters on both generator and grid sides interfaced with interconnected transmission cables.</p>
+<p>Such instability increases the likelihood of system failures, resulting in costly damage to power system infrastructure. Advanced devices, such as the SEL-421 Protection, Automation, and Control System, have been developed to mitigate these issues. Researchers have also explored low-frequency oscillations caused by wind-turbine induction generators <xref ref-type="bibr" rid="ref5">[5]</xref>, <xref ref-type="bibr" rid="ref6">[6]</xref>. For example, the work in <xref ref-type="bibr" rid="ref2">[2]</xref> focused on impedance modeling and harmonic stability studies of modular multilevel power converters, which are widely used in wind farms, by developing passive circulating current filters to address crossed-frequency effects. Despite these advancements, most proposed solutions face challenges such as implementation complexity, slow dynamic response, and high costs, limiting their practical deployment.</p>
+<p>Existing approaches impose considerable computational overhead for real-time analysis and edge deployment on FPGAs and CPUs <xref ref-type="bibr" rid="ref10">[10]</xref>, <xref ref-type="bibr" rid="ref11">[11]</xref>. Notably, studies predominantly focused on using Convolutional Neural Networks (CNNs) to detect oscillations in wind farms <xref ref-type="bibr" rid="ref7">[7]</xref>, with most evaluations based on traditional metrics like recall <xref ref-type="bibr" rid="ref7">[7]</xref> and accuracy. Particularly when transforming time-domain data into images for 2D CNNs, led to significant delays.</p>
+<p>Addressing this gap, our study emphasizes the detection of mild oscillations alongside high-magnitude ones to provide a comprehensive solution for wind farm stability which are further explained in the <xref ref-type="sec" rid="sec4">section IV</xref>. In this paper, to tackle these oscillation detection challenges, we introduce an innovative approach that leverages advanced machine learning algorithms such as one-class SVM (Support Vector Machine) <xref ref-type="bibr" rid="ref8">[8]</xref> and Hyperdimensional Computing (HDC). These methods provide robust detection of low-frequency oscillations of interest, with an emphasis on real-time processing, making them suitable for resource-constrained environments such as IoT-enabled wind farms. Furthermore, to assess detection reliability, we propose two novel metrics: True Positive Confidence (TPC) and False Positive Confidence (FPC) <xref ref-type="bibr" rid="ref7">[7]</xref>. These metrics evaluate the ability of algorithms to detect oscillations accurately within critical time windows, specifically within the first <inline-formula><tex-math notation="LaTeX">$500-800\mu \mathrm{s}$</tex-math></inline-formula>.</p>
+</sec>
+<sec id="sec2">
+<label>II.</label>
+<title>Background and Related Work</title>
+<sec id="sec2a">
+<label>A.</label>
+<title>Hyperdimensional Computing Background</title>
+<sec id="sec2a1">
+<title>Encoding Data in Hyperspace</title>
+<p>In our encoding process, each input sample represents a sequence of <inline-formula><tex-math notation="LaTeX">$N$</tex-math></inline-formula> sequential values from the original time-series data, denoted by <inline-formula><tex-math notation="LaTeX">$X$</tex-math></inline-formula>. We transform this input data into a higher-dimensional space in two stages. First, the input tensor <inline-formula><tex-math notation="LaTeX">$X$</tex-math></inline-formula>, of size <inline-formula><tex-math notation="LaTeX">$T$</tex-math></inline-formula>, is projected into an intermediate dimension <inline-formula><tex-math notation="LaTeX">$D$</tex-math></inline-formula> using a linear transformation followed by a ReLU activation function. This is followed by another linear transformation that projects the intermediate representation into the final output dimension <inline-formula><tex-math notation="LaTeX">$\tau$</tex-math></inline-formula>. This two-step process ensures that the encoded representation is both compact and information-rich.
+<fig id="fig1">
+<label>Fig. 1.</label>
+<caption><p>Configuration of the studied wind farm based on wind turbine-Type 3 connected to the utility grids to detect forced oscillations based on machine learning schemes. The real-field measurements for the normal operation and forced oscillations observed in the texas panhandle wind farm incident are shown in blue and red, respectively. Also, the initial <inline-formula><tex-math notation="LaTeX">$500/800\mu \mathrm{s}$</tex-math></inline-formula> considered to compute TPC for early detection out of the whole oscillation window.</p></caption>
+<graphic xlink:href="10977640-fig-1-source.tif"/>
+</fig>
+</p>
+<p>The mathematical representation of this encoding process:
+<disp-formula><tex-math notation="LaTeX">\begin{equation*}\mathrm{H}[i]= \text{Linear}(\text{ReLU}(\text{Linear }(X\cdot W_{1}+b_{1})))\cdot W_{2}+b_{2}\end{equation*}</tex-math></disp-formula></p>
+<p>Here, <inline-formula><tex-math notation="LaTeX">$W_{1}$</tex-math></inline-formula> and <inline-formula><tex-math notation="LaTeX">$b_{1}$</tex-math></inline-formula> are the weights and biases of the first layer, while <inline-formula><tex-math notation="LaTeX">$W_{2}$</tex-math></inline-formula> and <inline-formula><tex-math notation="LaTeX">$b_{2}$</tex-math></inline-formula> represent the second layer. The ReLU activation introduces nonlinearity, allowing for more complex pattern recognition in the encoded data.</p>
+<p>In the typical HDC workflow, encoding, training, and inference stages <xref ref-type="bibr" rid="ref9">[9]</xref> contribute to robust performance. During training, class hypervectors (HVs) are generated and refined by accumulating encoded samples per class, improving accuracy through minor adjustments for misclassified samples. In inference, encoded samples are compared with class HVs using Hamming distance to identify the closest match. This efficient process allows HDC to achieve reliable real-time oscillation detection with minimal computational overhead. While we emphasize our novel encoding here, the full HDC approach integrates these components seamlessly.</p>
+</sec>
+</sec>
+</sec>
+<sec id="sec3">
+<label>III.</label>
+<title>Improved Oscillation Detection in Windfarm Using Advanced Techniques</title>
+<sec id="sec3a">
+<label>A.</label>
+<title>Confidence Metrics</title>
+<p>In order to achieve faster detection of oscillations, we place emphasis on True Positive Confidence (TPC) and False Pos-itive Confidence (FPC) rather than focusing solely on the F1 Score. Even when models do not exhibit the highest F1 scores, those with high TPC and FPC values prove to be more reliable for real-time applications.</p>
+<sec id="sec3a1">
+<label>1)</label>
+<title>True Positive Confidence (TPC) Metric</title>
+<p>The True Positive Confidence equation is given by:
+<disp-formula><tex-math notation="LaTeX">\begin{equation*}
+P=1-(1-r^{s})^{(N-s+1)}\end{equation*}</tex-math></disp-formula></p>
+<p>This equation measures the probability of detecting at least one true sequence of <inline-formula><tex-math notation="LaTeX">$s$</tex-math></inline-formula> consecutive positives within the critical initial <inline-formula><tex-math notation="LaTeX">$500\mu \mathrm{s}-800\mu \mathrm{s}$</tex-math></inline-formula> window after the start of an oscillation. In this equation, <inline-formula><tex-math notation="LaTeX">$P$</tex-math></inline-formula> represents the probability of detecting at least one true sequence of <inline-formula><tex-math notation="LaTeX">$s$</tex-math></inline-formula> consecutive positives. The term <inline-formula><tex-math notation="LaTeX">$r$</tex-math></inline-formula> is the ratio of true positives to the actual number of positives (True Positive Rate, TPR). The parameter <inline-formula><tex-math notation="LaTeX">$s$</tex-math></inline-formula> denotes the number of consecutive NGram labels considered for the oscillation window. The term <inline-formula><tex-math notation="LaTeX">$N$</tex-math></inline-formula> represents the total number of NGrams, and <inline-formula><tex-math notation="LaTeX">$N-s+1$</tex-math></inline-formula> is the number of possible sequences of <inline-formula><tex-math notation="LaTeX">$s$</tex-math></inline-formula> consecutive NGrams. This metric ensures a high level of confidence in detecting oscillations early, which is crucial for timely intervention and mitigation.</p>
+</sec>
+<sec id="sec3a2">
+<label>2)</label>
+<title>False Positive Confidence (FPC) Metric</title>
+<p>The False Positive Confidence equation is given by:
+<disp-formula><tex-math notation="LaTeX">\begin{equation*}
+Q=(1-r^{s})^{(N-s+1)}\end{equation*}</tex-math></disp-formula></p>
+<p>This equation measures the probability that no sequence of <inline-formula><tex-math notation="LaTeX">$s$</tex-math></inline-formula> consecutive NGrams is falsely identified as an oscillation during normal operations. Here, <inline-formula><tex-math notation="LaTeX">$Q$</tex-math></inline-formula> represents the probability of correctly identifying sequences as non-oscillatory (normal). The term <inline-formula><tex-math notation="LaTeX">$r$</tex-math></inline-formula> in this context is the False Positive Rate (FPR), which is the proportion of false positives among the total number of negatives. The parameter <inline-formula><tex-math notation="LaTeX">$s$</tex-math></inline-formula> denotes the number of consecutive NGram labels considered. The term <inline-formula><tex-math notation="LaTeX">$N$</tex-math></inline-formula> represents the total number of NGrams, and <inline-formula><tex-math notation="LaTeX">$N-s+1$</tex-math></inline-formula> is the number of possible sequences of <inline-formula><tex-math notation="LaTeX">$s$</tex-math></inline-formula> consecutive NGrams. This metric helps ensure normal signals are not wrongly detected as oscillations, avoiding needless grid shutdowns.</p>
+<p>By introducing these confidence metrics, we provide a more nuanced understanding of algorithm performance. True Positive Confidence (TPC) measures the probability of accurately detecting oscillations, while False Positive Confidence (FPC) measures the likelihood of correctly identifying normal conditions without false positives. Evaluating both metrics together ensures a balanced detection approach, maximizing reliability while minimizing unnecessary interruptions. They are also the first evaluation metrics to consider timely detection as part of the measurement.</p>
+</sec>
+</sec>
+<sec id="sec3b">
+<label>B.</label>
+<title>Mild Vs High Magnitude Oscillations: Detection Chal-Lenges and Impacts</title>
+<p><fig id="fig2">
+<label>Fig. 2.</label>
+<caption><p>Scatter plot showing normal waveforms (black), high magnitude oscillations (red), and mild oscillations (orange). The 500&#x2013;800 &#x03BC;s of the high magnitude oscillations window (red) has been used to compute the true positive confidence (TPC) and normal waveform for the TNC calculation.</p></caption>
+<graphic xlink:href="10977640-fig-2-source.tif"/>
+</fig>
+</p>
+<p>Mild oscillations, as illustrated in the orange region of <xref ref-type="fig" rid="fig2">Figure 2</xref>, present a unique challenge compared to high magnitude os-cillations (depicted in red). While high magnitude oscillations are easier to identify due to their significant deviation from normal operational signals, mild oscillations closely mimic the characteristics of normal operations. This subtlety makes mild oscillations harder to detect, as they blend with the regular signal patterns, often going unnoticed by traditional detection methods. Despite their lower amplitude, mild oscillations can still cause considerable damage leading to potential long-term operational issues and increased maintenance costs.</p>
+</sec>
+<sec id="sec3c">
+<label>C.</label>
+<title>Fourier Transform Analysis for Oscillation Detection</title>
+<p>The detection of mild oscillations is crucial because they can escalate into more severe faults if left unaddressed. Their impact, though less immediate than high magnitude oscillations, can be equally detrimental over time. To effectively identify and manage these oscillations, we have introduced and evaluated multiple algorithms, including OCSVM and HDC. Each of these algorithms brings a unique approach to distinguishing mild oscillations from normal operational signals and high magnitude fault operations.</p>
+<p>To enhance our model&#x0027;s ability to detect both high magnitude and mild oscillations, we employ a dual-model approach. While one model focuses on detecting oscillations using only the time-domain signal (current domain over time), another model works in parallel to specifically detect mild oscillations, which are often more subtle and harder to identify. For this second model, we utilize the Fast Fourier Transform (FFT) <xref ref-type="bibr" rid="ref10">[10]</xref> to extract frequency-domain features from the wind farm data. By transforming the time-domain signals into the frequency domain, FFT helps in identifying dominant frequency components and their respective power levels. This approach is particularly effective in distinguishing between normal operations and mild oscillatory events, as it extracts features that separate the two, even though they visually appear almost identical in the time domain. By leveraging FFT, we aim to capture the subtle frequency differences that would otherwise be missed by conventional detection methods.</p>
+<p>Mild oscillations, unlike high-magnitude oscillations, do not present with stark deviations in amplitude or frequency. Instead, they exhibit subtle variations within a low-frequency range that are challenging to detect using conventional methods. The FFT analysis provides a powerful tool to identify these mild oscillations by highlighting the differences in frequency components between normal and oscillatory states. The capability to detect such subtle, yet potentially harmful, oscillations is crucial to avoid long-term damages.</p>
+<p>By extracting these key FFT features-such as <italic><bold>dominant frequency, mean power, and maximum</bold> power-our</italic> models can effectively differentiate between normal operational data and both high-magnitude and mild oscillations. This allows for a more nuanced detection strategy that ensures reliability and safety in wind farm operations. Moreover, detecting mild oscillations early on helps mitigate potential risks that may not be immediately apparent but could lead to significant loss.</p>
+</sec>
+<sec id="sec3d">
+<label>D.</label>
+<title>An Experiment with the Real-World Data from Texas Panhandle Wind Farm</title>
+<p>To further evaluate our models, we include a real world measured dataset in evaluation. The real measurement dataset employed in this analysis was provided by Oklahoma Gas and Electric Company for the Texas Panhandle wind farm, where the installed PMUs at various terminals were set to capture 30&#x2013;32 samples per second of data. The dataset referred to the incident when subsynchronous frequency voltage oscillations of around 3Hz caused a loss of 185MW power. The IEEE Standard C37.118-1-2011 for Synchrophasor Measurements for Power Systems specifies the device reporting rates in terms of data frames per second. The aim is to prevent confusion with the analog-to-digital converter (ADC) sampling rate that samples the voltage and current waveforms. The data frames from PMU include the magnitude, phase angle, frequency, and rate of change of frequency of the input signal because these parameters characterize the estimated phasor value of a continuous voltage or current waveform; with time synchronization, this is called a synchrophasor. In most wind farms, the grid monitoring devices may sample the current or voltage waveform at a high sampling rate, but report measurements filter out at a rate set by the users such as distribution system operators, plant owners, and utilities. For example, a relay may sample at up to 10kHz acquisition speed, but report the data at user-chosen rates of 5 to 60 samples per second on a 60Hz U.S. power grid.</p>
+</sec>
+</sec>
+<sec id="sec4">
+<label>IV.</label>
+<title>Experiments and Results</title>
+<sec id="sec4a">
+<label>A.</label>
+<title>Experimental Setup</title>
+<p>We have implemented HDC training, retraining, and inference on both software and Hardware. For software, we used Python. For the CPU architecture, our experiments were conducted on a server equipped with an AMD EPYC 7343 16-Core Processor and a total of 123.6 GB of RAM. For GPU, our experiments were conducted on a server equipped with two NVIDIA RTX A5500 GPUs, each with 24.6 GB of VRAM. For FPGA, we have implemented our design in Verilog. We verified the timing and functionality of the models by synthesizing them using Xilinx Vivado Design Suite <xref ref-type="bibr" rid="ref11">[11]</xref>. The synthesis code has been implemented on a Kintex-7 FPGA KC705 Evaluation Kit.</p>
+<p>We have evaluated the performance of our design and tested it on multiple different datasets. Some of the datasets are generated from simulation data using MATLAB and Simulink which are sampled at <inline-formula><tex-math notation="LaTeX">$10\mu s$</tex-math></inline-formula> recorded for 20 and 14 seconds for both high magnitude and mild oscillations. On the other hand, we also have tested our models on real world data collected from a Wind Farm field at Texas sampled at 60Hz with a duration of 10 minutes with fault appearing for 14 seconds in between. In this section, we present the results of our evaluation on two different algorithms: HDC, and One-Class SVM for the above mentioned datasets. We aim to determine which of these algorithms performs better in terms of overall performance for different metrics compared on our datasets. We have considered multiple datasets where the training and testing are done on separate datasets to prevent any potential data leakage. The comparison of overall performance includes metrics such as F1 score, FP and TP confidence scores, and speed on both CPU and GPU.</p>
+</sec>
+<sec id="sec4b">
+<label>B.</label>
+<title>Impact of S(Consecutive Number of ngrams) on FPC and TPC Confidence</title>
+<p><fig id="fig3">
+<label>Fig. 3.</label>
+<caption><p>Impact of s value on finding a balanced FPC and TPC explaining the impact of s in maintaining accuracy and efficiency in oscillation detection.</p></caption>
+<graphic xlink:href="10977640-fig-3-source.tif"/>
+</fig>
+</p>
+<p>The choice of the value s-the number of consecutive NGrams used for detecting oscillations-is crucial for balancing the accuracy of oscillation detection and the speed of the system&#x0027;s response. In the context of wind farm oscillation detection, particularly with rare faults like forced oscillations, small <inline-formula><tex-math notation="LaTeX">$s$</tex-math></inline-formula> values allow the system to quickly respond to faults, as fewer NGrams are needed to detect an actual oscillation. However, relying on a smaller <inline-formula><tex-math notation="LaTeX">$s$</tex-math></inline-formula> increases the chances of false positives, potentially causing unnecessary interruptions to the grid.</p>
+<p>The results from the <xref ref-type="fig" rid="fig3">Figure 3</xref> are obtained from the setting of Ngram size being-20 with an overlap of <italic>95&#x0025;</italic> on real-world data acquired from the Texas field indicates that larger <inline-formula><tex-math notation="LaTeX">$s$</tex-math></inline-formula> values can improve False Positive Confidence (FPC). This happens because the system adopts a more conservative approach-it requires a larger sequence of consecutive NGrams to confi- dently declare normal operation or to distinguish oscillations from grid faults. However, increasing <inline-formula><tex-math notation="LaTeX">$s$</tex-math></inline-formula> also comes with a significant drawback: more time is required for detection, as the system needs to analyze more data before making a decision. This delay can be critical, especially in situations where rapid intervention is necessary to prevent grid failures.</p>
+<p>The evaluated algorithms, including HDC, performed particularly well with smaller &#x2018; s &#x2018; values, such as 3 and 5, achieving balanced True Positive Confidence (TPC) and False Positive Confidence (FPC) rates, whereas One-Class SVM requires a big &#x2018; s &#x2018; Value. This suggests that HDC can detect oscillations reliably without requiring excessive NGrams, allowing for quicker detection while maintaining a low false positive rate.</p>
+</sec>
+<sec id="sec4c">
+<label>C.</label>
+<title><inline-formula><tex-math notation="LaTeX">$500\mu sVs800\mu s$</tex-math></inline-formula> Oscillation Detection Windows</title>
+<p><table-wrap id="table1">
+<label>Table I</label>
+<caption>
+<title>Algorithm performance comparison: true positive and false positive confidence</title></caption>
+<graphic xlink:href="10977640-table-1-source.tif"/>
+<table rules="all" frame="box" cellpadding="5">
+<colgroup>
+<col span="4"/>
+</colgroup>
+<thead>
+<tr>
+<th rowspan="2">Algorithm</th>
+<th colspan="2">TPC</th>
+<th rowspan="2">FPC</th>
+</tr>
+<tr>
+<th><italic>500</italic> &#x03BC;s</th>
+<th>800 &#x03BC;s</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OCSVM</td>
+<td>97&#x0025;</td>
+<td>100&#x0025;</td>
+<td>97&#x0025;</td>
+</tr>
+<tr>
+<td><bold>HDC</bold></td>
+<td>100&#x0025;</td>
+<td>100&#x0025;</td>
+<td>99&#x0025;</td>
+</tr>
+</tbody>
+</table>
+<table-wrap-foot>
+<p><bold><italic>Abbreviations</italic>: TPC</bold>: True Positive Confidence, <bold>FPC</bold>: False Positive Confidence, OCSVM: One-Class Support Vector Machine, <bold>HDC</bold>: Hyperdimensional Computing.</p>
+</table-wrap-foot>
+</table-wrap>
+</p>
+<p>This section provides a concise comparison of algorithm performance on mild oscillations from synthetic MATLAB Simulink data across critical metrics, focusing on True Positive Confidence (TPC) at detection windows of <inline-formula><tex-math notation="LaTeX">$500\mu \mathrm{s}$</tex-math></inline-formula> and <inline-formula><tex-math notation="LaTeX">$800\mu \mathrm{s}$</tex-math></inline-formula>, as well as False Positive Confidence (FPC) evaluated independently of the window size. The two algorithms compared are One-Class SVM (OCSVM) and Hyperdimensional Computing (HDC).</p>
+<p>From <xref ref-type="table" rid="table1">Table I</xref>, HDC achieves a TPC of 100&#x0025; across both <inline-formula><tex-math notation="LaTeX">$500\mu \mathrm{s}$</tex-math></inline-formula> and <inline-formula><tex-math notation="LaTeX">$800\mu \mathrm{s}$</tex-math></inline-formula> detection windows, highlighting its consistent and robust performance in detecting oscillations with minimal delay. OCSVM, while maintaining strong performance, achieves a slightly lower TPC of 97&#x0025; at <inline-formula><tex-math notation="LaTeX">$500\mu \mathrm{s}$</tex-math></inline-formula> but matches HDC at 100&#x0025; for the <inline-formula><tex-math notation="LaTeX">$800\mu \mathrm{s}$</tex-math></inline-formula> window. This suggests that OCSVM benefits from a slightly extended detection window for reliable classification.</p>
+<p>Regarding FPC, HDC achieves a near-perfect score of 99&#x0025;, demonstrating its ability to minimize false positives effectively. OCSVM, with an FPC of 97&#x0025;, performs well but is slightly less precise, indicating a marginally higher risk of misclassifying normal waveforms as oscillations. Ensuring low false positives is critical to avoid unnecessary disruptions in wind farm operations.</p>
+<p>While both algorithms exhibit commendable performance, HDC&#x0027;s perfect TPC at <inline-formula><tex-math notation="LaTeX">$500\mu \mathrm{s}$</tex-math></inline-formula> and superior FPC, combined with its computational efficiency, make it the preferred choice for real-time wind farm applications.</p>
+<p><xref ref-type="table" rid="table2">Table II</xref> compares OCSVM and HDC on multiple performance metrics, including Inference and Training timings per sample,F1 Score, TPC, and FPC, using both real-world high-magnitude oscillation data from a Texas wind farm and mild oscillations from synthetic MATLAB Simulink data. HDC outperforms OCSVM in most areas, demonstrating high accuracy and efficiency across varied oscillation types.
+<table-wrap id="table2">
+<label>Table II</label>
+<caption>
+<title>Performance and efficiency comparison: hdc and one-class svm</title></caption>
+<graphic xlink:href="10977640-table-2-source.tif"/>
+<table rules="all" frame="box" cellpadding="5">
+<colgroup>
+<col span="14"/>
+</colgroup>
+<thead>
+<tr>
+<th rowspan="2">Model</th>
+<th colspan="3">High Magnitude</th>
+<th colspan="3">Mild Oscillations</th>
+<th rowspan="2">Model Size</th>
+<th rowspan="2">Data Collection Time</th>
+<th rowspan="2">Inference Time</th>
+<th rowspan="2"><inline-formula><tex-math notation="LaTeX">$s$</tex-math></inline-formula> Consecutive Ngrams</th>
+<th rowspan="2">Total Time to Detect Oscillations for <inline-formula><tex-math notation="LaTeX">$s$</tex-math></inline-formula> Consecutive Ngrams</th>
+<th rowspan="2">Inference Energy</th>
+<th rowspan="2">Training Time</th>
+</tr>
+<tr>
+<th>Fl Score</th>
+<th>TPC</th>
+<th>FPC</th>
+<th>Fl Score</th>
+<th>TPC</th>
+<th>FPC</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><bold>OCSVM</bold></td>
+<td>69&#x0025;</td>
+<td>93&#x0025;</td>
+<td>86&#x0025;</td>
+<td>67&#x0025;</td>
+<td>97&#x0025;</td>
+<td>97&#x0025;</td>
+<td>10 KB</td>
+<td>20,u,s</td>
+<td>4 &#x03BC;s (CPU)</td>
+<td>5</td>
+<td>124 &#x03BC;s (CPU)</td>
+<td>48J (CPU)</td>
+<td>6&#x03BC;s (CPU)</td>
+</tr>
+<tr>
+<td rowspan="3"><bold>HDC</bold></td>
+<td rowspan="3">90&#x0025;</td>
+<td rowspan="3">99&#x0025;</td>
+<td rowspan="3">99&#x0025;</td>
+<td rowspan="3">80&#x0025;</td>
+<td rowspan="3">100&#x0025;</td>
+<td rowspan="3">99&#x0025;</td>
+<td rowspan="3">32 MB</td>
+<td rowspan="3">20 &#x03BC;s</td>
+<td>46&#x03BC;s (CPU)</td>
+<td rowspan="3">3</td>
+<td>112&#x03BC;s (CPU)</td>
+<td>552J (CPU)</td>
+<td>158&#x03BC;s (CPU)</td>
+</tr>
+<tr>
+<td>0.6&#x03BC;s (GPU)</td>
+<td>60.6&#x03BC;s (GPU)</td>
+<td>90J (GPU)</td>
+<td>2 &#x03BC;s (GPU)</td>
+</tr>
+<tr>
+<td>0.24&#x03BC;s (FPGA)</td>
+<td>60.24&#x03BC;s (FPGA)</td>
+<td>0.72J (FPGA)</td>
+<td>0.05&#x03BC;s (FPGA)</td>
+</tr>
+</tbody>
+</table>
+</table-wrap>
+</p>
+<p>For high-magnitude oscillations, HDC achieves a TPC of 99&#x0025;, FPC of 99&#x0025;, and an F1 Score of 90&#x0025;, making it highly reliable for accurately detecting significant oscillations with minimal false positives. OCSVM performs adequately but falls short with a TPC of 93&#x0025; and an FPC of 86&#x0025;, which could lead to more false positives. In detecting mild oscillations, HDC continues to lead with a TPC of 100&#x0025;, FPC of 99&#x0025;, and an Fl Score of 80&#x0025;, effectively identifying mild oscillatory patterns that closely resemble normal operations. OCSVM also maintains decent detection confidence but shows reduced accuracy, as indicated by its Fl Score of 67&#x0025; on mild oscillations.</p>
+<p>While OCSVM has a faster CPU inference time of <inline-formula><tex-math notation="LaTeX">$4\mu \mathrm{s}$</tex-math></inline-formula>, HDC&#x0027;s adaptability allows it to leverage GPU and FPGA for even greater efficiency. Implementing HDC on a GPU reduces inference time to <inline-formula><tex-math notation="LaTeX">$0.6\mu \mathrm{s}$</tex-math></inline-formula> (around <inline-formula><tex-math notation="LaTeX">$77\mathrm{x}$</tex-math></inline-formula> faster than its CPU time), and on FPGA, it achieves an impressive <inline-formula><tex-math notation="LaTeX">$0.24\mu \mathrm{s}$</tex-math></inline-formula> inference time and significantly lower energy usage. Moreover, HDC requires only three consecutive N-grams for a more confident detection, compared to OCSVM&#x0027;s requirement of 5, enabling faster and more reliable decision-making. This flexibility and efficiency position HDC as an optimal solution for real-time, energy-efficient wind farm oscillation detection.</p>
+</sec>
+</sec>
+<sec id="sec5">
+<label>V.</label>
+<title>Conclusion</title>
+<p>In this study, we evaluated the effectiveness of various algorithms, specifically focusing on Hyperdimensional Computing (HDC) and One-Class SVM, for detecting oscillations in wind farms. By testing these models on real-world Texas wind farm data, where actual operational challenges were present, we demonstrated that HDC consistently outperforms other algorithms across key performance metrics, such as True Pos-itive Confidence (TPC) and False Positive Confidence (FPC). HDC achieved balanced detection for both high-magnitude and mild oscillations, with TPC and FPC values reaching at least 99&#x0025; across both types. Mild and low-frequency oscillations, although subtle and often challenging to detect, can lead to a severe power outage, as 185MW power loss occurred in the Texas Panhandle wind farm; HDC&#x0027;s robust detection ensures that these are effectively identified. HDC also demonstrated substantial efficiency advantages on various hardware platforms: on GPU, it was over <inline-formula><tex-math notation="LaTeX">$6\times$</tex-math></inline-formula> and <inline-formula><tex-math notation="LaTeX">$16\times$</tex-math></inline-formula> when implemented on FPGA than SVM on CPU and achieved significant energy savings with up to 66x less inference energy when implemented on FPGA. The proposed solutions demonstrated their capability to detect oscillation within the critical time window after the start of the oscillation, which provides sufficient time for mitigation of such faults. These results highlight HDC as an optimal solution for real-time, energy-efficient oscillation detection in wind farm systems, suitable for deployment on both resource-constrained and high-performance hardware.</p>
+</sec>
+</body>
+<back>
+<ack>
+<label>VI.</label>
+<title>Acknowledgements</title>
+<p>This work was supported by the National Science Foundation (NSF) through Grant #2334256. Authors would also like to thank the Oklahoma Gas and Electric Utility for providing the real-field data from the Texas Panhandle wind farm.</p></ack>
+<ref-list>
+<title>References</title>
+<ref id="ref1"><label>[1]</label> <mixed-citation publication-type="confproc" publication-format="print"><person-group person-group-type="author"><string-name><given-names>T.</given-names> <surname>Bengtsson</surname></string-name>, <string-name><given-names>S.</given-names> <surname>Roxenborg</surname></string-name>, <string-name><given-names>M. M.</given-names> <surname>Saha</surname></string-name>, <string-name><given-names>P.-O.</given-names> <surname>Lindstr&#x00F6;m</surname></string-name>, <string-name><given-names>H.</given-names> <surname>Eriksson</surname></string-name>, and <string-name><given-names>M.</given-names> <surname>Lindstr&#x00F6;m</surname></string-name></person-group>, &#x201C;<article-title>Case studies and experiences with sub-synchronous resonance (ssr) detection technique</article-title>,&#x201D; in <source>2016 Power Systems Computation Conference (PSCC)</source>, pp. <fpage>1</fpage>&#x2013;<lpage>6</lpage>, <conf-sponsor>IEEE</conf-sponsor>, <year>2016</year>.</mixed-citation></ref>
+<ref id="ref2"><label>[2]</label> <mixed-citation publication-type="periodical" publication-format="print"><person-group person-group-type="author"><string-name><given-names>B.</given-names> <surname>Zhang</surname></string-name> and <string-name><given-names>H.</given-names> <surname>Nademi</surname></string-name></person-group>, &#x201C;<article-title>Modeling and harmonic stability of mmc-hvdc with passive circulating current filters</article-title>,&#x201D; <source specific-use="IEEE">Ieee Access</source>, vol. <volume>8</volume>, pp. <fpage>129372</fpage>&#x2013;<lpage>129386</lpage>, <year>2020</year>.</mixed-citation></ref>
+<ref id="ref3"><label>[3]</label> <mixed-citation publication-type="book" publication-format="print"><person-group person-group-type="author"><string-name><given-names>J.</given-names> <surname>Rose</surname></string-name> <etal/></person-group>, &#x201C;<chapter-title>Wind energy systems sub-synchronous oscillations: Events and modeling</chapter-title>,&#x201D; <source specific-use="IEEE">IEEE Power &#x0026; Energy Society: Piscataway</source>, <publisher-loc>NJ, USA</publisher-loc>, <year>2020</year>.</mixed-citation></ref>
+<ref id="ref4"><label>[4]</label> <mixed-citation publication-type="periodical" publication-format="print"><person-group person-group-type="author"><string-name><given-names>C.</given-names> <surname>Buchhagen</surname></string-name>, <string-name><given-names>C.</given-names> <surname>Rauscher</surname></string-name>, <string-name><given-names>A.</given-names> <surname>Menze</surname></string-name>, and <string-name><given-names>J.</given-names> <surname>Jung</surname></string-name></person-group>, &#x201C;<article-title>Borwin1-first experi-ences with harmonic interactions in converter dominated grids</article-title>,&#x201D; in <source>International ETG Congress 2015; Die Energiewende-Blueprints for the new energy age</source>, pp. <fpage>1</fpage>&#x2013;<lpage>7</lpage>, VDE, <year>2015</year>.</mixed-citation></ref>
+<ref id="ref5"><label>[5]</label> <mixed-citation publication-type="periodical" publication-format="print"><person-group person-group-type="author"><string-name><given-names>X.</given-names> <surname>Zhang</surname></string-name>, <string-name><given-names>X.</given-names> <surname>Xie</surname></string-name>, <string-name><given-names>J.</given-names> <surname>Shair</surname></string-name>, <string-name><given-names>H.</given-names> <surname>Liu</surname></string-name>, <string-name><given-names>Y.</given-names> <surname>Li</surname></string-name>, and <string-name><given-names>Y.</given-names> <surname>Li</surname></string-name></person-group>, &#x201C;<article-title>A grid-side subsynchronous damping controller to mitigate unstable ssci and its hardware-in-the-loop tests</article-title>,&#x201D; <source specific-use="IEEE">IEEE Transactions on Sustainable Energy</source>, vol. <volume>11</volume>, no. <issue>3</issue>, pp. <fpage>1548</fpage>&#x2013;<lpage>1558</lpage>, <year>2019</year>.</mixed-citation></ref>
+<ref id="ref6"><label>[6]</label> <mixed-citation publication-type="periodical" publication-format="print"><person-group person-group-type="author"><string-name><given-names>H.</given-names> <surname>Ghaffarzdeh</surname></string-name> and <string-name><given-names>A.</given-names> <surname>Mehrizi-Sani</surname></string-name></person-group>, &#x201C;<article-title>Mitigation of subsynchronous resonance induced by a type iii wind system</article-title>,&#x201D; <source specific-use="IEEE">IEEE Transactions on sustainable Energy</source>, vol. <volume>11</volume>,no. <issue>3</issue>,pp. <fpage>1717</fpage>&#x2013;<lpage>1727</lpage>, <year>2019</year>.</mixed-citation></ref>
+<ref id="ref7"><label>[7]</label> <mixed-citation publication-type="confproc" publication-format="print"><person-group person-group-type="author"><string-name><given-names>S.</given-names> <surname>Yathirajam</surname></string-name>, <string-name><given-names>A.</given-names> <surname>Peighambari</surname></string-name>, <string-name><given-names>R.</given-names> <surname>Roberts</surname></string-name>, <string-name><given-names>H.</given-names> <surname>Nademi</surname></string-name>, <string-name><given-names>S.</given-names> <surname>Gutta</surname></string-name>, <string-name><given-names>J.</given-names> <surname>Morris</surname></string-name>, and <string-name><given-names>A.</given-names> <surname>Ahmadinia</surname></string-name></person-group>, &#x201C;<article-title>Windfarm forced oscillation detection using hyperdimensional computing</article-title>,&#x201D; in <source specific-use="IEEE">2023 IEEE International Conference on Big Data (BigData)</source>, pp. <fpage>3965</fpage>&#x2013;<lpage>3972</lpage>, <conf-sponsor>IEEE</conf-sponsor>, <year>2023</year>.</mixed-citation></ref>
+<ref id="ref8"><label>[8]</label> <mixed-citation publication-type="periodical" publication-format="print"><person-group person-group-type="author"><string-name><given-names>J.</given-names> <surname>M&#x0169;noz-Mar&#x00ED;</surname></string-name>, <string-name><given-names>F.</given-names> <surname>Bovolo</surname></string-name>, <string-name><given-names>L.</given-names> <surname>G&#x00F3;mez-Chova</surname></string-name>, <string-name><given-names>L.</given-names> <surname>Bruzzone</surname></string-name>, and <string-name><given-names>G.</given-names> <surname>Camp-Valls</surname></string-name></person-group>, &#x201C;<article-title>Semisupervised one-class support vector machines for classification of remote sensing data</article-title>,&#x201D; <source specific-use="IEEE">IEEE transactions on geoscience and remote sensing</source>, vol. <volume>48</volume>, no. <issue>8</issue>,pp. <fpage>3188</fpage>&#x2013;<lpage>3197</lpage>, <year>2010</year>.</mixed-citation></ref>
+<ref id="ref9"><label>[9]</label> <mixed-citation publication-type="confproc" publication-format="print"><person-group person-group-type="author"><string-name><given-names>M.</given-names> <surname>Imani</surname></string-name>, <string-name><given-names>J.</given-names> <surname>Morris</surname></string-name>, <string-name><given-names>J.</given-names> <surname>Messerly</surname></string-name>, <string-name><given-names>H.</given-names> <surname>Shu</surname></string-name>, <string-name><given-names>Y.</given-names> <surname>Deng</surname></string-name>, and <string-name><given-names>T.</given-names> <surname>Rosing</surname></string-name></person-group>, &#x201C;<article-title>Bric: Locality-based encoding for energy-efficient brain-inspired hyperdimensional computing</article-title>,&#x201D; in <source>Proceedings of the 56th Annual Design Automation Conference</source>, pp. <fpage>1</fpage>&#x2013;<lpage>6</lpage>, <year>2019</year>.</mixed-citation></ref>
+<ref id="ref10"><label>[10]</label> <mixed-citation publication-type="periodical" publication-format="print"><person-group person-group-type="author"><string-name><given-names>E.</given-names> <surname>Ko&#x00E7;</surname></string-name> and <string-name><given-names>A.</given-names> <surname>Ko&#x00E7;</surname></string-name></person-group>, &#x201C;<article-title>Fractional fourier transform in time series prediction</article-title>,&#x201D; <source specific-use="IEEE">IEEE Signal Processing Letters</source>, vol. <volume>29</volume>, pp. <fpage>2542</fpage>&#x2013;<lpage>2546</lpage>, <year>2022</year>.</mixed-citation></ref>
+<ref id="ref11"><label>[11]</label> <mixed-citation publication-type="periodical" publication-format="print"><person-group person-group-type="author"><string-name><given-names>T.</given-names> <surname>Feist</surname></string-name></person-group>, &#x201C;<article-title>Vivado design suite</article-title>,&#x201D; <source>White Paper</source>, vol. <volume>5</volume>, <year>2012</year>.</mixed-citation></ref>
+</ref-list>
+</back>
+</conf-article>

@@ -6,7 +6,6 @@ import re
 
 import nameparser
 
-import adsingestp.custom_entity_conversions as conv
 from adsingestp.ingest_exceptions import AuthorParserException
 
 logger = logging.getLogger(__name__)
@@ -414,26 +413,3 @@ class AuthorNames(object):
         # corrected_authors_str = corrected_authors_str.replace(' -', '-').replace(' ~', '~')
 
         return corrected_authors_list
-
-
-# converts entities listed in ./custom_entity_conversions.py
-# see base.py's self.format method
-ENTITY_RE = re.compile(r"&([a-zA-Z#][a-zA-Z0-9]+);")
-
-
-class ConvertEntities(object):
-    def __init__(self):
-        pass
-
-    def _convert_entities_to_ascii(self, text: str) -> str:
-        def replacer(match):
-            name = match.group(1)
-
-            # If it's in our ASCII convuation map, convert it
-            if name in conv.ASCII_PUNCT_MAP:
-                return conv.ASCII_PUNCT_MAP[name]
-
-            # Otherwise leave unchanged
-            return match.group(0)
-
-        return ENTITY_RE.sub(replacer, text)

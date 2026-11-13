@@ -139,11 +139,12 @@ dmypy.json
 # Cython debug symbols
 cython_debug/
 
-
 .tmp/
+tmp
 workdir/
+secrets/
 logs/
 .docs/
-local_config
+local_config*
 **/.DS_Store
 *.idea

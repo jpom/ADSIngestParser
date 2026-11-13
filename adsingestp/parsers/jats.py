@@ -756,7 +756,7 @@ class JATSParser(BaseBeautifulSoupParser):
                 month = month_raw
             else:
                 month_name = month_raw[0:3].lower()
-                month = utils.MONTH_TO_NUMBER[month_name]
+                month = utils.MONTH_TO_NUMBER.get(month_name, 0)
 
             if int(month) < 10 and len(str(month)) < 2:
                 month = "0" + str(int(month))

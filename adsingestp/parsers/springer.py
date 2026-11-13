@@ -17,13 +17,19 @@ logger = logging.getLogger(__name__)
 orcid_format = re.compile(r"(\d{4}-){3}\d{3}(\d|X)")
 
 
+# TO DO: book-level records: if backmatter
+# Do not include page numbers
+
+
 class SpringerParser(BaseBeautifulSoupParser):
     def __init__(self):
         super(BaseBeautifulSoupParser, self).__init__()
         self.base_metadata = {}
         self.toplevel = None
         self.collectionmeta = None
+        # self.book = None  # delete in favor of toplevel
         self.bookmeta = None
+        # self.toplevel = None  # delete in favor of toplevel
         self.bookpart = None
         self.bookpartmeta = None
         self.contenttype = None
@@ -44,9 +50,10 @@ class SpringerParser(BaseBeautifulSoupParser):
 
         if self.bookpartmeta.find("abstract"):
             for p in self.bookpartmeta.find("abstract").find_all("p"):
-                p = self._remove_latex(p)
                 abstract = p.text.strip()
                 self.base_metadata["abstract"] = abstract
+        else:
+            logger.warning("No abstract found")
 
     def _parse_authors(self):
         # If book is part of a series
@@ -77,6 +84,8 @@ class SpringerParser(BaseBeautifulSoupParser):
                     if ed.get("surname"):
                         ed["surname"] = " ".join(ed["surname"].split())
                 self.base_metadata["editors"] = editors
+            else:
+                logger.warning("No editors found")
 
             author_meta = self.bookpartmeta
             au_output_dict = contrib_affil.parse(author_meta)
@@ -95,12 +104,16 @@ class SpringerParser(BaseBeautifulSoupParser):
                 if auth.get("surname"):
                     auth["surname"] = " ".join(auth["surname"].split())
             self.base_metadata["authors"] = authors
+        else:
+            logger.warning("No authors found")
 
     def _parse_collection(self):
-        # Pass <book-meta> <custom-meta-group> <custom-meta> <meta-name>book-subject-secondary
+        # Pass <book-meta> <custom-meta-group> <custom-meta> <meta-name>book-subject-primary
+        # and <meta-name>book-subject-secondary in %X
         # Removed in postprocessing; used to create %W
         # TO DO: Change as needed if Collection is ever added to the ingest data model
         self.base_metadata["comments"] = []
+        su_secondary = []
         subjects = []
 
         if self.bookmeta.find("custom-meta-group"):
@@ -117,10 +130,12 @@ class SpringerParser(BaseBeautifulSoupParser):
             meta_name = meta_name_tag.get_text(strip=True)
             meta_value = meta_value_tag.get_text(strip=True)
 
-            # XML contains book-subject-collection, book-subject-primary, & book-subject-secondary
-            # Sadly, collection & primary terms are too broad to be useful
-            # Have to use much longer term list for book-subject-secondary
-            if meta_name == "book-subject-secondary":
+            # Keeping these separate in case we want to use primary but not secondary
+            # There is 1 primary, may be >1 secondary
+            if meta_name == "book-subject-primary":
+                subjects.append(meta_value)
+            elif meta_name == "book-subject-secondary":
+                su_secondary.append(meta_value)
                 subjects.append(meta_value)
 
         if subjects:
@@ -131,18 +146,22 @@ class SpringerParser(BaseBeautifulSoupParser):
 
         # Get book DOI for manuscripts
         if self.contenttype == "manuscript":
-            if self.bookmeta.find("book-id", {"book-id-type": "doi"}):
-                self.base_metadata["ids"]["doi"] = self.bookmeta.find(
-                    "book-id", {"book-id-type": "doi"}
-                ).get_text(strip=True)
+            doi_book = self.bookmeta.find("book-id", {"book-id-type": "doi"}).get_text(strip=True)
+            if doi_book:
+                self.base_metadata["ids"]["doi"] = doi_book
+            else:
+                logger.warning("No doi found for book")
 
         # Get chapter DOI for edited vols
         # TO DO: Also get book DOI for edited vols?
         if self.contenttype == "edited":
-            if self.bookpartmeta.find("book-part-id", {"book-part-id-type": "doi"}):
-                self.base_metadata["ids"]["doi"] = self.bookpartmeta.find(
-                    "book-part-id", {"book-part-id-type": "doi"}
-                ).get_text(strip=True)
+            doi_ch = self.bookpartmeta.find("book-part-id", {"book-part-id-type": "doi"}).get_text(
+                strip=True
+            )
+            if doi_ch:
+                self.base_metadata["ids"]["doi"] = doi_ch
+            else:
+                logger.warning("No doi found for chapter")
 
         # Handle both print & electronic ISBNs
         # <isbn content-type="[ppub or epub]">
@@ -191,7 +210,6 @@ class SpringerParser(BaseBeautifulSoupParser):
             kwd_type = kwd_group.get("kwd-group-type", "")
 
             for kwd in kwd_group.find_all("kwd"):
-                kwd = self._remove_latex(kwd)
                 keyword = kwd.get_text(strip=True)
                 if keyword:
                     keywords.append(
@@ -202,6 +220,8 @@ class SpringerParser(BaseBeautifulSoupParser):
                     )
         if keywords:
             self.base_metadata["keywords"] = keywords
+        else:
+            logger.warning("No keywords found")
 
     def _parse_page(self):
         fpage = None
@@ -291,10 +311,11 @@ class SpringerParser(BaseBeautifulSoupParser):
                                 )
 
     def _parse_pubdate(self):
-        if self.bookmeta.find("permissions").find("copyright-year"):
-            self.base_metadata["pubdate_print"] = (
-                self.bookmeta.find("permissions").find("copyright-year").get_text()
-            )
+        year = self.bookmeta.find("permissions").find("copyright-year").get_text()
+        if year:
+            self.base_metadata["pubdate_print"] = year
+        else:
+            logger.warning("No pubdate found")
 
     # Manuscripts: refs are in backmatter
     # Edited volumes: refs are in chapters
@@ -308,9 +329,8 @@ class SpringerParser(BaseBeautifulSoupParser):
                 ref_results = []
             for r in ref_results:
                 # output raw XML for reference service to parse later
-                s = self._remove_latex(r)
-                t = str(s.extract()).replace("\n", " ").replace("\xa0", " ")
-                ref_list_text.append(t)
+                s = str(r.extract()).replace("\n", " ").replace("\xa0", " ")
+                ref_list_text.append(s)
             self.base_metadata["references"] = ref_list_text
 
     def _parse_title(self):
@@ -321,61 +341,51 @@ class SpringerParser(BaseBeautifulSoupParser):
         # Chapter title: <book-part> <book-part-meta> <title-group> <title> (no subtitle)
 
         # If book is part of a series, get series title
-        # <collection-meta> has 2 collection-type="series" & "subseries"
         # Ignore subseries title, if one exists
-        series_title = None
-
         if self.collectionmeta:
-            title_group = self.collectionmeta.find("title-group")
-            if title_group:
-                sti = title_group.find("title")
-                if sti:
-                    sti = self._remove_latex(sti)
-                    series_title = sti.text.strip()
+            for cm in self.collectionmeta.find_all("collection-meta"):
+                ctype = cm.get("collection-type")
+                if ctype not in ("series", "subseries"):
+                    continue
+
+                ti = cm.find("title-group").find("title").get_text(strip=True)
+
+                if ctype == "series":
+                    series_title = ti
+                    self.base_metadata["series_title"] = series_title
+                # elif ctype == "subseries":
+                #    subseries_title = ti
+                #    self.base_metadata["series_title"] = series_title + ": " + subseries_title
 
             # Volume number in series is in <book-meta>
-            if self.bookmeta.find("book-volume-number"):
-                self.base_metadata["volume"] = self.bookmeta.find("book-volume-number").get_text(
-                    strip=True
-                )
+            volnum = self.bookmeta.find("book-volume-number").get_text(strip=True)
+            if volnum:
+                self.base_metadata["volume"] = volnum
 
         # Get book title & subtitle
         book_title = None
         book_subtitle = None
 
         btg = self.bookmeta.find("book-title-group")
-        if btg:
-            bt = btg.find("book-title")
-            if bt:
-                bt = self._remove_latex(bt)
-                book_title = bt.text.strip()
-            subti = btg.find("subtitle")
-            if subti:
-                subti = self._remove_latex(subti)
-                book_subtitle = subti.text.strip()
+        book_title = btg.find("book-title").get_text()
+        if btg.find("subtitle"):
+            book_subtitle = btg.find("subtitle").get_text()
 
-        if self.frontmatter or self.backmatter:
-            self.base_metadata["title"] = book_title
-            self.base_metadata["subtitle"] = book_subtitle
-        else:  # If Chapter, then title = chapter title
-            tg = self.bookpartmeta.find("title-group")
-            if tg:
-                ct = tg.find("title")
-                if ct:
-                    ct = self._remove_latex(ct)
-                    chapter_title = ct.text.strip()
+        self.base_metadata["title"] = book_title
+        self.base_metadata["subtitle"] = book_subtitle
+
+        # If Chapter, then title = chapter title
+        if not (self.frontmatter or self.backmatter):
+            if self.bookpartmeta.find("title-group").find("title"):
+                chapter_title = self.bookpartmeta.find("title-group").find("title").get_text()
             self.base_metadata["title"] = chapter_title
             self.base_metadata["subtitle"] = ""
 
         # publication = book for ALL content types (chapters & frontmatter)
-        publication = None
         if book_subtitle:
-            publication = book_title + ": " + book_subtitle
+            self.base_metadata["publication"] = f"{book_title}: {book_subtitle}"
         else:
-            publication = book_title
-        if series_title:
-            publication = publication + ". " + series_title
-        self.base_metadata["publication"] = publication
+            self.base_metadata["publication"] = book_title
 
     def parse(self, text):
         if hasattr(self, "filename"):
@@ -399,54 +409,28 @@ class SpringerParser(BaseBeautifulSoupParser):
         if self.toplevel.find("book-meta", None):
             self.bookmeta = self.toplevel.find("book-meta")
 
-        # ALL FILES
+        # FRONT MATTER
+        # Only BookFrontMatter files contain <book> <front-matter>
+        if self.toplevel.find("front-matter", None):
+            self.frontmatter = self.toplevel.find("front-matter")
+
+            if self.frontmatter.find("book-part-meta", None):
+                self.bookpartmeta = self.frontmatter.find("book-part-meta")
+
+        # CHAPTERS
         # Book has <collection-meta> only if part of a series
         if self.toplevel.find("collection-meta", None):
             self.collectionmeta = self.toplevel.find("collection-meta")
+        # <collection-meta> has 2 collection-type="series" & "subseries"
 
         # All books have <book-meta>
         if self.toplevel.find("book-meta", None):
             self.bookmeta = self.toplevel.find("book-meta")
 
-        # <contrib-group> provides names of book author(s) or editor(s)
-        contrib_group = self.bookmeta.find("contrib-group")
-        if contrib_group is not None:
-            content_type = contrib_group.get("content-type", "").lower()
-
-        # If book type is manuscript
-        # <contrib-group content-type="book author"> or "book authors"
-        # Only parse front & back matter, skip chapters
-        if "author" in content_type:
-            self.contenttype = "manuscript"
-
-        # If book type is edited volume
-        # <contrib-group content-type="book editor"> or "book editors"
-        # Parse front matter & chapters
-        elif "editor" in content_type:
-            self.contenttype = "edited"
-        else:
-            raise Exception("XML file is of unknown content type")
-
-        # FRONT MATTER
-        # Only BookFrontMatter files contain <book> <front-matter>
-        # Skip BookFrontMatter files
-        if self.toplevel.find("front-matter", None):
-            self.frontmatter = self.toplevel.find("front-matter")
-            return
-        if self.toplevel.find("book-part", {"book-part-type": "part"}):
-            self.bookpart = self.toplevel.find("book-part", {"book-part-type": "part"})
-            if self.bookpart.find("front-matter", None):
-                return
-
-        # CHAPTERS
         # Get <book-part book-part-type="chapter"> only
         # Ignore <book-part book-part-type="part"> <book-part-meta> as it only contains part title
         if self.toplevel.find("book-part", {"book-part-type": "chapter"}):
             self.bookpart = self.toplevel.find("book-part", {"book-part-type": "chapter"})
-            # If a manuscript, skip chapters: we only want book-level records
-            if self.contenttype == "manuscript":
-                return
-
             if self.bookpart.find("book-part-meta", None):
                 self.bookpartmeta = self.bookpart.find("book-part-meta")
 
@@ -467,6 +451,25 @@ class SpringerParser(BaseBeautifulSoupParser):
                 self.bookbackpart = self.backmatter.find("book-part")
                 if self.bookbackpart.find("back"):
                     self.back = self.bookbackpart.find("back")
+
+        # ALL FILES
+        # <contrib-group> provides names of book author(s) or editor(s)
+        contrib_group = self.bookmeta.find("contrib-group")
+        if contrib_group is not None:
+            content_type = contrib_group.get("content-type", "").lower()
+
+        # If book type is manuscript
+        # <contrib-group content-type="book author"> or "book authors"
+        # Only parse front & back matter, do not parse chapters
+        if "author" in content_type:
+            self.contenttype = "manuscript"
+        # If book type is edited volume
+        # <contrib-group content-type="book editor"> or "book editors"
+        # Parse front matter & chapters
+        elif "editor" in content_type:
+            self.contenttype = "edited"
+        else:
+            raise Exception("XML file is of unknown content type")
 
         self._parse_abstract()
         self._parse_authors()

@@ -18,11 +18,12 @@ class TestSpringer(unittest.TestCase):
 
     def test_springer(self):
         filenames = [
-            "springer_ms_series_frontmatter",
-            "springer_ed_series_chapter",
-            "springer_ms_standalone_frontmatter",
-            "springer_ed_standalone_frontmatter",
-            "springer_ed_standalone_chapter",
+            "springer_series_ed_backmatter",
+            "springer_series_ed_chapter",
+            "springer_series_ms_backmatter",
+            "springer_standalone_ed_backmatter",
+            "springer_standalone_ed_chapter",
+            "springer_standalone_ms_backmatter",
         ]
         for f in filenames:
             test_infile = os.path.join(self.inputdir, f + ".xml")

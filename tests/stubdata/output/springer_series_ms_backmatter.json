@@ -78,7 +78,7 @@
   ],
   "comments": [
     {
-      "commentText": "Earth Sciences; Earth Sciences, general; Geophysics/Geodesy; Environmental Physics"
+      "commentText": "Earth Sciences, general; Geophysics/Geodesy; Environmental Physics"
     }
   ],
   "copyright": {
@@ -110,11 +110,11 @@
         "pubtype": "print"
       },
       {
-        "issnString": "electronic",
-        "pubtype": "2364-5849"
+        "issnString": "2364-5849",
+        "pubtype": "electronic"
       }
     ],
-    "pubName": "Tensor Computation for Seismic Data Processing: Linking Theory and Practice",
+    "pubName": "Tensor Computation for Seismic Data Processing: Linking Theory and Practice. Earth Systems Data and Models",
     "pubYear": "2025",
     "volumeNum": "6"
   },
@@ -123,9 +123,19 @@
     "loadFormat": "Springer",
     "loadLocation": "",
     "loadType": "fromFile",
-    "parsedTime": "2026-10-08T18:18:41.190403Z",
+    "parsedTime": "2026-11-23T16:37:35.222922Z",
     "recordOrigin": ""
   },
+  "references": [
+    "<ref id=\"CR1\"><label>1.</label><mixed-citation publication-type=\"other\">Liu Y, Liu J, Long Z, Zhu C (2022) Tensor computation for data analysis. Springer</mixed-citation></ref>",
+    "<ref id=\"CR2\"><label>2.</label><mixed-citation publication-type=\"other\">Kossaifi J, Panagakis Y, Anandkumar A, Pantic M (2016) Tensorly: tensor learning in python. arXiv preprint <ext-link ext-link-type=\"uri\" xlink:href=\"http://arxiv.org/abs/1610.09555\">arXiv:1610.09555</ext-link></mixed-citation></ref>",
+    "<ref id=\"CR3\"><label>3.</label><mixed-citation publication-type=\"journal\"><person-group person-group-type=\"author\"><name><surname>Usvyatsov</surname><given-names>M</given-names></name><name><surname>Ballester-Ripoll</surname><given-names>R</given-names></name><name><surname>Schindler</surname><given-names>K</given-names></name></person-group><article-title xml:lang=\"en\">tntorch: Tensor network learning with PyTorch</article-title><source>J Mach Learn Res</source><year>2022</year><volume>23</volume><issue>208</issue><fpage>1</fpage><lpage>6</lpage></mixed-citation></ref>",
+    "<ref id=\"CR4\"><label>4.</label><mixed-citation publication-type=\"other\">Kolda TG, Bader BW (2006) Matlab tensor toolbox. Technical report, Sandia National Laboratories (SNL), Albuquerque, NM, and Livermore, CA</mixed-citation></ref>",
+    "<ref id=\"CR5\"><label>5.</label><mixed-citation publication-type=\"other\">Vervliet N, Debals O, De Lathauwer L (2016) Tensorlab 3.0-numerical optimization strategies for large-scale constrained and coupled matrix/tensor factorization. In: 2016 50th Asilomar conference on signals, systems and computers. IEEE, pp 1733\u20131738</mixed-citation></ref>",
+    "<ref id=\"CR6\"><label>6.</label><mixed-citation publication-type=\"other\">Kao Y-J, Hsieh Y-D, Chen P (2015) Uni10: an open-source library for tensor network algorithms. J Phys: Conf Ser (1):012040. IOP Publishing</mixed-citation></ref>",
+    "<ref id=\"CR7\"><label>7.</label><mixed-citation publication-type=\"other\">Smith S, Ravindran N, Sidiropoulos ND, Karypis G (2015) SPLATT: efficient and parallel sparse tensor-matrix multiplication. In: 2015 IEEE international parallel and distributed processing symposium. IEEE, pp 61\u201370</mixed-citation></ref>",
+    "<ref id=\"CR8\"><label>8.</label><mixed-citation publication-type=\"other\">Kisil I, Calvi GG, Dees BS, Mandic DP (2011) Hottbox: higher order tensor toolbox (2021). arXiv preprint <ext-link ext-link-type=\"uri\" xlink:href=\"http://arxiv.org/abs/2111.15662\">arXiv:2111.15662</ext-link></mixed-citation></ref>"
+  ],
   "subtitle": {
     "textEnglish": "Linking Theory and Practice"
   },

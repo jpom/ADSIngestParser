@@ -1,0 +1,48 @@
+{
+  "comments": [
+    {
+      "commentText": "Astrophysics and Astroparticles; Astronomy, Observations and Techniques; Particle and Nuclear Physics; Cosmology"
+    }
+  ],
+  "copyright": {
+    "statement": "\u00a9 Springer Nature Singapore Pte Ltd. 2024",
+    "status": true
+  },
+  "pagination": {
+    "firstPage": "5871",
+    "lastPage": "5950",
+    "pageRange": "5871-5950"
+  },
+  "persistentIDs": [
+    {
+      "ISBN": [
+        {
+          "isbnString": "978-981-19-6959-1",
+          "pubtype": "ppub"
+        },
+        {
+          "isbnString": "978-981-19-6960-7",
+          "pubtype": "epub"
+        }
+      ]
+    }
+  ],
+  "pubDate": {
+    "printDate": "2024"
+  },
+  "publication": {
+    "pubName": "Handbook of X-ray and Gamma-ray Astrophysics",
+    "pubYear": "2024"
+  },
+  "recordData": {
+    "createdTime": "",
+    "loadFormat": "Springer",
+    "loadLocation": "",
+    "loadType": "fromFile",
+    "parsedTime": "2026-11-23T16:37:45.047826Z",
+    "recordOrigin": ""
+  },
+  "title": {
+    "textEnglish": "Handbook of X-ray and Gamma-ray Astrophysics"
+  }
+}

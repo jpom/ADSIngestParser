@@ -165,7 +165,7 @@
   ],
   "comments": [
     {
-      "commentText": "Computer Science; Artificial Intelligence; Computer Communication Networks; Database Management; Data Mining and Knowledge Discovery; Information Storage and Retrieval; Computer Applications"
+      "commentText": "Artificial Intelligence; Computer Communication Networks; Database Management; Data Mining and Knowledge Discovery; Information Storage and Retrieval; Computer Applications"
     }
   ],
   "copyright": {
@@ -226,7 +226,7 @@
         "pubtype": "1611-3349"
       }
     ],
-    "pubName": "Intelligent Information and Database Systems: 17th Asian Conference, ACIIDS 2025, Kitakyushu, Japan, April 23-25, 2025, Proceedings, Part I",
+    "pubName": "Intelligent Information and Database Systems: 17th Asian Conference, ACIIDS 2025, Kitakyushu, Japan, April 23-25, 2025, Proceedings, Part I. Lecture Notes in Computer Science",
     "pubYear": "2025",
     "volumeNum": "15683"
   },
@@ -235,7 +235,7 @@
     "loadFormat": "Springer",
     "loadLocation": "",
     "loadType": "fromFile",
-    "parsedTime": "2026-10-08T18:20:28.978538Z",
+    "parsedTime": "2026-11-23T16:37:17.387212Z",
     "recordOrigin": ""
   },
   "references": [

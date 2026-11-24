@@ -70,11 +70,12 @@ class SpringerParser(BaseBeautifulSoupParser):
         #   <book-meta> <contrib-group>
         elif self.contenttype == "edited":
             # JATSAffils.parse() extracts/decomposes <contrib-group>, so parse bookmeta once
-            #editor_meta = self.bookmeta
-            #ed_output_dict = contrib_affil.parse(editor_meta)
+            # editor_meta = self.bookmeta
+            # ed_output_dict = contrib_affil.parse(editor_meta)
             ed_output_dict = JATSAffils().parse(self.bookmeta)
             editors = [
-                c for c in (ed_output_dict.get("contributors") or [])
+                c
+                for c in (ed_output_dict.get("contributors") or [])
                 if c.get("role", "").lower() == "editor"
             ]
 
@@ -237,7 +238,7 @@ class SpringerParser(BaseBeautifulSoupParser):
             return
 
         # Get page numbers for chapters of edited vols only
-        #if self.contenttype == "edited":
+        # if self.contenttype == "edited":
         fpage = self.bookpartmeta.find("fpage")
         e_id = self.bookpartmeta.find("elocation-id")
         lpage = self.bookpartmeta.find("lpage")

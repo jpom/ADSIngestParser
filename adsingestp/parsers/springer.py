@@ -17,10 +17,6 @@ logger = logging.getLogger(__name__)
 orcid_format = re.compile(r"(\d{4}-){3}\d{3}(\d|X)")
 
 
-# TO DO: book-level records: if backmatter
-# Do not include page numbers
-
-
 class SpringerParser(BaseBeautifulSoupParser):
     def __init__(self):
         super(BaseBeautifulSoupParser, self).__init__()
@@ -73,9 +69,14 @@ class SpringerParser(BaseBeautifulSoupParser):
         # and editor(s) are for the book
         #   <book-meta> <contrib-group>
         elif self.contenttype == "edited":
-            editor_meta = self.bookmeta
-            ed_output_dict = contrib_affil.parse(editor_meta)
-            editors = ed_output_dict.get("editors") or []
+            # JATSAffils.parse() extracts/decomposes <contrib-group>, so parse bookmeta once
+            #editor_meta = self.bookmeta
+            #ed_output_dict = contrib_affil.parse(editor_meta)
+            ed_output_dict = JATSAffils().parse(self.bookmeta)
+            editors = [
+                c for c in (ed_output_dict.get("contributors") or [])
+                if c.get("role", "").lower() == "editor"
+            ]
 
             if editors:
                 for ed in editors:
@@ -87,6 +88,14 @@ class SpringerParser(BaseBeautifulSoupParser):
             else:
                 logger.warning("No editors found")
 
+            # BookFrontMatter or BookBackMatter: treat editor(s) as author(s)
+            if self.frontmatter or self.backmatter:
+                authors = editors
+            else:
+                au_output_dict = JATSAffils().parse(self.bookpartmeta)
+                authors = au_output_dict.get("authors") or []
+
+            """
             author_meta = self.bookpartmeta
             au_output_dict = contrib_affil.parse(author_meta)
             authors = au_output_dict.get("authors") or []
@@ -96,6 +105,7 @@ class SpringerParser(BaseBeautifulSoupParser):
                 author_meta = self.bookmeta
                 au_output_dict = contrib_affil.parse(author_meta)
                 authors = au_output_dict.get("authors") or []
+            """
 
         if authors:
             for auth in authors:
@@ -118,6 +128,8 @@ class SpringerParser(BaseBeautifulSoupParser):
 
         if self.bookmeta.find("custom-meta-group"):
             cm_group = self.bookmeta.find("custom-meta-group")
+        else:
+            logger.warning("No custom-meta-group found")
 
         for cm in cm_group.find_all("custom-meta"):
             meta_name_tag = cm.find("meta-name")
@@ -125,6 +137,7 @@ class SpringerParser(BaseBeautifulSoupParser):
 
             # <custom-meta> should always contain both <meta-name> & <meta-value> but just in case
             if not meta_name_tag or not meta_value_tag:
+                logger.warning("No meta_name_tag or meta_value_tag found")
                 continue
 
             meta_name = meta_name_tag.get_text(strip=True)
@@ -143,25 +156,26 @@ class SpringerParser(BaseBeautifulSoupParser):
 
     def _parse_ids(self):
         self.base_metadata["ids"] = {}
+        doi = None
 
-        # Get book DOI for manuscripts
-        if self.contenttype == "manuscript":
-            doi_book = self.bookmeta.find("book-id", {"book-id-type": "doi"}).get_text(strip=True)
-            if doi_book:
-                self.base_metadata["ids"]["doi"] = doi_book
-            else:
-                logger.warning("No doi found for book")
-
-        # Get chapter DOI for edited vols
-        # TO DO: Also get book DOI for edited vols?
-        if self.contenttype == "edited":
-            doi_ch = self.bookpartmeta.find("book-part-id", {"book-part-id-type": "doi"}).get_text(
-                strip=True
+        # Get book DOI for manuscripts, frontmatter, or backmatter
+        # Get chapter DOI for chapters of edited vols
+        if self.contenttype == "manuscript" or self.frontmatter or self.backmatter:
+            # No chapter DOI for these, so use the book DOI
+            tag = self.bookmeta.find("book-id", {"book-id-type": "doi"})
+        else:
+            # Chapter DOI for edited vols
+            tag = (
+                self.bookpartmeta.find("book-part-id", {"book-part-id-type": "doi"})
+                if self.bookpartmeta
+                else None
             )
-            if doi_ch:
-                self.base_metadata["ids"]["doi"] = doi_ch
-            else:
-                logger.warning("No doi found for chapter")
+        if tag:
+            doi = tag.get_text(strip=True)
+        if doi:
+            self.base_metadata["ids"]["doi"] = doi
+        else:
+            logger.warning("No doi found")
 
         # Handle both print & electronic ISBNs
         # <isbn content-type="[ppub or epub]">
@@ -229,12 +243,17 @@ class SpringerParser(BaseBeautifulSoupParser):
         lpage = None
         pagerange = None
 
+        # Get page numbers for chapters only
+        # Don't want page numbers for backmatter for book-level record
+        if self.frontmatter or self.backmatter:
+            return
+
         # Get page numbers for chapters of edited vols only
-        if self.contenttype == "edited":
-            fpage = self.bookpartmeta.find("fpage")
-            e_id = self.bookpartmeta.find("elocation-id")
-            lpage = self.bookpartmeta.find("lpage")
-            pagerange = self.bookpartmeta.find("page-range")
+        #if self.contenttype == "edited":
+        fpage = self.bookpartmeta.find("fpage")
+        e_id = self.bookpartmeta.find("elocation-id")
+        lpage = self.bookpartmeta.find("lpage")
+        pagerange = self.bookpartmeta.find("page-range")
 
         # Don't want page numbers for book-level record
         """

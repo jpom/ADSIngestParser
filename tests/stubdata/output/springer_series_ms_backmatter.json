@@ -78,7 +78,7 @@
   ],
   "comments": [
     {
-      "commentText": "Earth Sciences, general; Geophysics/Geodesy; Environmental Physics"
+      "commentText": "Earth Sciences; Earth Sciences, general; Geophysics/Geodesy; Environmental Physics"
     }
   ],
   "copyright": {
@@ -106,15 +106,15 @@
   "publication": {
     "ISSN": [
       {
-        "issnString": "2364-5830",
-        "pubtype": "print"
+        "issnString": "print",
+        "pubtype": "2364-5830"
       },
       {
-        "issnString": "2364-5849",
-        "pubtype": "electronic"
+        "issnString": "electronic",
+        "pubtype": "2364-5849"
       }
     ],
-    "pubName": "Tensor Computation for Seismic Data Processing: Linking Theory and Practice. Earth Systems Data and Models",
+    "pubName": "Tensor Computation for Seismic Data Processing: Linking Theory and Practice",
     "pubYear": "2025",
     "volumeNum": "6"
   },
@@ -123,7 +123,7 @@
     "loadFormat": "Springer",
     "loadLocation": "",
     "loadType": "fromFile",
-    "parsedTime": "2026-11-23T16:37:35.222922Z",
+    "parsedTime": "2026-11-24T19:40:55.659276Z",
     "recordOrigin": ""
   },
   "references": [

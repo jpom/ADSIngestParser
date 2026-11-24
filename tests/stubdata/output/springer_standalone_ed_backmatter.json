@@ -1,20 +1,68 @@
 {
+  "authors": [
+    {
+      "affiliation": [
+        {
+          "affPubID": [
+            {
+              "affID": "https://ror.org/013q1eq08",
+              "affIDType": "ROR"
+            },
+            {
+              "affID": "grid.8547.e",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 0125 2443",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Department of Physics, Fudan University, Shanghai, China"
+        }
+      ],
+      "name": {
+        "given_name": "Cosimo",
+        "surname": "Bambi"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": [
+            {
+              "affID": "https://ror.org/03a1kwz48",
+              "affIDType": "ROR"
+            },
+            {
+              "affID": "grid.10392.39",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2190 1447",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Institute for Astronomy and Astrophysics, University of Tuebingen, Tuebingen, Baden-W\u00fcrttemberg, Germany"
+        }
+      ],
+      "name": {
+        "given_name": "Andrea",
+        "surname": "Santangelo"
+      }
+    }
+  ],
   "comments": [
     {
-      "commentText": "Astrophysics and Astroparticles; Astronomy, Observations and Techniques; Particle and Nuclear Physics; Cosmology"
+      "commentText": "Physics; Astrophysics and Astroparticles; Astronomy, Observations and Techniques; Particle and Nuclear Physics; Cosmology"
     }
   ],
   "copyright": {
     "statement": "\u00a9 Springer Nature Singapore Pte Ltd. 2024",
     "status": true
   },
-  "pagination": {
-    "firstPage": "5871",
-    "lastPage": "5950",
-    "pageRange": "5871-5950"
-  },
   "persistentIDs": [
     {
+      "DOI": "10.1007/978-981-19-6960-7",
       "ISBN": [
         {
           "isbnString": "978-981-19-6959-1",
@@ -39,7 +87,7 @@
     "loadFormat": "Springer",
     "loadLocation": "",
     "loadType": "fromFile",
-    "parsedTime": "2026-11-23T16:37:45.047826Z",
+    "parsedTime": "2026-11-24T19:40:59.804635Z",
     "recordOrigin": ""
   },
   "title": {

@@ -1,20 +1,214 @@
 {
+  "authors": [
+    {
+      "affiliation": [
+        {
+          "affPubID": [
+            {
+              "affID": "https://ror.org/008fyn775",
+              "affIDType": "ROR"
+            },
+            {
+              "affID": "grid.7005.2",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0000 9805 3178",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Wroc\u0142aw University of Science and Technology, Wroc\u0142aw, Poland"
+        }
+      ],
+      "attrib": {
+        "orcid": "0000-0002-3247-2948"
+      },
+      "name": {
+        "given_name": "Ngoc Thanh",
+        "surname": "Nguyen"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": [
+            {
+              "affID": "https://ror.org/04f9apy08",
+              "affIDType": "ROR"
+            },
+            {
+              "affID": "grid.444800.c",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0000 9772 7011",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Advanced Institute of Industrial Technology, Tokyo, Japan"
+        }
+      ],
+      "attrib": {
+        "orcid": "0009-0000-3551-8799"
+      },
+      "name": {
+        "given_name": "Tokuro",
+        "surname": "Matsuo"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": [
+            {
+              "affID": "https://ror.org/03zmf4s77",
+              "affIDType": "ROR"
+            },
+            {
+              "affID": "grid.440753.1",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0004 0644 6185",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Bina Nusantara University, Jakarta, Indonesia"
+        }
+      ],
+      "attrib": {
+        "orcid": "0000-0002-5116-5708"
+      },
+      "name": {
+        "given_name": "Ford Lumban",
+        "surname": "Gaol"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": [
+            {
+              "affID": "https://ror.org/033sm2k57",
+              "affIDType": "ROR"
+            },
+            {
+              "affID": "grid.440846.a",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0004 0400 8042",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Open University of Cyprus, Nicosia, Cyprus"
+        }
+      ],
+      "attrib": {
+        "orcid": "0000-0003-4026-4329"
+      },
+      "name": {
+        "given_name": "Yannis",
+        "surname": "Manolopoulos"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": [
+            {
+              "affID": "https://ror.org/054dx8336",
+              "affIDType": "ROR"
+            },
+            {
+              "affID": "grid.443998.b",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2172 3919",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Iwate Prefectural University, Takizawa, Japan"
+        }
+      ],
+      "attrib": {
+        "orcid": "0000-0001-5256-210X"
+      },
+      "name": {
+        "given_name": "Hamido",
+        "surname": "Fujita"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": [
+            {
+              "affID": "https://ror.org/013zjb662",
+              "affIDType": "ROR"
+            },
+            {
+              "affID": "grid.412111.6",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0004 0638 9985",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Department of Computer Science and Information Engineering, National University of Kaohsiung, Kaohsiung, Taiwan"
+        }
+      ],
+      "attrib": {
+        "orcid": "0000-0001-7305-6492"
+      },
+      "name": {
+        "given_name": "Tzung-Pei",
+        "surname": "Hong"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": [
+            {
+              "affID": "https://ror.org/008fyn775",
+              "affIDType": "ROR"
+            },
+            {
+              "affID": "grid.7005.2",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0000 9805 3178",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Wroc\u0142aw University of Science and Technology, Wroc\u0142aw, Poland"
+        }
+      ],
+      "attrib": {
+        "orcid": "0000-0002-7851-4330"
+      },
+      "name": {
+        "given_name": "Krystian",
+        "surname": "Wojtkiewicz"
+      }
+    }
+  ],
   "comments": [
     {
-      "commentText": "Artificial Intelligence; Computer Communication Networks; Database Management; Data Mining and Knowledge Discovery; Information Storage and Retrieval; Computer Applications"
+      "commentText": "Computer Science; Artificial Intelligence; Computer Communication Networks; Database Management; Data Mining and Knowledge Discovery; Information Storage and Retrieval; Computer Applications"
     }
   ],
   "copyright": {
     "statement": "\u00a9 The Editor(s) (if applicable) and The Author(s), under exclusive license to Springer Nature Singapore Pte Ltd. 2025",
     "status": true
   },
-  "pagination": {
-    "firstPage": "383",
-    "lastPage": "385",
-    "pageRange": "383-385"
-  },
   "persistentIDs": [
     {
+      "DOI": "10.1007/978-981-96-6008-7",
       "ISBN": [
         {
           "isbnString": "978-981-96-6007-0",
@@ -37,11 +231,11 @@
         "pubtype": "0302-9743"
       },
       {
-        "issnString": "1611-3349",
-        "pubtype": "electronic"
+        "issnString": "electronic",
+        "pubtype": "1611-3349"
       }
     ],
-    "pubName": "Intelligent Information and Database Systems: 17th Asian Conference, ACIIDS 2025, Kitakyushu, Japan, April 23\u201325, 2025, Proceedings, Part I. Lecture Notes in Computer Science",
+    "pubName": "Intelligent Information and Database Systems: 17th Asian Conference, ACIIDS 2025, Kitakyushu, Japan, April 23\u201325, 2025, Proceedings, Part I",
     "pubYear": "2025",
     "volumeNum": "15683"
   },
@@ -50,7 +244,7 @@
     "loadFormat": "Springer",
     "loadLocation": "",
     "loadType": "fromFile",
-    "parsedTime": "2026-11-23T16:36:54.700745Z",
+    "parsedTime": "2026-11-24T19:41:03.314692Z",
     "recordOrigin": ""
   },
   "subtitle": {

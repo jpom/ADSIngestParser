@@ -95,18 +95,6 @@ class SpringerParser(BaseBeautifulSoupParser):
                 au_output_dict = JATSAffils().parse(self.bookpartmeta)
                 authors = au_output_dict.get("authors") or []
 
-            """
-            author_meta = self.bookpartmeta
-            au_output_dict = contrib_affil.parse(author_meta)
-            authors = au_output_dict.get("authors") or []
-
-            # If BookFrontMatter or BookBackMatter, treat editor(s) as author(s)
-            if self.frontmatter or self.backmatter:
-                author_meta = self.bookmeta
-                au_output_dict = contrib_affil.parse(author_meta)
-                authors = au_output_dict.get("authors") or []
-            """
-
         if authors:
             for auth in authors:
                 if auth.get("given-names"):
